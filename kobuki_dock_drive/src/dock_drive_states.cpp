@@ -80,7 +80,7 @@ namespace kobuki {
     unsigned char mid   = signal_filt[1];
     // unsigned char left  = signal_filt[2];
 
-    RobotDockingState::State next_state;
+    RobotDockingState::State next_state = RobotDockingState::UNKNOWN;;
     double next_vx;
     double next_wz;
 
@@ -252,7 +252,7 @@ namespace kobuki {
     // unsigned char right = signal_filt[0];
     unsigned char mid   = signal_filt[1];
     // unsigned char left  = signal_filt[2];
-    RobotDockingState::State next_state;
+    RobotDockingState::State next_state = RobotDockingState::UNKNOWN;
     double next_vx;
     double next_wz;
 

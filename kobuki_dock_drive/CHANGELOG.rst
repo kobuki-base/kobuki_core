@@ -2,6 +2,10 @@
 Changelog
 =========
 
+Forthcoming
+-----------
+* [infra] some minor clang static anlayser fixes, `#54 <https://github.com/yujinrobot/kobuki_core/pull/54>`_
+
 0.8.0 (2020-01-09)
 ------------------
 * build rules updated for ament
