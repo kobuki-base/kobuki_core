@@ -159,7 +159,7 @@ void DockDrive::computePoseUpdate(ecl::LegacyPose2D<double>& pose_update, const 
 
 
 /**
- * @breif pushing into signal into signal window. and go through the signal window to find what has detected
+ * @brief pushing into signal into signal window. and go through the signal window to find what has detected
  *
  * @param signal_filt - this get filled out after the function.
  * @param signal - the raw data from robot
@@ -228,7 +228,7 @@ void DockDrive::processBumpChargeEvent(const unsigned char& bumper, const unsign
 }
 
 /*************************
- * @breif processing. algorithms; transforma to velocity command
+ * @brief processing. algorithms; transforma to velocity command
  *
  * @param dock_ir signal
  * @param bumper sensor
@@ -279,7 +279,7 @@ void DockDrive::updateVelocity(const std::vector<unsigned char>& signal_filt, co
 }
 
 /*************************
- * @breif Check if any ir sees the given state signal from dock station
+ * @brief Check if any ir sees the given state signal from dock station
  *
  * @param filtered signal
  * @param dock ir state

@@ -52,7 +52,7 @@ namespace kobuki {
 
   /*******************************************************
    * Idle
-   *  @breif Entry of auto docking state machine
+   *  @brief Entry of auto docking state machine
    *
    *  Shared variable
    *  @dock_detecotr - indicates where the dock is located. Positive means dock is on left side of robot
@@ -68,7 +68,7 @@ namespace kobuki {
 
   /********************************************************
    * Scan
-   *  @breif While it rotates ccw, determines the dock location with only middle sensor.
+   *  @brief While it rotates ccw, determines the dock location with only middle sensor.
    *         If its middle sensor detects center ir, the robot is aligned with docking station
    *
    *  Shared variable
@@ -138,7 +138,7 @@ namespace kobuki {
 
   /********************************************************
    * Find stream
-   *  @breif based on dock_detector variable, it determines the dock's location and rotates toward the center line of dock
+   *  @brief based on dock_detector variable, it determines the dock's location and rotates toward the center line of dock
    *
    *  Shared variable
    *  @dock_detector - to determine dock's location
@@ -241,7 +241,7 @@ namespace kobuki {
 
  /********************************************************
   * Aligned
-  *   @breif Robot sees center IR with middle sensor. It is heading dock. It approaches to the dock only using mid sensor
+  *   @brief Robot sees center IR with middle sensor. It is heading dock. It approaches to the dock only using mid sensor
   *
   *   Shared Variable
   *   @ dock_detector - reset
@@ -252,9 +252,9 @@ namespace kobuki {
     // unsigned char right = signal_filt[0];
     unsigned char mid   = signal_filt[1];
     // unsigned char left  = signal_filt[2];
-    RobotDockingState::State next_state = nstate;
-    double next_vx = nvx;
-    double next_wz = nwz;
+    RobotDockingState::State next_state;
+    double next_vx;
+    double next_wz;
 
     if(mid)
     {
@@ -317,7 +317,7 @@ namespace kobuki {
 
  /********************************************************
   * Bumped
-  *  @breif Robot has bumped somewhere. Go backward for 10 iteration
+  *  @brief Robot has bumped somewhere. Go backward for 10 iteration
   *
   ********************************************************/
   void DockDrive::bumped(RobotDockingState::State& nstate,double& nvx, double& nwz, int& bump_count)

@@ -149,6 +149,11 @@ int main(int argc, char **argv)
   ftdi_eeprom eeprom;
   unsigned char eeprom_binary[512];
   int result = ftdi_read_eeprom(&ftdi,eeprom_binary);
+  if (result < 0)
+  {
+    std::cerr << "Failed to read the eeprom from the requested device." << std::endl;
+    return EXIT_FAILURE;
+  }
   int size = FTDI_DEFAULT_EEPROM_SIZE;
   // this never works for me
 //  int size = ftdi_read_eeprom_getsize(&ftdi, eeprom_binary, 512);
