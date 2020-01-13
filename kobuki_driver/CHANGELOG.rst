@@ -4,7 +4,7 @@ Changelog
 
 Forthcoming
 -----------
-* ...
+* [infra] udev rule and debian installation thereof, `#13 <https://github.com/kobuki-base/kobuki_core/pull/13>`_.
 
 0.8.1 (2019-01-09)
 ------------------
