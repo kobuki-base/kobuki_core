@@ -1,5 +1,5 @@
 #!/bin/sh
-# postinst script for kobuki-ftdi package
+# postinst script for kobuki udev rules (part of the kobuki_driver package)
 #
 # see: dh_installdeb(1)
 
@@ -20,7 +20,7 @@ set -e
 # source debconf library
 . /usr/share/debconf/confmodule
 
-OLDUDEV="/etc/udev/rules.d/57-kobuki.rules"
+OLDUDEV="/etc/udev/rules.d/60-kobuki.rules"
 
 # Are we running in a Docker Environment?
 docker_cnt=$(awk '$2 == "(1,"' /proc/1/sched  | wc -l)
@@ -38,10 +38,10 @@ case "$1" in
       (udevadm control --reload-rules && udevadm trigger) || true
     fi
 
-    # Warn user about /usr/local installation
+    # Emit a warning to the user - tell them to clean up a manually installed rule
     if [ -f ${OLDUDEV} ]
     then
-      echo "WARNING: Locally installed kobuki_ftdi udev rule should removed:"
+      echo "WARNING: Locally installed and conflicting kobuki udev rule will be removed:"
       echo "         sudo rm -f ${OLDUDEV}"
     fi
     ;;

@@ -19,7 +19,6 @@
 
   <exec_depend>kobuki_dock_drive</exec_depend>
   <exec_depend>kobuki_driver</exec_depend>
-  <exec_depend>kobuki_ftdi</exec_depend>
 
   <export>
     <build_type>ament_cmake</build_type>
