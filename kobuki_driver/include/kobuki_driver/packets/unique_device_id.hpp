@@ -4,7 +4,8 @@
  * @brief Module for handling of unique device id request packet payloads.
  *
  * License: BSD
- *   https://raw.github.com/yujinrobot/kobuki_core/hydro-devel/kobuki_driver/LICENSE
+ *    *   https://raw.githubusercontent.com/kobuki-base/kobuki_core/license/LICENSE
+
  */
 /*****************************************************************************
 ** Preprocessor
