@@ -2,8 +2,9 @@
 Changelog
 =========
 
-Forthcoming
------------
+1.0.0 (2020-01-13)
+------------------
+* [infra] port and release for ROS2/Eloquent
 * [infra] udev rule and debian installation thereof, `#13 <https://github.com/kobuki-base/kobuki_core/pull/13>`_.
 
 0.8.1 (2019-01-09)

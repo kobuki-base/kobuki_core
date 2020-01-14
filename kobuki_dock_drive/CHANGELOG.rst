@@ -2,8 +2,10 @@
 Changelog
 =========
 
-Forthcoming
------------
+1.0.0 (2020-01-13)
+------------------
+* [infra] port and release for ROS2/Eloquent
+* [dock] avoid a crash, but falls short of fixing all failing states in the docking sequence `#55 <https://github.com/yujinrobot/kobuki_core/pull/55>`_
 * [infra] some minor clang static anlayser fixes, `#54 <https://github.com/yujinrobot/kobuki_core/pull/54>`_
 
 0.8.0 (2020-01-09)
