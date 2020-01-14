@@ -1,6 +1,10 @@
 Kobuki Core
 ===========
 
+**Under Construction. For legacy support of Kobuki's for ROS1, shift your xeyes to https://github.com/yujinrobot/kobuki_core.git.**
+
+----
+
 The Kobuki Core stack consists of the C++ driver for communicating with [iClebo Kobuki](http:/kobuki.yujinrobot.com). For using Kobuki with [ROS](http://www.ros.org) take a look at the [Kobuki stack](https://github.com/yujinrobot/kobuki).
 
 ![Kobuki Logo](kobuki_logo.png)
