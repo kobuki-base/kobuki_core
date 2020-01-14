@@ -4,7 +4,8 @@
  * @brief Implementation of the core sensor packet data.
  *
  * License: BSD
- *   https://raw.github.com/yujinrobot/kobuki_core/hydro-devel/kobuki_driver/LICENSE
+ *    *   https://raw.githubusercontent.com/kobuki-base/kobuki_core/license/LICENSE
+
  **/
 
 /*****************************************************************************
