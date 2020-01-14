@@ -166,7 +166,7 @@ namespace kobuki {
         next_wz = -0.33;
       }
     }
-    else if(dock_detector < 0 ) // robot is located in left side of dock
+    else if(dock_detector <= 0 ) // robot is located in left side of dock
     {
       // turn left, CCW until get left signal from right sensor
       if(right & (DockStationIRState::FAR_LEFT + DockStationIRState::NEAR_LEFT))
@@ -218,7 +218,7 @@ namespace kobuki {
         next_wz = 0.0;
       }
     }
-    else if(dock_detector < 0) { // robot is located left side of dock
+    else if(dock_detector <= 0) { // robot is located left side of dock
       if(right & (DockStationIRState::FAR_RIGHT + DockStationIRState::NEAR_RIGHT)) {
         dock_detector = 0;
         rotated = 0;
