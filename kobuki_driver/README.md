@@ -1,5 +1,5 @@
-Kobuki Core
-===========
+Kobuki Driver
+=============
 
 [[Preparing the Connection](#preparing-the-connection)]
 
