@@ -4,9 +4,8 @@
  * @brief Module for handling of three_axis_gyro packet payloads.
  *
  * License: BSD
- *    *   https://raw.githubusercontent.com/kobuki-base/kobuki_core/license/LICENSE
-
- */
+ *   https://raw.githubusercontent.com/kobuki-base/kobuki_core/license/LICENSE
+ **/
 /*****************************************************************************
 ** Preprocessor
 *****************************************************************************/

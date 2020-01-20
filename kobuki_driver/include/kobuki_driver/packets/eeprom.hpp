@@ -6,8 +6,7 @@
  * Not currently using this yet.
  *
  * License: BSD
- *    *   https://raw.githubusercontent.com/kobuki-base/kobuki_core/license/LICENSE
-
+ *   https://raw.githubusercontent.com/kobuki-base/kobuki_core/license/LICENSE
  */
 /*****************************************************************************
 ** Preprocessor

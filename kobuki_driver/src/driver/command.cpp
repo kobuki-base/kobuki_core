@@ -4,8 +4,7 @@
  * @brief Implementation of the command packets.
  *
  * License: BSD
- *    *   https://raw.githubusercontent.com/kobuki-base/kobuki_core/license/LICENSE
-
+ *   https://raw.githubusercontent.com/kobuki-base/kobuki_core/license/LICENSE
 **/
 
 /*****************************************************************************

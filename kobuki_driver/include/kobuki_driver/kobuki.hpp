@@ -4,8 +4,7 @@
  * @brief Device driver core interface.
  *
  * License: BSD
- *    *   https://raw.githubusercontent.com/kobuki-base/kobuki_core/license/LICENSE
-
+ *   https://raw.githubusercontent.com/kobuki-base/kobuki_core/license/LICENSE
  **/
 /*****************************************************************************
  ** Ifdefs

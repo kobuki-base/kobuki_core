@@ -4,8 +4,7 @@
  * @brief Version info for the kobuki driver.
  *
  * License: BSD
- *    *   https://raw.githubusercontent.com/kobuki-base/kobuki_core/license/LICENSE
-
+ *   https://raw.githubusercontent.com/kobuki-base/kobuki_core/license/LICENSE
  **/
 /*****************************************************************************
 ** Ifdefs

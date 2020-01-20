@@ -1,8 +1,10 @@
 /**                                                                           !
-  * @file /kobuki_driver/src/tools/version_info.cpp
-  *
-  * @brief Tools/utility program to retriving version info. of kobuki.
-  *
+ * @file /kobuki_driver/src/tools/version_info.cpp
+ *
+ * @brief Tools/utility program to retriving version info. of kobuki.
+ *
+ * License: BSD
+ *   https://raw.githubusercontent.com/kobuki-base/kobuki_core/license/LICENSE
  **/
 
 /*****************************************************************************

@@ -3,7 +3,8 @@
  *
  * @brief Macros for kobuki_driver.
  *
- * @date April, 2013
+ * License: BSD
+ *   https://raw.githubusercontent.com/kobuki-base/kobuki_core/license/LICENSE
  **/
 /*****************************************************************************
 ** Ifdefs
