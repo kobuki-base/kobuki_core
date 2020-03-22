@@ -90,7 +90,7 @@ unsigned int PacketFinderBase::numberOfDataToRead()
       break;
 
     case waitingForPayloadSize:
-      num = size_checksum_field;
+      num = size_length_field;
       break;
 
     case waitingForStx:
