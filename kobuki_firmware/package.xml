@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>kobuki_firmware</name>
+  <version>1.2.0</version>
+  <description>
+    Firmware blobs for kobuki.
+  </description>
+  <author>Daniel Stonier</author>
+  <author>Jaeyeong Lee</author>
+  <maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+  <license>BSD</license>
+  <url type="bugtracker">https://github.com/kobuki-base/kobuki_core/issues</url>
+  <url type="repository">https://github.com/kobuki-base/kobuki_core</url>
+  <url type="website">https://index.ros.org/p/kobuki_driver/github-kobuki-base-kobuki_core/</url>
+
+  <buildtool_depend>ament_cmake_ros</buildtool_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
