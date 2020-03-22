@@ -4,6 +4,7 @@ Changelog
 
 Forthcoming
 -----------
+* [driver] bugfix correct size for pyaload length lookup, #16 <https://github.com/kobuki-base/kobuki_core/pull/16>`_.
 * [infra] license links updated, `#15 <https://github.com/kobuki-base/kobuki_core/pull/15>`_.
 
 1.0.0 (2020-01-13)
