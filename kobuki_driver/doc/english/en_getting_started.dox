@@ -1,11 +1,22 @@
 /**
 @page enGettingStartedGuide Getting Started
 
-@section kobukiClass Overview
+@section design Design
+
+<i>This library does not attempt to provide you with a control loop.</i>
+
+The nature of the compute node attached to the Kobuki as well as your
+application's needs can be extremely varied and have a significant impact on how
+you build your program. Subsequently, we have left the decision on how to design
+your application, especially for details around the control loop, up to you.
+This means the library is simply one of classes, data structures, simple functions
+and callback-oriented @ref enSigslotsGuide "sigslots".
+
+@section kobukiClass The Kobuki Class
 
 The @ref kobuki::Kobuki class is the first port of call for developing your kobuki program. 
-All kobuki configuration and interaction is done via this class. This guide will cover 
-configuration and interaction with the library method api. Interactions via callbacks 
+Configuration and non-callback modes of interaction are handled via this class. 
+Interactions via callbacks 
 using sigslots is covered especially in the guide on @ref enSigslotsGuide "sigslots".  
 
 @section kobukiConfiguration Configuration

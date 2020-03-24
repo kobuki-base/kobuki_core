@@ -1,0 +1,34 @@
+/**
+\mainpage
+
+<b>Welcome!</b>
+
+<hr/>
+
+You have found the c++ api documentation for the Kobuki. These pages will be useful if you
+intend to write your own custom c++ application with the Kobuki libraries or if you are
+endeavouring to understand a an application or driver written by someone else (e.g. the
+<a href="https://github.com/kobuki-base/kobuki_ros/tree/devel/kobuki_node">Kobuki ROS2 Node</a>).
+
+
+It also includes the specification for the serial protocol for communication between
+Kobuki and host pc which may be of interest if you are writing your own driver libraries
+for the Kobuki in another language (e.g. Java).
+
+If you were perchance chasing the user documentation, please refer to the
+<a href="https://kobuki.readthedocs.io/en/release-1.0.x/">Kobuki User Guide - v1.0.x</a>.
+
+<hr/>
+
+- @ref enInstallationLinuxGuide "Installation (Linux)"
+- @ref enFtdiGuide "Ftdi Serial Device"
+- @ref enGettingStartedGuide "Getting Started"
+- @ref enSigslotsGuide "Sigslots"
+- @ref enSimpleExample "Simple Control Loop Example"
+- @ref enAppendixKobukiParameters "Appendix - Kobuki Parameters"
+- @ref enAppendixProtocolSpecification "Appendix - Protocol Specification"
+- @ref enAppendixVersionInfo "Appendix - Version Info"
+
+<hr/>
+
+*/
