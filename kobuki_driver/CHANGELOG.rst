@@ -8,7 +8,7 @@ Forthcoming
 
 1.1.0 (2020-08-04)
 ------------------
-* [infra] ament_export_interfaces -> ament_export_targets
+* [infra] ament_export_interfaces -> ament_export_targets, `#21 <https://github.com/kobuki-base/kobuki_core/pull/21>`_.
 * [driver] bugfix correct size for pyaload length lookup, #19 <https://github.com/kobuki-base/kobuki_core/pull/19>`_.
 * [infra] license links updated, `#15 <https://github.com/kobuki-base/kobuki_core/pull/15>`_.
 
