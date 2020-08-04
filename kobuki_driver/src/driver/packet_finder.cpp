@@ -4,7 +4,7 @@
  * @brief Packet handling implementation.
  *
  * License: BSD
- *   https://raw.github.com/yujinrobot/kobuki_core/hydro-devel/kobuki_driver/LICENSE
+ *   https://raw.githubusercontent.com/kobuki-base/kobuki_core/license/LICENSE
  **/
 
 /*****************************************************************************
@@ -90,7 +90,7 @@ unsigned int PacketFinderBase::numberOfDataToRead()
       break;
 
     case waitingForPayloadSize:
-      num = size_checksum_field;
+      num = size_length_field;
       break;
 
     case waitingForStx:

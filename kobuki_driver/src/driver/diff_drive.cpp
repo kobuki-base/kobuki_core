@@ -4,7 +4,7 @@
  * @brief Differential drive abstraction (brought in from ycs).
  *
  * License: BSD
- *   https://raw.github.com/yujinrobot/kobuki_core/hydro-devel/kobuki_driver/LICENSE
+ *   https://raw.githubusercontent.com/kobuki-base/kobuki_core/license/LICENSE
  **/
 
 /*****************************************************************************

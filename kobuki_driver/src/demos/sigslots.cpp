@@ -2,6 +2,9 @@
  * @file /kobuki_driver/src/test/sigslots.cpp
  *
  * @brief Example/test program for kobuki sigslots.
+ *
+ * License: BSD
+ *   https://raw.githubusercontent.com/kobuki-base/kobuki_core/license/LICENSE
  **/
 /*****************************************************************************
 ** Includes

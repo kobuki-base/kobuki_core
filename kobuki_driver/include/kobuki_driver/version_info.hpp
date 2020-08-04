@@ -4,7 +4,7 @@
  * @brief Version info for the kobuki driver.
  *
  * License: BSD
- *   https://raw.github.com/yujinrobot/kobuki_core/hydro-devel/kobuki_driver/LICENSE
+ *   https://raw.githubusercontent.com/kobuki-base/kobuki_core/license/LICENSE
  **/
 /*****************************************************************************
 ** Ifdefs

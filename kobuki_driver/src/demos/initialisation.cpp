@@ -2,6 +2,9 @@
  * @file /kobuki_driver/src/test/initialisation.cpp
  *
  * @brief Demo program for kobuki initialisation.
+ *
+ * License: BSD
+ *   https://raw.githubusercontent.com/kobuki-base/kobuki_core/license/LICENSE
  **/
 /*****************************************************************************
 ** Includes

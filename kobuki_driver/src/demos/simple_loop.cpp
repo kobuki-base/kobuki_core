@@ -1,9 +1,12 @@
 /**                                                                           !
-  * @file /kobuki_driver/src/test/simple_loop.cpp
-  *
-  * @brief Example/test program with simple loop.
-  *
-  * It provides simple example of how interact with kobuki by using c++ without ROS.
+ * @file /kobuki_driver/src/test/simple_loop.cpp
+ *
+ * @brief Example/test program with simple loop.
+ *
+ * It provides simple example of how interact with kobuki by using c++ without ROS.
+ *
+ * License: BSD
+ *   https://raw.githubusercontent.com/kobuki-base/kobuki_core/license/LICENSE
  **/
 
 /*****************************************************************************
