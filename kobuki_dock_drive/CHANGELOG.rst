@@ -2,6 +2,10 @@
 Changelog
 =========
 
+1.1.0 (2020-08-04)
+------------------
+* [infra] ament_export_interfaces -> ament_export_targets
+
 1.0.0 (2020-01-13)
 ------------------
 * [infra] port and release for ROS2/Eloquent
