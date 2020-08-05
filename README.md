@@ -1,6 +1,6 @@
 # Kobuki Core - Under Construction
 
-![Kobuki Logo](kobuki_logo.png)
+![Kobuki Logo](resources/kobuki_logo.png)
 
 ----
 
