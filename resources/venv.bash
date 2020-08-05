@@ -33,10 +33,40 @@ padded_message () {
   printf "%s %s${2}\n" ${1} "${line:${#1}}"
 }
 
-pretty_header () { echo -e "${BOLD}${1}${RESET}" }
-pretty_print () { echo -e "${GREEN}${1}${RESET}"}
-pretty_warning () { echo -e "${YELLOW}${1}${RESET}" }
-pretty_error () { echo -e "${RED}${1}${RESET}" }
+pretty_header () {
+  echo -e "${BOLD}${1}${RESET}"
+}
+pretty_print () {
+  echo -e "${GREEN}${1}${RESET}"
+}
+pretty_warning () {
+  echo -e "${YELLOW}${1}${RESET}"
+}
+pretty_error () {
+  echo -e "${RED}${1}${RESET}"
+}
+
+##############################################################################
+# Methods
+##############################################################################
+
+install_package ()
+{
+  PACKAGE_NAME=$1
+  dpkg -s ${PACKAGE_NAME} > /dev/null
+  if [ $? -ne 0 ]; then
+    sudo apt-get -q -y install ${PACKAGE_NAME} > /dev/null
+  else
+    pretty_print "  $(padded_message ${PACKAGE_NAME} "found")"
+    return 0
+  fi
+  if [ $? -ne 0 ]; then
+    pretty_error "  $(padded_message ${PACKAGE_NAME} "failed")"
+    return 1
+  fi
+  pretty_warning "  $(padded_message ${PACKAGE_NAME} "installed")"
+  return 0
+}
 
 #############################
 # Checks
@@ -47,6 +77,12 @@ if [ -z "$SOURCED" ]; then
   pretty_error "This script needs to be sourced, i.e. source './setup.bash', not './setup.bash'"
   exit 1
 fi
+
+#############################
+# System Dependencies
+#############################
+
+install_package python3-dev || return  # for venv
 
 #############################
 # Virtual Env
