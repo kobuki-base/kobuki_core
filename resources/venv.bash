@@ -46,28 +46,6 @@ pretty_error () {
   echo -e "${RED}${1}${RESET}"
 }
 
-##############################################################################
-# Methods
-##############################################################################
-
-install_package ()
-{
-  PACKAGE_NAME=$1
-  dpkg -s ${PACKAGE_NAME} > /dev/null
-  if [ $? -ne 0 ]; then
-    sudo apt-get -q -y install ${PACKAGE_NAME} > /dev/null
-  else
-    pretty_print "  $(padded_message ${PACKAGE_NAME} "found")"
-    return 0
-  fi
-  if [ $? -ne 0 ]; then
-    pretty_error "  $(padded_message ${PACKAGE_NAME} "failed")"
-    return 1
-  fi
-  pretty_warning "  $(padded_message ${PACKAGE_NAME} "installed")"
-  return 0
-}
-
 #############################
 # Checks
 #############################
@@ -77,12 +55,6 @@ if [ -z "$SOURCED" ]; then
   pretty_error "This script needs to be sourced, i.e. source './setup.bash', not './setup.bash'"
   exit 1
 fi
-
-#############################
-# System Dependencies
-#############################
-
-install_package python3-dev || return  # for venv
 
 #############################
 # Virtual Env
