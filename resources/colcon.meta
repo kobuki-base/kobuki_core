@@ -1,5 +1,5 @@
-names:
-    "Eigen3":
+paths:
+    "src/eigen":
         name: "eigen"
         type: cmake
         "cmake-args":
