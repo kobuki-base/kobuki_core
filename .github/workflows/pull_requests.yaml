@@ -1,0 +1,27 @@
+
+name: build
+
+on:
+  pull_request:
+    branches: [ devel ]
+
+jobs:
+  sources:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    # - uses: actions/checkout@v2
+
+    - name: build sources
+      run: |
+        wget https://raw.githubusercontent.com/kobuki-base/kobuki_documentation/devel/resources/venv.bash || exit 1
+        wget https://raw.githubusercontent.com/kobuki-base/kobuki_documentation/devel/resources/colcon.meta || exit 1
+        wget https://raw.githubusercontent.com/kobuki-base/kobuki_documentation/devel/resources/kobuki_standalone.repos || exit 1
+        source venv.bash
+        mkdir src
+        vcs import ./src < kobuki_standalone.repos || exit 1
+        VERBOSE=1 colcon build -merge-install --event-handlers console_direct+ -DBUILD_TESTING=OFF
+        deactivate
