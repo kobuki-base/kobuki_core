@@ -31,5 +31,5 @@ jobs:
         source venv.bash
         mkdir src
         vcs import ./src < kobuki_standalone.repos || exit 1
-        VERBOSE=1 colcon build --merge-install --event-handlers console_direct+ -DBUILD_TESTING=OFF
+        VERBOSE=1 colcon build --merge-install --event-handlers console_direct+ --cmake-args -DBUILD_TESTING=OFF
         deactivate
