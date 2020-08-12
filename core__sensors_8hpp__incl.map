@@ -1,0 +1,9 @@
+<map id="kobuki_driver/include/kobuki_driver/packets/core_sensors.hpp" name="kobuki_driver/include/kobuki_driver/packets/core_sensors.hpp">
+<area shape="rect" id="node1" title="Core sensor packet payloads." alt="" coords="135,5,288,61"/>
+<area shape="rect" id="node2" href="$payload__base_8hpp.html" title="Base class for payloads." alt="" coords="6,109,174,151"/>
+<area shape="rect" id="node4" title=" " alt="" coords="157,199,221,225"/>
+<area shape="rect" id="node5" href="$macros_8hpp.html" title="Macros for kobuki_driver." alt="" coords="270,117,369,143"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,199,132,225"/>
+<area shape="rect" id="node6" title=" " alt="" coords="245,199,393,225"/>
+<area shape="rect" id="node7" title=" " alt="" coords="418,199,541,225"/>
+</map>

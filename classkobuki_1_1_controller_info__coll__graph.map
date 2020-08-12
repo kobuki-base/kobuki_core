@@ -1,0 +1,5 @@
+<map id="kobuki::ControllerInfo" name="kobuki::ControllerInfo">
+<area shape="rect" id="node1" title=" " alt="" coords="124,109,267,136"/>
+<area shape="rect" id="node2" href="$classpacket__handler_1_1payload_base.html" title="Provides base class for payloads." alt="" coords="5,13,196,39"/>
+<area shape="rect" id="node3" href="$structkobuki_1_1_controller_info_1_1_data.html" title=" " alt="" coords="220,5,363,47"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="kobuki_driver/include/kobuki_driver/packets/firmware.hpp" name="kobuki_driver/include/kobuki_driver/packets/firmware.hpp">
+<area shape="rect" id="node1" title="Firmware version request packet payloads." alt="" coords="148,5,301,61"/>
+<area shape="rect" id="node2" href="$payload__base_8hpp.html" title="Base class for payloads." alt="" coords="45,109,213,151"/>
+<area shape="rect" id="node5" href="$payload__headers_8hpp.html" title="Byte id&#39;s for the individual payload headers." alt="" coords="237,109,405,151"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,199,132,225"/>
+<area shape="rect" id="node4" title=" " alt="" coords="157,199,221,225"/>
+</map>

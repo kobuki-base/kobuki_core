@@ -1,0 +1,10 @@
+<map id="kobuki_driver/include/kobuki_driver/modules/battery.hpp" name="kobuki_driver/include/kobuki_driver/modules/battery.hpp">
+<area shape="rect" id="node1" title="Human friendly batter indicator class." alt="" coords="82,5,238,61"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,273,69,300"/>
+<area shape="rect" id="node3" href="$core__sensors_8hpp.html" title="Core sensor packet payloads." alt="" coords="68,109,252,136"/>
+<area shape="rect" id="node6" href="$macros_8hpp.html" title="Macros for kobuki_driver." alt="" coords="269,191,368,218"/>
+<area shape="rect" id="node4" href="$payload__base_8hpp.html" title="Base class for payloads." alt="" coords="76,184,244,225"/>
+<area shape="rect" id="node5" title=" " alt="" coords="94,273,221,300"/>
+<area shape="rect" id="node7" title=" " alt="" coords="245,273,393,300"/>
+<area shape="rect" id="node8" title=" " alt="" coords="417,273,540,300"/>
+</map>

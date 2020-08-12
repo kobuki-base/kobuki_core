@@ -1,0 +1,11 @@
+<map id="kobuki_dock_drive/include/kobuki_dock_drive/dock_drive.hpp" name="kobuki_dock_drive/include/kobuki_dock_drive/dock_drive.hpp">
+<area shape="rect" id="node1" title="Simple module for the docking drive algorithm." alt="" coords="198,5,373,61"/>
+<area shape="rect" id="node2" title=" " alt="" coords="364,199,436,225"/>
+<area shape="rect" id="node3" title=" " alt="" coords="31,117,100,143"/>
+<area shape="rect" id="node4" title=" " alt="" coords="124,117,191,143"/>
+<area shape="rect" id="node5" title=" " alt="" coords="215,117,274,143"/>
+<area shape="rect" id="node6" title=" " alt="" coords="298,117,356,143"/>
+<area shape="rect" id="node7" title=" " alt="" coords="381,109,518,151"/>
+<area shape="rect" id="node8" title=" " alt="" coords="543,117,690,143"/>
+<area shape="rect" id="node9" href="$state_8hpp.html" title="States." alt="" coords="714,117,900,143"/>
+</map>

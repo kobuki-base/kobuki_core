@@ -1,0 +1,4 @@
+<map id="kobuki::ThreeAxisGyro" name="kobuki::ThreeAxisGyro">
+<area shape="rect" id="node1" title=" " alt="" coords="25,80,176,107"/>
+<area shape="rect" id="node2" href="$classpacket__handler_1_1payload_base.html" title="Provides base class for payloads." alt="" coords="5,5,196,32"/>
+</map>
