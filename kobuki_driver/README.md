@@ -30,4 +30,4 @@ crw-rw-rw- 1 root dialout 188, 0 Jan 14 22:17 /dev/ttyUSB0
 
 To troubleshoot further, refer to [kobuki_ftdi/README.md](https://github.com/kobuki-base/kobuki_ftdi/blob/devel/README.md).
 
-Testies 1 2 3 4
+Testies 1 2 3 4 5
