@@ -1,5 +1,5 @@
 var files_dup =
 [
-    [ "kobuki_dock_drive", "dir_4ff1c1cfd503b202cc37b919f268c3dd.html", "dir_4ff1c1cfd503b202cc37b919f268c3dd" ],
-    [ "kobuki_driver", "dir_cc9f5f6a0b9e5238d5a371177e898541.html", "dir_cc9f5f6a0b9e5238d5a371177e898541" ]
+    [ "include", "dir_d44c64559bbebec7f509842c48db8b23.html", "dir_d44c64559bbebec7f509842c48db8b23" ],
+    [ "src", "dir_68267d1309a1af8e8297ef4c3efbcdba.html", "dir_68267d1309a1af8e8297ef4c3efbcdba" ]
 ];

@@ -25,9 +25,18 @@
 var NAVTREE =
 [
   [ "Kobuki", "index.html", [
-    [ "Appendix : Kobuki Parameters", "en_appendix_kobuki_parameters.html", null ],
-    [ "Appendix : Protocol Specification", "en_appendix_protocol_specification.html", null ],
-    [ "Appendix : Version Info", "en_appendix_version_info.html", null ],
+    [ "Installation - Linux", "en_installation_linux_guide.html", [
+      [ "Overview", "en_installation_linux_guide.html#enInstallationLinuxOverview", [
+        [ "Target audience", "en_installation_linux_guide.html#who", null ]
+      ] ],
+      [ "Procedure", "en_installation_linux_guide.html#Procedure", [
+        [ "Prerequirements", "en_installation_linux_guide.html#prereq", null ],
+        [ "Catkin workspace", "en_installation_linux_guide.html#catkin", null ],
+        [ "Testing your installation", "en_installation_linux_guide.html#test", null ]
+      ] ],
+      [ "Cross compiling", "en_installation_linux_guide.html#crossc", null ],
+      [ "Additional support", "en_installation_linux_guide.html#support", null ]
+    ] ],
     [ "Working with FTDI", "en_ftdi_guide.html", [
       [ "Overview", "en_ftdi_guide.html#ftdiOverview", null ]
     ] ],
@@ -42,18 +51,6 @@ var NAVTREE =
         [ "Hard Commands", "en_getting_started_guide.html#kobukiHardCommands", null ],
         [ "The Differential Drive Module", "en_getting_started_guide.html#differentialDriverModule", null ]
       ] ]
-    ] ],
-    [ "Installation - Linux", "en_installation_linux_guide.html", [
-      [ "Overview", "en_installation_linux_guide.html#enInstallationLinuxOverview", [
-        [ "Target audience", "en_installation_linux_guide.html#who", null ]
-      ] ],
-      [ "Procedure", "en_installation_linux_guide.html#Procedure", [
-        [ "Prerequirements", "en_installation_linux_guide.html#prereq", null ],
-        [ "Catkin workspace", "en_installation_linux_guide.html#catkin", null ],
-        [ "Testing your installation", "en_installation_linux_guide.html#test", null ]
-      ] ],
-      [ "Cross compiling", "en_installation_linux_guide.html#crossc", null ],
-      [ "Additional support", "en_installation_linux_guide.html#support", null ]
     ] ],
     [ "Sigslots", "en_sigslots_guide.html", [
       [ "Introduction", "en_sigslots_guide.html#sigslotsIntro", null ],
@@ -76,6 +73,9 @@ var NAVTREE =
       ] ],
       [ "More Complicated Example", "en_simple_example.html#enSimpleExampleMoreComplicated", null ]
     ] ],
+    [ "Appendix : Kobuki Parameters", "en_appendix_kobuki_parameters.html", null ],
+    [ "Appendix : Protocol Specification", "en_appendix_protocol_specification.html", null ],
+    [ "Appendix : Version Info", "en_appendix_version_info.html", null ],
     [ "Todo List", "todo.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
@@ -97,8 +97,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "",
-"classkobuki_1_1_kobuki.html#a8300b9e468ea77063421953a711b3eef",
-"structkobuki_1_1_bumper_event.html"
+"classkobuki_1_1_packet_finder_base.html#a36345c2f2abf305954b882371ed9f9c3",
+"structkobuki_1_1_command_1_1_data.html#a656ba136485c301b1c6e61812d4d5b26"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

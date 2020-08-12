@@ -1,5 +1,5 @@
-<map id="kobuki_driver/src/driver/command.cpp" name="kobuki_driver/src/driver/command.cpp">
-<area shape="rect" id="node1" title="Implementation of the command packets." alt="" coords="95,5,253,47"/>
+<map id="/github/workspace/kobuki_driver/src/driver/command.cpp" name="/github/workspace/kobuki_driver/src/driver/command.cpp">
+<area shape="rect" id="node1" title="Implementation of the command packets." alt="" coords="72,5,276,47"/>
 <area shape="rect" id="node2" href="$command_8hpp.html" title="Command structure." alt="" coords="101,95,247,136"/>
 <area shape="rect" id="node3" title=" " alt="" coords="5,512,132,539"/>
 <area shape="rect" id="node4" href="$payload__base_8hpp.html" title="Base class for payloads." alt="" coords="48,423,207,464"/>

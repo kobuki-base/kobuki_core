@@ -1,5 +1,5 @@
-<map id="kobuki_driver/include/kobuki_driver/packets/cliff.hpp" name="kobuki_driver/include/kobuki_driver/packets/cliff.hpp">
-<area shape="rect" id="node1" title="Cliff sensor packet payloads." alt="" coords="95,5,249,61"/>
+<map id="/github/workspace/kobuki_driver/include/kobuki_driver/packets/cliff.hpp" name="/github/workspace/kobuki_driver/include/kobuki_driver/packets/cliff.hpp">
+<area shape="rect" id="node1" title="Cliff sensor packet payloads." alt="" coords="87,5,257,61"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,117,64,143"/>
 <area shape="rect" id="node3" href="$payload__base_8hpp.html" title="Base class for payloads." alt="" coords="88,109,256,151"/>
 <area shape="rect" id="node6" href="$payload__headers_8hpp.html" title="Byte id&#39;s for the individual payload headers." alt="" coords="280,109,448,151"/>

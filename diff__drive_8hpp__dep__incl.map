@@ -1,11 +1,11 @@
-<map id="kobuki_driver/include/kobuki_driver/modules/diff_drive.hpp" name="kobuki_driver/include/kobuki_driver/modules/diff_drive.hpp">
-<area shape="rect" id="node1" title="Simple module for the diff drive odometry." alt="" coords="347,5,503,61"/>
-<area shape="rect" id="node2" href="$modules_8hpp.html" title="Convenience header for modules." alt="" coords="239,109,419,151"/>
-<area shape="rect" id="node9" href="$diff__drive_8cpp.html" title="Differential drive abstraction (brought in from ycs)." alt="" coords="444,109,601,151"/>
-<area shape="rect" id="node3" href="$command_8hpp.html" title="Command structure." alt="" coords="302,199,490,240"/>
-<area shape="rect" id="node4" href="$kobuki_8hpp.html" title="Device driver core interface." alt="" coords="179,288,349,329"/>
-<area shape="rect" id="node8" href="$command_8cpp.html" title="Implementation of the command packets." alt="" coords="373,288,531,329"/>
-<area shape="rect" id="node5" href="$kobuki_8cpp.html" title="Implementation for the kobuki device driver." alt="" coords="5,377,163,419"/>
-<area shape="rect" id="node6" href="$simple__keyop_8cpp.html" title="Tools/utility program to control robot by keyboard." alt="" coords="187,377,341,419"/>
-<area shape="rect" id="node7" href="$version__info_8cpp.html" title="Tools/utility program to retriving version info. of kobuki." alt="" coords="365,377,518,419"/>
+<map id="/github/workspace/kobuki_driver/include/kobuki_driver/modules/diff_drive.hpp" name="/github/workspace/kobuki_driver/include/kobuki_driver/modules/diff_drive.hpp">
+<area shape="rect" id="node1" title="Simple module for the diff drive odometry." alt="" coords="362,5,557,61"/>
+<area shape="rect" id="node2" href="$modules_8hpp.html" title="Convenience header for modules." alt="" coords="277,109,447,165"/>
+<area shape="rect" id="node9" href="$diff__drive_8cpp.html" title="Differential drive abstraction (brought in from ycs)." alt="" coords="471,109,642,165"/>
+<area shape="rect" id="node3" href="$command_8hpp.html" title="Command structure." alt="" coords="338,213,509,269"/>
+<area shape="rect" id="node4" href="$kobuki_8hpp.html" title="Device driver core interface." alt="" coords="215,317,386,373"/>
+<area shape="rect" id="node8" href="$command_8cpp.html" title="Implementation of the command packets." alt="" coords="411,325,615,366"/>
+<area shape="rect" id="node5" href="$kobuki_8cpp.html" title="Implementation for the kobuki device driver." alt="" coords="5,429,191,470"/>
+<area shape="rect" id="node6" href="$simple__keyop_8cpp.html" title="Tools/utility program to control robot by keyboard." alt="" coords="215,421,386,477"/>
+<area shape="rect" id="node7" href="$version__info_8cpp.html" title="Tools/utility program to retriving version info. of kobuki." alt="" coords="410,421,581,477"/>
 </map>

@@ -1,8 +1,8 @@
-<map id="kobuki_driver/include/kobuki_driver/packet_handler/packet_finder.hpp" name="kobuki_driver/include/kobuki_driver/packet_handler/packet_finder.hpp">
-<area shape="rect" id="node1" title="Simple packet finder." alt="" coords="269,5,445,61"/>
-<area shape="rect" id="node2" href="$kobuki_8hpp.html" title="Device driver core interface." alt="" coords="179,109,349,151"/>
-<area shape="rect" id="node6" href="$packet__finder_8cpp.html" title="Packet handling implementation." alt="" coords="373,109,531,151"/>
-<area shape="rect" id="node3" href="$kobuki_8cpp.html" title="Implementation for the kobuki device driver." alt="" coords="5,199,163,240"/>
-<area shape="rect" id="node4" href="$simple__keyop_8cpp.html" title="Tools/utility program to control robot by keyboard." alt="" coords="187,199,341,240"/>
-<area shape="rect" id="node5" href="$version__info_8cpp.html" title="Tools/utility program to retriving version info. of kobuki." alt="" coords="365,199,518,240"/>
+<map id="/github/workspace/kobuki_driver/include/kobuki_driver/packet_handler/packet_finder.hpp" name="/github/workspace/kobuki_driver/include/kobuki_driver/packet_handler/packet_finder.hpp">
+<area shape="rect" id="node1" title="Simple packet finder." alt="" coords="300,5,496,76"/>
+<area shape="rect" id="node2" href="$kobuki_8hpp.html" title="Device driver core interface." alt="" coords="215,124,386,180"/>
+<area shape="rect" id="node6" href="$packet__finder_8cpp.html" title="Packet handling implementation." alt="" coords="410,124,581,180"/>
+<area shape="rect" id="node3" href="$kobuki_8cpp.html" title="Implementation for the kobuki device driver." alt="" coords="5,235,191,277"/>
+<area shape="rect" id="node4" href="$simple__keyop_8cpp.html" title="Tools/utility program to control robot by keyboard." alt="" coords="215,228,386,284"/>
+<area shape="rect" id="node5" href="$version__info_8cpp.html" title="Tools/utility program to retriving version info. of kobuki." alt="" coords="410,228,581,284"/>
 </map>
