@@ -1,8 +1,12 @@
 <map id="/github/workspace/kobuki_driver/include/kobuki_driver/packets/unique_device_id.hpp" name="/github/workspace/kobuki_driver/include/kobuki_driver/packets/unique_device_id.hpp">
-<area shape="rect" id="node1" title="Module for handling of unique device id request packet payloads." alt="" coords="181,5,420,61"/>
-<area shape="rect" id="node2" href="$packets_8hpp.html" title="Packets convenience header." alt="" coords="215,109,386,165"/>
-<area shape="rect" id="node3" href="$kobuki_8hpp.html" title="Device driver core interface." alt="" coords="215,213,386,269"/>
-<area shape="rect" id="node4" href="$kobuki_8cpp.html" title="Implementation for the kobuki device driver." alt="" coords="5,325,191,366"/>
-<area shape="rect" id="node5" href="$simple__keyop_8cpp.html" title="Tools/utility program to control robot by keyboard." alt="" coords="215,317,386,373"/>
-<area shape="rect" id="node6" href="$version__info_8cpp.html" title="Tools/utility program to retriving version info. of kobuki." alt="" coords="410,317,581,373"/>
+<area shape="rect" id="node1" title="Module for handling of unique device id request packet payloads." alt="" coords="607,5,846,61"/>
+<area shape="rect" id="node2" href="$packets_8hpp.html" title="Packets convenience header." alt="" coords="641,109,812,165"/>
+<area shape="rect" id="node3" href="$kobuki_8hpp.html" title="Device driver core interface." alt="" coords="641,213,812,269"/>
+<area shape="rect" id="node4" href="$buttons_8cpp.html" title="Example program for kobuki button events." alt="" coords="5,325,203,366"/>
+<area shape="rect" id="node5" href="$chirp_8cpp.html" title="Example program for kobuki initialisation." alt="" coords="227,325,410,366"/>
+<area shape="rect" id="node6" href="$simple__loop_8cpp.html" title="Example program with a simple control loop." alt="" coords="435,317,605,373"/>
+<area shape="rect" id="node7" href="$stream_8cpp.html" title="Example program for streaming kobuki&#39;s sensors." alt="" coords="629,325,824,366"/>
+<area shape="rect" id="node8" href="$kobuki_8cpp.html" title="Implementation for the kobuki device driver." alt="" coords="849,325,1034,366"/>
+<area shape="rect" id="node9" href="$simple__keyop_8cpp.html" title="Tools/utility program to control robot by keyboard." alt="" coords="1059,317,1229,373"/>
+<area shape="rect" id="node10" href="$version__info_8cpp.html" title="Tools/utility program to retriving version info. of kobuki." alt="" coords="1253,317,1424,373"/>
 </map>

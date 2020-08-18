@@ -1,10 +1,14 @@
 <map id="/github/workspace/kobuki_driver/include/kobuki_driver/modules/acceleration_limiter.hpp" name="/github/workspace/kobuki_driver/include/kobuki_driver/modules/acceleration_limiter.hpp">
-<area shape="rect" id="node1" title="Simple module for the velocity smoothing." alt="" coords="268,5,456,76"/>
-<area shape="rect" id="node2" href="$modules_8hpp.html" title="Convenience header for modules." alt="" coords="277,124,447,180"/>
-<area shape="rect" id="node3" href="$command_8hpp.html" title="Command structure." alt="" coords="338,228,509,284"/>
-<area shape="rect" id="node4" href="$kobuki_8hpp.html" title="Device driver core interface." alt="" coords="215,332,386,388"/>
-<area shape="rect" id="node8" href="$command_8cpp.html" title="Implementation of the command packets." alt="" coords="411,339,615,381"/>
-<area shape="rect" id="node5" href="$kobuki_8cpp.html" title="Implementation for the kobuki device driver." alt="" coords="5,443,191,485"/>
-<area shape="rect" id="node6" href="$simple__keyop_8cpp.html" title="Tools/utility program to control robot by keyboard." alt="" coords="215,436,386,492"/>
-<area shape="rect" id="node7" href="$version__info_8cpp.html" title="Tools/utility program to retriving version info. of kobuki." alt="" coords="410,436,581,492"/>
+<area shape="rect" id="node1" title="Simple module for the velocity smoothing." alt="" coords="694,5,882,76"/>
+<area shape="rect" id="node2" href="$modules_8hpp.html" title="Convenience header for modules." alt="" coords="703,124,873,180"/>
+<area shape="rect" id="node3" href="$command_8hpp.html" title="Command structure." alt="" coords="764,228,935,284"/>
+<area shape="rect" id="node4" href="$kobuki_8hpp.html" title="Device driver core interface." alt="" coords="641,332,812,388"/>
+<area shape="rect" id="node12" href="$command_8cpp.html" title="Implementation of the command packets." alt="" coords="837,339,1041,381"/>
+<area shape="rect" id="node5" href="$buttons_8cpp.html" title="Example program for kobuki button events." alt="" coords="5,443,203,485"/>
+<area shape="rect" id="node6" href="$chirp_8cpp.html" title="Example program for kobuki initialisation." alt="" coords="227,443,410,485"/>
+<area shape="rect" id="node7" href="$simple__loop_8cpp.html" title="Example program with a simple control loop." alt="" coords="435,436,605,492"/>
+<area shape="rect" id="node8" href="$stream_8cpp.html" title="Example program for streaming kobuki&#39;s sensors." alt="" coords="629,443,824,485"/>
+<area shape="rect" id="node9" href="$kobuki_8cpp.html" title="Implementation for the kobuki device driver." alt="" coords="849,443,1034,485"/>
+<area shape="rect" id="node10" href="$simple__keyop_8cpp.html" title="Tools/utility program to control robot by keyboard." alt="" coords="1059,436,1229,492"/>
+<area shape="rect" id="node11" href="$version__info_8cpp.html" title="Tools/utility program to retriving version info. of kobuki." alt="" coords="1253,436,1424,492"/>
 </map>

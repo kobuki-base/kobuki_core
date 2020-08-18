@@ -97,8 +97,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "",
-"classkobuki_1_1_packet_finder_base.html#a36345c2f2abf305954b882371ed9f9c3",
-"structkobuki_1_1_command_1_1_data.html#a656ba136485c301b1c6e61812d4d5b26"
+"classkobuki_1_1_packet_finder_base.html#a06d54c9254d3413fed606bf515183770",
+"structkobuki_1_1_cliff_event.html#a35b0f0ad19aed5ba599fc999f70175af"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

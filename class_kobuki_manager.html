@@ -100,15 +100,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa11797ac2c8d0a5b37c701bb22e634a2"><td class="memItemLeft" align="right" valign="top"><a id="aa11797ac2c8d0a5b37c701bb22e634a2"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>KobukiManager</b> (const std::string &amp;device)</td></tr>
 <tr class="separator:aa11797ac2c8d0a5b37c701bb22e634a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa11797ac2c8d0a5b37c701bb22e634a2"><td class="memItemLeft" align="right" valign="top"><a id="aa11797ac2c8d0a5b37c701bb22e634a2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>KobukiManager</b> (const std::string &amp;device)</td></tr>
-<tr class="separator:aa11797ac2c8d0a5b37c701bb22e634a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2a9199cb862ebc899996a9eef3214c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kobuki_manager.html#aa2a9199cb862ebc899996a9eef3214c6">spin</a> ()</td></tr>
 <tr class="memdesc:aa2a9199cb862ebc899996a9eef3214c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Worker thread loop; sends current velocity command at a fixed rate.  <a href="class_kobuki_manager.html#aa2a9199cb862ebc899996a9eef3214c6">More...</a><br /></td></tr>
 <tr class="separator:aa2a9199cb862ebc899996a9eef3214c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b7d112844422e6d0e1bb67acacfc6e5"><td class="memItemLeft" align="right" valign="top"><a id="a8b7d112844422e6d0e1bb67acacfc6e5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>processStreamData</b> ()</td></tr>
-<tr class="separator:a8b7d112844422e6d0e1bb67acacfc6e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a782a758ed80f25c49c0f429e88d8bf3e"><td class="memItemLeft" align="right" valign="top"><a id="a782a758ed80f25c49c0f429e88d8bf3e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>processButtonEvent</b> (const <a class="el" href="structkobuki_1_1_button_event.html">kobuki::ButtonEvent</a> &amp;event)</td></tr>
+<tr class="separator:a782a758ed80f25c49c0f429e88d8bf3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa11797ac2c8d0a5b37c701bb22e634a2"><td class="memItemLeft" align="right" valign="top"><a id="aa11797ac2c8d0a5b37c701bb22e634a2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>KobukiManager</b> (const std::string &amp;device)</td></tr>
+<tr class="separator:aa11797ac2c8d0a5b37c701bb22e634a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa11797ac2c8d0a5b37c701bb22e634a2"><td class="memItemLeft" align="right" valign="top"><a id="aa11797ac2c8d0a5b37c701bb22e634a2"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>KobukiManager</b> (const std::string &amp;device)</td></tr>
 <tr class="separator:aa11797ac2c8d0a5b37c701bb22e634a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,6 +121,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>processMotion</b> ()<
 <tr class="memitem:ad21d150c9a8e1f5bc8d92b0e7913fe0a"><td class="memItemLeft" align="right" valign="top"><a id="ad21d150c9a8e1f5bc8d92b0e7913fe0a"></a>
 ecl::LegacyPose2D&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getPose</b> ()</td></tr>
 <tr class="separator:ad21d150c9a8e1f5bc8d92b0e7913fe0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa11797ac2c8d0a5b37c701bb22e634a2"><td class="memItemLeft" align="right" valign="top"><a id="aa11797ac2c8d0a5b37c701bb22e634a2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>KobukiManager</b> (const std::string &amp;device)</td></tr>
+<tr class="separator:aa11797ac2c8d0a5b37c701bb22e634a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2a9199cb862ebc899996a9eef3214c6"><td class="memItemLeft" align="right" valign="top"><a id="aa2a9199cb862ebc899996a9eef3214c6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spin</b> ()</td></tr>
+<tr class="separator:aa2a9199cb862ebc899996a9eef3214c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b7d112844422e6d0e1bb67acacfc6e5"><td class="memItemLeft" align="right" valign="top"><a id="a8b7d112844422e6d0e1bb67acacfc6e5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>processStreamData</b> ()</td></tr>
+<tr class="separator:a8b7d112844422e6d0e1bb67acacfc6e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af719c61bfe21c8c3e35320edba20f7aa"><td class="memItemLeft" align="right" valign="top"><a id="af719c61bfe21c8c3e35320edba20f7aa"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kobuki_manager.html#af719c61bfe21c8c3e35320edba20f7aa">KobukiManager</a> ()</td></tr>
 <tr class="memdesc:af719c61bfe21c8c3e35320edba20f7aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor, needs initialisation. <br /></td></tr>
@@ -192,9 +201,10 @@ std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getUDID<
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/github/workspace/kobuki_driver/src/demos/initialisation.cpp</li>
-<li>/github/workspace/kobuki_driver/src/demos/sigslots.cpp</li>
-<li>/github/workspace/kobuki_driver/src/demos/simple_loop.cpp</li>
+<li>/github/workspace/kobuki_driver/src/demos/<a class="el" href="buttons_8cpp.html">buttons.cpp</a></li>
+<li>/github/workspace/kobuki_driver/src/demos/<a class="el" href="chirp_8cpp.html">chirp.cpp</a></li>
+<li>/github/workspace/kobuki_driver/src/demos/<a class="el" href="simple__loop_8cpp.html">simple_loop.cpp</a></li>
+<li>/github/workspace/kobuki_driver/src/demos/<a class="el" href="stream_8cpp.html">stream.cpp</a></li>
 <li>/github/workspace/kobuki_driver/src/tools/<a class="el" href="simple__keyop_8cpp.html">simple_keyop.cpp</a></li>
 <li>/github/workspace/kobuki_driver/src/tools/<a class="el" href="version__info_8cpp.html">version_info.cpp</a></li>
 </ul>

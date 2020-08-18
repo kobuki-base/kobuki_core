@@ -1,13 +1,17 @@
 <map id="/github/workspace/kobuki_driver/include/kobuki_driver/modules/battery.hpp" name="/github/workspace/kobuki_driver/include/kobuki_driver/modules/battery.hpp">
-<area shape="rect" id="node1" title="Human friendly batter indicator class." alt="" coords="371,5,553,61"/>
-<area shape="rect" id="node2" href="$modules_8hpp.html" title="Convenience header for modules." alt="" coords="189,109,359,165"/>
-<area shape="rect" id="node9" href="$parameters_8hpp.html" title="Parameter configuration for the kobuki." alt="" coords="311,213,482,269"/>
-<area shape="rect" id="node10" href="$battery_8cpp.html" title="Battery/charging source implementation." alt="" coords="434,117,621,158"/>
-<area shape="rect" id="node11" href="$event__manager_8cpp.html" title="Implementation of the event black magic." alt="" coords="645,109,815,165"/>
-<area shape="rect" id="node3" href="$command_8hpp.html" title="Command structure." alt="" coords="66,213,237,269"/>
-<area shape="rect" id="node4" href="$kobuki_8hpp.html" title="Device driver core interface." alt="" coords="234,317,405,373"/>
-<area shape="rect" id="node8" href="$command_8cpp.html" title="Implementation of the command packets." alt="" coords="5,325,209,366"/>
-<area shape="rect" id="node5" href="$kobuki_8cpp.html" title="Implementation for the kobuki device driver." alt="" coords="24,429,209,470"/>
-<area shape="rect" id="node6" href="$simple__keyop_8cpp.html" title="Tools/utility program to control robot by keyboard." alt="" coords="234,421,405,477"/>
-<area shape="rect" id="node7" href="$version__info_8cpp.html" title="Tools/utility program to retriving version info. of kobuki." alt="" coords="429,421,599,477"/>
+<area shape="rect" id="node1" title="Human friendly batter indicator class." alt="" coords="779,5,960,61"/>
+<area shape="rect" id="node2" href="$modules_8hpp.html" title="Convenience header for modules." alt="" coords="596,109,767,165"/>
+<area shape="rect" id="node13" href="$parameters_8hpp.html" title="Parameter configuration for the kobuki." alt="" coords="719,213,889,269"/>
+<area shape="rect" id="node14" href="$battery_8cpp.html" title="Battery/charging source implementation." alt="" coords="841,117,1028,158"/>
+<area shape="rect" id="node15" href="$event__manager_8cpp.html" title="Implementation of the event black magic." alt="" coords="1052,109,1223,165"/>
+<area shape="rect" id="node3" href="$command_8hpp.html" title="Command structure." alt="" coords="473,213,644,269"/>
+<area shape="rect" id="node4" href="$kobuki_8hpp.html" title="Device driver core interface." alt="" coords="641,317,812,373"/>
+<area shape="rect" id="node12" href="$command_8cpp.html" title="Implementation of the command packets." alt="" coords="413,325,617,366"/>
+<area shape="rect" id="node5" href="$buttons_8cpp.html" title="Example program for kobuki button events." alt="" coords="5,429,203,470"/>
+<area shape="rect" id="node6" href="$chirp_8cpp.html" title="Example program for kobuki initialisation." alt="" coords="227,429,410,470"/>
+<area shape="rect" id="node7" href="$simple__loop_8cpp.html" title="Example program with a simple control loop." alt="" coords="435,421,605,477"/>
+<area shape="rect" id="node8" href="$stream_8cpp.html" title="Example program for streaming kobuki&#39;s sensors." alt="" coords="629,429,824,470"/>
+<area shape="rect" id="node9" href="$kobuki_8cpp.html" title="Implementation for the kobuki device driver." alt="" coords="849,429,1034,470"/>
+<area shape="rect" id="node10" href="$simple__keyop_8cpp.html" title="Tools/utility program to control robot by keyboard." alt="" coords="1059,421,1229,477"/>
+<area shape="rect" id="node11" href="$version__info_8cpp.html" title="Tools/utility program to retriving version info. of kobuki." alt="" coords="1253,421,1424,477"/>
 </map>
