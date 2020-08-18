@@ -1,9 +1,10 @@
 /**                                                                           !
- * @file /kobuki_driver/src/test/simple_loop.cpp
+ * @file src/demos/simple_loop.cpp
  *
- * @brief Example/test program with simple loop.
+ * @brief Example program with a simple control loop.
  *
- * It provides simple example of how interact with kobuki by using c++ without ROS.
+ * Controls the kobuki around a dead-reckoned square with sides of
+ * length 1.0m.
  *
  * License: BSD
  *   https://raw.githubusercontent.com/kobuki-base/kobuki_core/license/LICENSE
@@ -93,8 +94,14 @@ void signalHandler(int /* signum */) {
 
 int main(int argc, char** argv)
 {
-  ecl::CmdLine cmd_line("simple_loop demo", ' ', "0.2");
-  ecl::UnlabeledValueArg<std::string> device_port("device_port", "Path to device file of serial port to open, connected to the kobuki", false, "/dev/kobuki", "string");
+  ecl::CmdLine cmd_line("Uses a simple control loop to move Kobuki around a dead-reckoned square with sides of length 1.0m", ' ', "0.2");
+  ecl::ValueArg<std::string> device_port(
+      "p", "port",
+      "Path to device file of serial port to open",
+      false,
+      "/dev/kobuki",
+      "string"
+  );
   cmd_line.add(device_port);
   cmd_line.parse(argc, argv);
 

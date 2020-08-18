@@ -22,7 +22,8 @@ endmacro()
 # Tests
 ###############################################################################
 
+kobuki_driver_add_demo(chirp)
+kobuki_driver_add_demo(buttons)
+kobuki_driver_add_demo(stream)
 kobuki_driver_add_demo(velocity_commands)
-kobuki_driver_add_demo(initialisation)
-kobuki_driver_add_demo(sigslots)
 kobuki_driver_add_demo(simple_loop)

@@ -1,5 +1,5 @@
 /**
- * @file /kobuki_driver/src/test/velocity_commands.cpp
+ * @file src/demos/velocity_commands.cpp
  *
  * @brief Unit test for velocity command inputs.
  *
