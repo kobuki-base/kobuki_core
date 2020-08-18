@@ -4,7 +4,8 @@ Changelog
 
 Forthcoming
 -----------
-* ...
+* [demos] added an event demo, also minor cleanup, `#27 <https://github.com/kobuki-base/kobuki_core/pull/27>`_.
+* [infra] don't use system headers for dependencies, `#27 <https://github.com/kobuki-base/kobuki_core/pull/27>`_.
 
 1.1.0 (2020-08-04)
 ------------------
