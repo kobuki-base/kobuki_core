@@ -1,5 +1,7 @@
 var NAVTREEINDEX1 =
 {
+"classkobuki_1_1_packet_finder_base.html#a06d54c9254d3413fed606bf515183770":[9,0,0,23,28],
+"classkobuki_1_1_packet_finder_base.html#a0ab8932e3f01def929b43d2d8c68413d":[9,0,0,23,24],
 "classkobuki_1_1_packet_finder_base.html#a14e362e78ff9f5d584ee437b353580aa":[9,0,0,23,13],
 "classkobuki_1_1_packet_finder_base.html#a1fd3a110b4920103132e7e281251caca":[9,0,0,23,22],
 "classkobuki_1_1_packet_finder_base.html#a211cc4e18d4b48e951539952cf3a0607":[9,0,0,23,12],
@@ -247,7 +249,5 @@ var NAVTREEINDEX1 =
 "structkobuki_1_1_cliff_1_1_data.html#addf367ef49803e8814f0e468d87b78ac":[9,0,0,4,0,1],
 "structkobuki_1_1_cliff_event.html":[9,0,0,5],
 "structkobuki_1_1_cliff_event.html#a175c5c97ac7e152c70b6d3bcb59fad2a":[9,0,0,5,3],
-"structkobuki_1_1_cliff_event.html#a21fc5c15487bff4aca1b324c9ea4dc63":[9,0,0,5,4],
-"structkobuki_1_1_cliff_event.html#a35b0f0ad19aed5ba599fc999f70175af":[9,0,0,5,0],
-"structkobuki_1_1_cliff_event.html#a35b0f0ad19aed5ba599fc999f70175afa1ce20d32d968b34c4d1f06fbd8cc01fa":[9,0,0,5,0,2]
+"structkobuki_1_1_cliff_event.html#a21fc5c15487bff4aca1b324c9ea4dc63":[9,0,0,5,4]
 };
