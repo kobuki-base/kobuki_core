@@ -4,6 +4,11 @@ Changelog
 
 Forthcoming
 -----------
+* ...
+
+1.1.1 (2020-08-19)
+------------------
+* [udev] bugfix low latency ftdi operation, `#28 <https://github.com/kobuki-base/kobuki_core/pull/28>`_.
 * [demos] added an event demo, also minor cleanup, `#27 <https://github.com/kobuki-base/kobuki_core/pull/27>`_.
 * [infra] don't use system headers for dependencies, `#27 <https://github.com/kobuki-base/kobuki_core/pull/27>`_.
 
