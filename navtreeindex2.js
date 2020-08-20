@@ -1,7 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"structkobuki_1_1_core_sensors_1_1_data.html#ae98f21f55cbd5f271b34c2d954a80f88":[0,0,0,8,0,6],
-"structkobuki_1_1_core_sensors_1_1_data.html#aed031d5acac9e297826cea0aaa48e3ef":[0,0,0,8,0,4],
 "structkobuki_1_1_core_sensors_1_1_flags.html":[0,0,0,8,1],
 "structkobuki_1_1_current_1_1_data.html":[0,0,0,9,0],
 "structkobuki_1_1_current_1_1_data.html#aa81bd1e4e117ef5162e8d5ef64c5b775":[0,0,0,9,0,0],
@@ -80,5 +78,7 @@ var NAVTREEINDEX2 =
 "version__info_8cpp.html":[1,0,1,2,1],
 "version__info_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627":[1,0,1,2,1,1],
 "version__info_8hpp.html":[1,0,0,0,10],
-"version__info_8hpp_source.html":[1,0,0,0,10]
+"version__info_8hpp_source.html":[1,0,0,0,10],
+"":[0,0,0],
+"":[0,0,1]
 };
