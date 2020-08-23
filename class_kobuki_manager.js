@@ -2,7 +2,7 @@ var class_kobuki_manager =
 [
     [ "KobukiManager", "class_kobuki_manager.html#aa11797ac2c8d0a5b37c701bb22e634a2", null ],
     [ "KobukiManager", "class_kobuki_manager.html#aa11797ac2c8d0a5b37c701bb22e634a2", null ],
-    [ "KobukiManager", "class_kobuki_manager.html#aa11797ac2c8d0a5b37c701bb22e634a2", null ],
+    [ "KobukiManager", "class_kobuki_manager.html#a2d8ff34414891e559522b31b8e94ce03", null ],
     [ "~KobukiManager", "class_kobuki_manager.html#ac42d8ea226f1b7aed59781c58ceea311", null ],
     [ "KobukiManager", "class_kobuki_manager.html#aa11797ac2c8d0a5b37c701bb22e634a2", null ],
     [ "KobukiManager", "class_kobuki_manager.html#af719c61bfe21c8c3e35320edba20f7aa", null ],
