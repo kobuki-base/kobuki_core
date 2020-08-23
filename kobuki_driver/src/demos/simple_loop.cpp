@@ -4,7 +4,7 @@
  * @brief Example program with a simple control loop.
  *
  * Controls the kobuki around a dead-reckoned square with sides of
- * length 1.0m.
+ * length 0.25m.
  *
  * License: BSD
  *   https://raw.githubusercontent.com/kobuki-base/kobuki_core/license/LICENSE
@@ -30,14 +30,20 @@
 
 class KobukiManager {
 public:
-  KobukiManager(const std::string & device) :
+  KobukiManager(
+      const std::string & device,
+      const double &length,
+      const bool &disable_smoothing
+  ) :
     dx(0.0), dth(0.0),
+    length(length),
     slot_stream_data(&KobukiManager::processStreamData, *this)
   {
     kobuki::Parameters parameters;
     parameters.sigslots_namespace = "/kobuki";
     parameters.device_port = device;
-    parameters.enable_acceleration_limiter = false;
+    parameters.enable_acceleration_limiter = !disable_smoothing;
+
     kobuki.init(parameters);
     kobuki.enable();
     slot_stream_data.connect("/kobuki/stream_data");
@@ -63,9 +69,21 @@ public:
 
   // Generate square motion
   void processMotion() {
-    if (dx >= 1.0 && dth >= ecl::pi/2.0) { dx=0.0; dth=0.0; kobuki.setBaseControl(0.0, 0.0); return; }
-    else if (dx >= 1.0) { kobuki.setBaseControl(0.0, 3.3); return; }
-    else { kobuki.setBaseControl(0.3, 0.0); return; }
+    const double buffer = 0.05;
+    double longitudinal_velocity = 0.0;
+    double rotational_velocity = 0.0;
+    if (dx >= (length) && dth >= ecl::pi/2.0) {
+      std::cout << "[Z] ";
+      dx=0.0; dth=0.0;
+    } else if (dx >= (length + buffer)) {
+      std::cout << "[R] ";
+      rotational_velocity = 1.1;
+    } else {
+      std::cout << "[L] ";
+      longitudinal_velocity = 0.3;
+    }
+    std::cout << "[dx: " << dx << "][dth: " << dth << "][" << pose.x() << ", " << pose.y() << ", " << pose.heading() << "]" << std::endl;
+    kobuki.setBaseControl(longitudinal_velocity, rotational_velocity);
   }
 
   ecl::LegacyPose2D<double> getPose() {
@@ -74,6 +92,7 @@ public:
 
 private:
   double dx, dth;
+  const double length;
   ecl::LegacyPose2D<double> pose;
   kobuki::Kobuki kobuki;
   ecl::Slot<> slot_stream_data;
@@ -102,13 +121,32 @@ int main(int argc, char** argv)
       "/dev/kobuki",
       "string"
   );
+  ecl::ValueArg<double> length(
+      "l", "length",
+      "traverse square with sides of this size in length (m)",
+      false,
+      0.25,
+      "double"
+  );
+  ecl::SwitchArg disable_smoothing(
+      "d", "disable_smoothing",
+      "Disable the acceleration limiter (smoothens velocity)",
+      false
+  );
+
   cmd_line.add(device_port);
+  cmd_line.add(length);
+  cmd_line.add(disable_smoothing);
   cmd_line.parse(argc, argv);
 
   signal(SIGINT, signalHandler);
 
   std::cout << "Demo : Example of simple control loop." << std::endl;
-  KobukiManager kobuki_manager(device_port.getValue());
+  KobukiManager kobuki_manager(
+      device_port.getValue(),
+      length.getValue(),
+      disable_smoothing.getValue()
+  );
 
   ecl::Sleep sleep(1);
   ecl::LegacyPose2D<double> pose;
@@ -116,7 +154,7 @@ int main(int argc, char** argv)
     while (!shutdown_req){
       sleep();
       pose = kobuki_manager.getPose();
-      std::cout << "current pose: [" << pose.x() << ", " << pose.y() << ", " << pose.heading() << "]" << std::endl;
+      // std::cout << "current pose: [" << pose.x() << ", " << pose.y() << ", " << pose.heading() << "]" << std::endl;
     }
   } catch ( ecl::StandardException &e ) {
     std::cout << e.what();
