@@ -10,8 +10,8 @@ macro(kobuki_core_add_tool name)
     ecl_command_line::ecl_command_line
   )
   # if we want dashes
-  # string(REGEX REPLACE "_" "-" dashed_name kobuki-${name})
-  set_target_properties(${target_name} PROPERTIES OUTPUT_NAME kobuki_${name})
+  string(REGEX REPLACE "_" "-" dashed_name kobuki-${name})
+  set_target_properties(${target_name} PROPERTIES OUTPUT_NAME ${dashed_name})
   install(
     TARGETS
       ${target_name}
