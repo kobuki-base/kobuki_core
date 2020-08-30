@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['yes_133',['yes',['../classpacket__handler_1_1payload_base.html#ace337f35fbb2b2ae1abffeb078a7cfd8',1,'packet_handler::payloadBase']]]
+  ['_7ekobuki_107',['~Kobuki',['../classkobuki_1_1_kobuki.html#a22de83f3db0db6dff0647299bbc5f90e',1,'kobuki::Kobuki']]]
 ];

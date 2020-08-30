@@ -166,14 +166,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>serialise</b> (ecl::P
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a90d62fd79acdef8204ef8df442b7c417"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classkobuki_1_1_command.html">Command</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkobuki_1_1_command.html#a90d62fd79acdef8204ef8df442b7c417">SetLedArray</a> (const enum <a class="el" href="led__array_8hpp.html#a33186680e911242fe0c7a511a12d1465">LedNumber</a> &amp;number, const enum LedColour &amp;colour, <a class="el" href="structkobuki_1_1_command_1_1_data.html">Command::Data</a> &amp;current_data)</td></tr>
+<tr class="memitem:a90d62fd79acdef8204ef8df442b7c417"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classkobuki_1_1_command.html">Command</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkobuki_1_1_command.html#a90d62fd79acdef8204ef8df442b7c417">SetLedArray</a> (const enum LedNumber &amp;number, const enum LedColour &amp;colour, <a class="el" href="structkobuki_1_1_command_1_1_data.html">Command::Data</a> &amp;current_data)</td></tr>
 <tr class="separator:a90d62fd79acdef8204ef8df442b7c417"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4376a5a8b8be1107a56aca5a36fd61d8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classkobuki_1_1_command.html">Command</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkobuki_1_1_command.html#a4376a5a8b8be1107a56aca5a36fd61d8">SetDigitalOutput</a> (const <a class="el" href="structkobuki_1_1_digital_output.html">DigitalOutput</a> &amp;digital_output, <a class="el" href="structkobuki_1_1_command_1_1_data.html">Command::Data</a> &amp;current_data)</td></tr>
 <tr class="separator:a4376a5a8b8be1107a56aca5a36fd61d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc66a38299deaad48570040aa54d5bdc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classkobuki_1_1_command.html">Command</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkobuki_1_1_command.html#acc66a38299deaad48570040aa54d5bdc">SetExternalPower</a> (const <a class="el" href="structkobuki_1_1_digital_output.html">DigitalOutput</a> &amp;digital_output, <a class="el" href="structkobuki_1_1_command_1_1_data.html">Command::Data</a> &amp;current_data)</td></tr>
 <tr class="separator:acc66a38299deaad48570040aa54d5bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac35d8f465897026666846a0e33d411ab"><td class="memItemLeft" align="right" valign="top"><a id="ac35d8f465897026666846a0e33d411ab"></a>
-static <a class="el" href="classkobuki_1_1_command.html">Command</a>&#160;</td><td class="memItemRight" valign="bottom"><b>PlaySoundSequence</b> (const enum <a class="el" href="sound_8hpp.html#a336129805a07def7a2c2b0be281e7ddd">SoundSequences</a> &amp;number)</td></tr>
+static <a class="el" href="classkobuki_1_1_command.html">Command</a>&#160;</td><td class="memItemRight" valign="bottom"><b>PlaySoundSequence</b> (const enum SoundSequences &amp;number)</td></tr>
 <tr class="separator:ac35d8f465897026666846a0e33d411ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af88113d4e2bb59857a1194d76d813c6c"><td class="memItemLeft" align="right" valign="top"><a id="af88113d4e2bb59857a1194d76d813c6c"></a>
 static <a class="el" href="classkobuki_1_1_command.html">Command</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetVersionInfo</b> ()</td></tr>
@@ -385,7 +385,7 @@ template&lt;typename T &gt; </td></tr>
         <tr>
           <td class="memname"><a class="el" href="classkobuki_1_1_command.html">Command</a> kobuki::Command::SetLedArray </td>
           <td>(</td>
-          <td class="paramtype">const enum <a class="el" href="led__array_8hpp.html#a33186680e911242fe0c7a511a12d1465">LedNumber</a> &amp;&#160;</td>
+          <td class="paramtype">const enum LedNumber &amp;&#160;</td>
           <td class="paramname"><em>number</em>, </td>
         </tr>
         <tr>
@@ -436,8 +436,8 @@ template&lt;typename T &gt; </td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/github/workspace/kobuki_driver/include/kobuki_driver/<a class="el" href="command_8hpp_source.html">command.hpp</a></li>
-<li>/github/workspace/kobuki_driver/src/driver/<a class="el" href="command_8cpp.html">command.cpp</a></li>
+<li>/github/workspace/include/kobuki_driver/<a class="el" href="command_8hpp_source.html">command.hpp</a></li>
+<li>/github/workspace/src/driver/<a class="el" href="command_8cpp.html">command.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

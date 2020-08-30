@@ -1,12 +1,7 @@
 var NAVTREEINDEX0 =
 {
-"":[0,0,0],
-"":[0,0,1],
-"acceleration__limiter_8hpp.html":[1,0,0,0,0,0],
 "acceleration__limiter_8hpp_source.html":[1,0,0,0,0,0],
 "annotated.html":[0,0],
-"battery_8cpp.html":[1,0,1,1,0],
-"battery_8hpp.html":[1,0,0,0,0,1],
 "battery_8hpp_source.html":[1,0,0,0,0,1],
 "buttons_8cpp.html":[1,0,1,0,0],
 "buttons_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627":[1,0,1,0,0,1],
@@ -24,9 +19,9 @@ var NAVTREEINDEX0 =
 "class_kobuki_manager.html#a8b7d112844422e6d0e1bb67acacfc6e5":[0,0,2,19],
 "class_kobuki_manager.html#a8b7d112844422e6d0e1bb67acacfc6e5":[0,0,2,20],
 "class_kobuki_manager.html#a8b7d112844422e6d0e1bb67acacfc6e5":[0,0,2,21],
-"class_kobuki_manager.html#aa11797ac2c8d0a5b37c701bb22e634a2":[0,0,2,1],
 "class_kobuki_manager.html#aa11797ac2c8d0a5b37c701bb22e634a2":[0,0,2,4],
 "class_kobuki_manager.html#aa11797ac2c8d0a5b37c701bb22e634a2":[0,0,2,0],
+"class_kobuki_manager.html#aa11797ac2c8d0a5b37c701bb22e634a2":[0,0,2,1],
 "class_kobuki_manager.html#aa2a9199cb862ebc899996a9eef3214c6":[0,0,2,23],
 "class_kobuki_manager.html#aa2a9199cb862ebc899996a9eef3214c6":[0,0,2,24],
 "class_kobuki_manager.html#aa2a9199cb862ebc899996a9eef3214c6":[0,0,2,25],
@@ -249,5 +244,10 @@ var NAVTREEINDEX0 =
 "classkobuki_1_1_kobuki.html#a22de83f3db0db6dff0647299bbc5f90e":[0,0,0,23,1],
 "classkobuki_1_1_kobuki.html#a3457d9ee4ef4ef4e3761a72bc4cd6610":[0,0,0,23,35],
 "classkobuki_1_1_kobuki.html#a36ba47467282656af96beb1384e4d337":[0,0,0,23,31],
-"classkobuki_1_1_kobuki.html#a4811744d8cf462525716c9a15d5fea71":[0,0,0,23,33]
+"classkobuki_1_1_kobuki.html#a4811744d8cf462525716c9a15d5fea71":[0,0,0,23,33],
+"classkobuki_1_1_kobuki.html#a4c767b0d60457092a6085ce0b1db7ff8":[0,0,0,23,0],
+"classkobuki_1_1_kobuki.html#a53a52a4a94507afe3ce30a0f6dfbefdf":[0,0,0,23,29],
+"classkobuki_1_1_kobuki.html#a65937022b91074bf8f7965f44ebf485b":[0,0,0,23,6],
+"classkobuki_1_1_kobuki.html#a6a4ff5d9a33ec16d705c9a8911d50649":[0,0,0,23,32],
+"classkobuki_1_1_kobuki.html#a70e163fcf282a169a1c1c7cbb8564294":[0,0,0,23,17]
 };
