@@ -1,8 +1,8 @@
-<map id="/github/workspace/include/kobuki_driver/packets/eeprom.hpp" name="/github/workspace/include/kobuki_driver/packets/eeprom.hpp">
-<area shape="rect" id="node1" title="Eeprom packet payloads." alt="" coords="81,5,255,61"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,117,64,143"/>
-<area shape="rect" id="node3" href="$payload__base_8hpp.html" title="Base class for payloads." alt="" coords="89,109,247,151"/>
-<area shape="rect" id="node6" href="$payload__headers_8hpp.html" title="Byte id&#39;s for the individual payload headers." alt="" coords="272,109,440,151"/>
-<area shape="rect" id="node4" title=" " alt="" coords="45,199,171,225"/>
-<area shape="rect" id="node5" title=" " alt="" coords="196,199,260,225"/>
+<map id="/github/workspace/include/kobuki_core/packets/eeprom.hpp" name="/github/workspace/include/kobuki_core/packets/eeprom.hpp">
+<area shape="rect" id="node1" title="Eeprom packet payloads." alt="" coords="59,5,277,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,102,64,129"/>
+<area shape="rect" id="node3" href="$payload__base_8hpp.html" title="Base class for payloads." alt="" coords="89,95,247,136"/>
+<area shape="rect" id="node6" href="$payload__headers_8hpp.html" title="Byte id&#39;s for the individual payload headers." alt="" coords="272,95,440,136"/>
+<area shape="rect" id="node4" title=" " alt="" coords="45,184,171,211"/>
+<area shape="rect" id="node5" title=" " alt="" coords="196,184,260,211"/>
 </map>

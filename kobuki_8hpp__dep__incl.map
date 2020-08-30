@@ -1,4 +1,4 @@
-<map id="/github/workspace/include/kobuki_driver/kobuki.hpp" name="/github/workspace/include/kobuki_driver/kobuki.hpp">
+<map id="/github/workspace/include/kobuki_core/kobuki.hpp" name="/github/workspace/include/kobuki_core/kobuki.hpp">
 <area shape="rect" id="node1" title="Device driver core interface." alt="" coords="350,5,523,47"/>
 <area shape="rect" id="node2" href="$buttons_8cpp.html" title="Example program for kobuki button events." alt="" coords="5,95,156,136"/>
 <area shape="rect" id="node3" href="$chirp_8cpp.html" title="Example program for kobuki initialisation." alt="" coords="180,95,331,136"/>

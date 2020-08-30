@@ -1,10 +1,10 @@
-<map id="/github/workspace/include/kobuki_driver/packets/dock_ir.hpp" name="/github/workspace/include/kobuki_driver/packets/dock_ir.hpp">
-<area shape="rect" id="node1" title="Docking infrared sensor packet payloads." alt="" coords="350,5,523,61"/>
-<area shape="rect" id="node2" href="$packets_8hpp.html" title="Packets convenience header." alt="" coords="348,109,525,151"/>
-<area shape="rect" id="node3" href="$kobuki_8hpp.html" title="Device driver core interface." alt="" coords="350,199,523,240"/>
-<area shape="rect" id="node4" href="$buttons_8cpp.html" title="Example program for kobuki button events." alt="" coords="5,288,156,329"/>
-<area shape="rect" id="node5" href="$chirp_8cpp.html" title="Example program for kobuki initialisation." alt="" coords="180,288,331,329"/>
-<area shape="rect" id="node6" href="$simple__loop_8cpp.html" title="Example program with a simple control loop." alt="" coords="355,288,518,329"/>
-<area shape="rect" id="node7" href="$stream_8cpp.html" title="Example program for streaming kobuki&#39;s sensors." alt="" coords="543,288,693,329"/>
-<area shape="rect" id="node8" href="$kobuki_8cpp.html" title="Implementation for the kobuki device driver." alt="" coords="717,288,868,329"/>
+<map id="/github/workspace/include/kobuki_core/packets/dock_ir.hpp" name="/github/workspace/include/kobuki_core/packets/dock_ir.hpp">
+<area shape="rect" id="node1" title="Docking infrared sensor packet payloads." alt="" coords="329,5,545,47"/>
+<area shape="rect" id="node2" href="$packets_8hpp.html" title="Packets convenience header." alt="" coords="350,95,523,136"/>
+<area shape="rect" id="node3" href="$kobuki_8hpp.html" title="Device driver core interface." alt="" coords="350,184,523,225"/>
+<area shape="rect" id="node4" href="$buttons_8cpp.html" title="Example program for kobuki button events." alt="" coords="5,273,156,315"/>
+<area shape="rect" id="node5" href="$chirp_8cpp.html" title="Example program for kobuki initialisation." alt="" coords="180,273,331,315"/>
+<area shape="rect" id="node6" href="$simple__loop_8cpp.html" title="Example program with a simple control loop." alt="" coords="355,273,518,315"/>
+<area shape="rect" id="node7" href="$stream_8cpp.html" title="Example program for streaming kobuki&#39;s sensors." alt="" coords="543,273,693,315"/>
+<area shape="rect" id="node8" href="$kobuki_8cpp.html" title="Implementation for the kobuki device driver." alt="" coords="717,273,868,315"/>
 </map>

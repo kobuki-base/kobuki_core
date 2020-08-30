@@ -1,10 +1,10 @@
-<map id="/github/workspace/include/kobuki_driver/event_manager.hpp" name="/github/workspace/include/kobuki_driver/event_manager.hpp">
-<area shape="rect" id="node1" title="The event manager &#45; sigslot interface." alt="" coords="50,5,270,47"/>
+<map id="/github/workspace/include/kobuki_core/event_manager.hpp" name="/github/workspace/include/kobuki_core/event_manager.hpp">
+<area shape="rect" id="node1" title="The event manager &#45; sigslot interface." alt="" coords="53,5,267,47"/>
 <area shape="rect" id="node2" title=" " alt="" coords="140,259,204,285"/>
 <area shape="rect" id="node3" title=" " alt="" coords="21,95,80,121"/>
 <area shape="rect" id="node4" title=" " alt="" coords="104,95,216,121"/>
 <area shape="rect" id="node5" href="$core__sensors_8hpp.html" title="Core sensor packet payloads." alt="" coords="241,95,415,121"/>
-<area shape="rect" id="node8" href="$macros_8hpp.html" title="Macros for kobuki_driver." alt="" coords="404,177,503,203"/>
+<area shape="rect" id="node8" href="$macros_8hpp.html" title="Macros for kobuki_core." alt="" coords="404,177,503,203"/>
 <area shape="rect" id="node6" href="$payload__base_8hpp.html" title="Base class for payloads." alt="" coords="209,169,377,211"/>
 <area shape="rect" id="node7" title=" " alt="" coords="229,259,355,285"/>
 <area shape="rect" id="node9" title=" " alt="" coords="379,259,527,285"/>

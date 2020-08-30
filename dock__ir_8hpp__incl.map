@@ -1,7 +1,7 @@
-<map id="/github/workspace/include/kobuki_driver/packets/dock_ir.hpp" name="/github/workspace/include/kobuki_driver/packets/dock_ir.hpp">
-<area shape="rect" id="node1" title="Docking infrared sensor packet payloads." alt="" coords="138,5,311,61"/>
-<area shape="rect" id="node2" href="$payload__base_8hpp.html" title="Base class for payloads." alt="" coords="45,109,213,151"/>
-<area shape="rect" id="node5" href="$payload__headers_8hpp.html" title="Byte id&#39;s for the individual payload headers." alt="" coords="237,109,405,151"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,199,132,225"/>
-<area shape="rect" id="node4" title=" " alt="" coords="157,199,221,225"/>
+<map id="/github/workspace/include/kobuki_core/packets/dock_ir.hpp" name="/github/workspace/include/kobuki_core/packets/dock_ir.hpp">
+<area shape="rect" id="node1" title="Docking infrared sensor packet payloads." alt="" coords="117,5,333,47"/>
+<area shape="rect" id="node2" href="$payload__base_8hpp.html" title="Base class for payloads." alt="" coords="45,95,213,136"/>
+<area shape="rect" id="node5" href="$payload__headers_8hpp.html" title="Byte id&#39;s for the individual payload headers." alt="" coords="237,95,405,136"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,184,132,211"/>
+<area shape="rect" id="node4" title=" " alt="" coords="157,184,221,211"/>
 </map>

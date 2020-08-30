@@ -1,11 +1,11 @@
 <map id="/github/workspace/src/driver/command.cpp" name="/github/workspace/src/driver/command.cpp">
 <area shape="rect" id="node1" title="Implementation of the command packets." alt="" coords="99,5,249,47"/>
-<area shape="rect" id="node2" href="$command_8hpp.html" title="Command structure." alt="" coords="101,95,247,136"/>
+<area shape="rect" id="node2" href="$command_8hpp.html" title="Command structure." alt="" coords="105,95,243,136"/>
 <area shape="rect" id="node3" title=" " alt="" coords="5,512,132,539"/>
 <area shape="rect" id="node4" href="$payload__base_8hpp.html" title="Base class for payloads." alt="" coords="48,423,207,464"/>
 <area shape="rect" id="node6" href="$led__array_8hpp_source.html" title=" " alt="" coords="99,259,249,285"/>
 <area shape="rect" id="node7" href="$modules_8hpp.html" title="Convenience header for modules." alt="" coords="477,184,572,211"/>
-<area shape="rect" id="node10" href="$macros_8hpp.html" title="Macros for kobuki_driver." alt="" coords="454,430,553,457"/>
+<area shape="rect" id="node10" href="$macros_8hpp.html" title="Macros for kobuki_core." alt="" coords="454,430,553,457"/>
 <area shape="rect" id="node5" title=" " alt="" coords="341,512,405,539"/>
 <area shape="rect" id="node8" href="$battery_8hpp_source.html" title=" " alt="" coords="274,259,413,285"/>
 <area shape="rect" id="node13" href="$digital__output_8hpp_source.html" title=" " alt="" coords="437,259,613,285"/>

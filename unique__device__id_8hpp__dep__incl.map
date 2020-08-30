@@ -1,6 +1,6 @@
-<map id="/github/workspace/include/kobuki_driver/packets/unique_device_id.hpp" name="/github/workspace/include/kobuki_driver/packets/unique_device_id.hpp">
-<area shape="rect" id="node1" title="Module for handling of unique device id request packet payloads." alt="" coords="350,5,523,61"/>
-<area shape="rect" id="node2" href="$packets_8hpp.html" title="Packets convenience header." alt="" coords="348,109,525,151"/>
+<map id="/github/workspace/include/kobuki_core/packets/unique_device_id.hpp" name="/github/workspace/include/kobuki_core/packets/unique_device_id.hpp">
+<area shape="rect" id="node1" title="Module for handling of unique device id request packet payloads." alt="" coords="343,5,531,61"/>
+<area shape="rect" id="node2" href="$packets_8hpp.html" title="Packets convenience header." alt="" coords="350,109,523,151"/>
 <area shape="rect" id="node3" href="$kobuki_8hpp.html" title="Device driver core interface." alt="" coords="350,199,523,240"/>
 <area shape="rect" id="node4" href="$buttons_8cpp.html" title="Example program for kobuki button events." alt="" coords="5,288,156,329"/>
 <area shape="rect" id="node5" href="$chirp_8cpp.html" title="Example program for kobuki initialisation." alt="" coords="180,288,331,329"/>

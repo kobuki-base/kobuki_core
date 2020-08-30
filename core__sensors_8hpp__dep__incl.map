@@ -1,16 +1,16 @@
-<map id="/github/workspace/include/kobuki_driver/packets/core_sensors.hpp" name="/github/workspace/include/kobuki_driver/packets/core_sensors.hpp">
-<area shape="rect" id="node1" title="Core sensor packet payloads." alt="" coords="497,5,670,61"/>
-<area shape="rect" id="node2" href="$event__manager_8hpp.html" title="The event manager &#45; sigslot interface." alt="" coords="611,303,831,344"/>
-<area shape="rect" id="node9" href="$battery_8hpp_source.html" title=" " alt="" coords="297,109,470,165"/>
-<area shape="rect" id="node14" href="$packets_8hpp.html" title="Packets convenience header." alt="" coords="495,117,672,158"/>
-<area shape="rect" id="node3" href="$kobuki_8hpp.html" title="Device driver core interface." alt="" coords="350,392,523,433"/>
-<area shape="rect" id="node4" href="$buttons_8cpp.html" title="Example program for kobuki button events." alt="" coords="5,481,156,523"/>
-<area shape="rect" id="node5" href="$chirp_8cpp.html" title="Example program for kobuki initialisation." alt="" coords="180,481,331,523"/>
-<area shape="rect" id="node6" href="$simple__loop_8cpp.html" title="Example program with a simple control loop." alt="" coords="355,481,518,523"/>
-<area shape="rect" id="node7" href="$stream_8cpp.html" title="Example program for streaming kobuki&#39;s sensors." alt="" coords="543,481,693,523"/>
-<area shape="rect" id="node8" href="$kobuki_8cpp.html" title="Implementation for the kobuki device driver." alt="" coords="717,481,868,523"/>
-<area shape="rect" id="node10" href="$modules_8hpp.html" title="Convenience header for modules." alt="" coords="135,213,315,255"/>
-<area shape="rect" id="node13" href="$parameters_8hpp.html" title="Parameter configuration for the kobuki." alt="" coords="339,213,535,255"/>
-<area shape="rect" id="node11" href="$command_8hpp.html" title="Command structure." alt="" coords="144,303,332,344"/>
-<area shape="rect" id="node12" href="$command_8cpp.html" title="Implementation of the command packets." alt="" coords="163,392,313,433"/>
+<map id="/github/workspace/include/kobuki_core/packets/core_sensors.hpp" name="/github/workspace/include/kobuki_core/packets/core_sensors.hpp">
+<area shape="rect" id="node1" title="Core sensor packet payloads." alt="" coords="491,5,665,61"/>
+<area shape="rect" id="node2" href="$event__manager_8hpp.html" title="The event manager &#45; sigslot interface." alt="" coords="606,288,819,329"/>
+<area shape="rect" id="node9" href="$battery_8hpp_source.html" title=" " alt="" coords="251,109,467,151"/>
+<area shape="rect" id="node14" href="$packets_8hpp.html" title="Packets convenience header." alt="" coords="491,109,665,151"/>
+<area shape="rect" id="node3" href="$kobuki_8hpp.html" title="Device driver core interface." alt="" coords="350,377,523,419"/>
+<area shape="rect" id="node4" href="$buttons_8cpp.html" title="Example program for kobuki button events." alt="" coords="5,467,156,508"/>
+<area shape="rect" id="node5" href="$chirp_8cpp.html" title="Example program for kobuki initialisation." alt="" coords="180,467,331,508"/>
+<area shape="rect" id="node6" href="$simple__loop_8cpp.html" title="Example program with a simple control loop." alt="" coords="355,467,518,508"/>
+<area shape="rect" id="node7" href="$stream_8cpp.html" title="Example program for streaming kobuki&#39;s sensors." alt="" coords="543,467,693,508"/>
+<area shape="rect" id="node8" href="$kobuki_8cpp.html" title="Implementation for the kobuki device driver." alt="" coords="717,467,868,508"/>
+<area shape="rect" id="node10" href="$modules_8hpp.html" title="Convenience header for modules." alt="" coords="145,199,318,240"/>
+<area shape="rect" id="node13" href="$parameters_8hpp.html" title="Parameter configuration for the kobuki." alt="" coords="342,199,531,240"/>
+<area shape="rect" id="node11" href="$command_8hpp.html" title="Command structure." alt="" coords="150,288,331,329"/>
+<area shape="rect" id="node12" href="$command_8cpp.html" title="Implementation of the command packets." alt="" coords="165,377,316,419"/>
 </map>

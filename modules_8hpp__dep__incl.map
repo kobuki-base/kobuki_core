@@ -1,6 +1,6 @@
-<map id="/github/workspace/include/kobuki_driver/modules.hpp" name="/github/workspace/include/kobuki_driver/modules.hpp">
-<area shape="rect" id="node1" title="Convenience header for modules." alt="" coords="412,5,592,47"/>
-<area shape="rect" id="node2" href="$command_8hpp.html" title="Command structure." alt="" coords="475,95,663,136"/>
+<map id="/github/workspace/include/kobuki_core/modules.hpp" name="/github/workspace/include/kobuki_core/modules.hpp">
+<area shape="rect" id="node1" title="Convenience header for modules." alt="" coords="414,5,587,47"/>
+<area shape="rect" id="node2" href="$command_8hpp.html" title="Command structure." alt="" coords="474,95,655,136"/>
 <area shape="rect" id="node3" href="$kobuki_8hpp.html" title="Device driver core interface." alt="" coords="350,184,523,225"/>
 <area shape="rect" id="node9" href="$command_8cpp.html" title="Implementation of the command packets." alt="" coords="548,184,699,225"/>
 <area shape="rect" id="node4" href="$buttons_8cpp.html" title="Example program for kobuki button events." alt="" coords="5,273,156,315"/>
