@@ -1,5 +1,7 @@
 var NAVTREEINDEX1 =
 {
+"classkobuki_1_1_packet_finder_base.html#a06d54c9254d3413fed606bf515183770":[0,0,0,23,28],
+"classkobuki_1_1_packet_finder_base.html#a0ab8932e3f01def929b43d2d8c68413d":[0,0,0,23,24],
 "classkobuki_1_1_packet_finder_base.html#a14e362e78ff9f5d584ee437b353580aa":[0,0,0,23,13],
 "classkobuki_1_1_packet_finder_base.html#a1fd3a110b4920103132e7e281251caca":[0,0,0,23,22],
 "classkobuki_1_1_packet_finder_base.html#a211cc4e18d4b48e951539952cf3a0607":[0,0,0,23,12],
@@ -247,7 +249,5 @@ var NAVTREEINDEX1 =
 "structkobuki_1_1_core_sensors_1_1_data.html#a880058d64a33e864c418ddcd353b325f":[0,0,0,8,0,3],
 "structkobuki_1_1_core_sensors_1_1_data.html#a9a2aee9ed43bb59570ab618f81016044":[0,0,0,8,0,5],
 "structkobuki_1_1_core_sensors_1_1_data.html#ab5d251034bca20f28ec57bde1441ca45":[0,0,0,8,0,8],
-"structkobuki_1_1_core_sensors_1_1_data.html#adbb5a43e2e08dbf7827beb3ef52cef0e":[0,0,0,8,0,1],
-"structkobuki_1_1_core_sensors_1_1_data.html#ae98f21f55cbd5f271b34c2d954a80f88":[0,0,0,8,0,6],
-"structkobuki_1_1_core_sensors_1_1_data.html#aed031d5acac9e297826cea0aaa48e3ef":[0,0,0,8,0,4]
+"structkobuki_1_1_core_sensors_1_1_data.html#adbb5a43e2e08dbf7827beb3ef52cef0e":[0,0,0,8,0,1]
 };
