@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['battery_5fcapacity_233',['battery_capacity',['../classkobuki_1_1_parameters.html#a0c7b04175141d702f520c4a963876143',1,'kobuki::Parameters']]],
-  ['battery_5fdangerous_234',['battery_dangerous',['../classkobuki_1_1_parameters.html#a6332cc2748b6f7095e1eb463a024289d',1,'kobuki::Parameters']]],
-  ['battery_5flow_235',['battery_low',['../classkobuki_1_1_parameters.html#afbe3833926add7263db592c6b0116b36',1,'kobuki::Parameters']]]
+  ['battery_5fcapacity_249',['battery_capacity',['../classkobuki_1_1_parameters.html#a0c7b04175141d702f520c4a963876143',1,'kobuki::Parameters']]],
+  ['battery_5fdangerous_250',['battery_dangerous',['../classkobuki_1_1_parameters.html#a6332cc2748b6f7095e1eb463a024289d',1,'kobuki::Parameters']]],
+  ['battery_5flow_251',['battery_low',['../classkobuki_1_1_parameters.html#afbe3833926add7263db592c6b0116b36',1,'kobuki::Parameters']]]
 ];

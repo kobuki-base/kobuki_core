@@ -7,6 +7,7 @@ var dir_c0413abbcdaab3a977f0d743ea4a0f43 =
       [ "Command", "classkobuki_1_1_command.html", "classkobuki_1_1_command" ],
       [ "Data", "structkobuki_1_1_command_1_1_data.html", "structkobuki_1_1_command_1_1_data" ]
     ] ],
+    [ "dock_drive.hpp", "dock__drive_8hpp_source.html", null ],
     [ "event_manager.hpp", "event__manager_8hpp.html", [
       [ "ButtonEvent", "structkobuki_1_1_button_event.html", "structkobuki_1_1_button_event" ],
       [ "BumperEvent", "structkobuki_1_1_bumper_event.html", "structkobuki_1_1_bumper_event" ],

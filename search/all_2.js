@@ -9,11 +9,12 @@ var searchData=
   ['command_19',['Command',['../classkobuki_1_1_command.html',1,'kobuki']]],
   ['command_2ecpp_20',['command.cpp',['../command_8cpp.html',1,'']]],
   ['command_2ehpp_21',['command.hpp',['../command_8hpp.html',1,'']]],
-  ['controller_5finfo_2ehpp_22',['controller_info.hpp',['../controller__info_8hpp.html',1,'']]],
-  ['controllerinfo_23',['ControllerInfo',['../classkobuki_1_1_controller_info.html',1,'kobuki']]],
-  ['core_5fsensors_2ecpp_24',['core_sensors.cpp',['../core__sensors_8cpp.html',1,'']]],
-  ['core_5fsensors_2ehpp_25',['core_sensors.hpp',['../core__sensors_8hpp.html',1,'']]],
-  ['coresensors_26',['CoreSensors',['../classkobuki_1_1_core_sensors.html',1,'kobuki']]],
-  ['current_27',['Current',['../classkobuki_1_1_current.html',1,'kobuki']]],
-  ['current_2ehpp_28',['current.hpp',['../current_8hpp.html',1,'']]]
+  ['computeposeupdate_22',['computePoseUpdate',['../classkobuki_1_1_dock_drive.html#af06c2592be3c1219d084e516a7184658',1,'kobuki::DockDrive']]],
+  ['controller_5finfo_2ehpp_23',['controller_info.hpp',['../controller__info_8hpp.html',1,'']]],
+  ['controllerinfo_24',['ControllerInfo',['../classkobuki_1_1_controller_info.html',1,'kobuki']]],
+  ['core_5fsensors_2ecpp_25',['core_sensors.cpp',['../core__sensors_8cpp.html',1,'']]],
+  ['core_5fsensors_2ehpp_26',['core_sensors.hpp',['../core__sensors_8hpp.html',1,'']]],
+  ['coresensors_27',['CoreSensors',['../classkobuki_1_1_core_sensors.html',1,'kobuki']]],
+  ['current_28',['Current',['../classkobuki_1_1_current.html',1,'kobuki']]],
+  ['current_2ehpp_29',['current.hpp',['../current_8hpp.html',1,'']]]
 ];

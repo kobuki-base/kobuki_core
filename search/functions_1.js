@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['deserialise_208',['deserialise',['../classkobuki_1_1_command.html#a98ee9f7d0256e8b2ea06ec58cb198038',1,'kobuki::Command']]],
-  ['disable_209',['disable',['../classkobuki_1_1_kobuki.html#a9e4447e3b2bb177155ee681daccdc274',1,'kobuki::Kobuki']]]
+  ['computeposeupdate_222',['computePoseUpdate',['../classkobuki_1_1_dock_drive.html#af06c2592be3c1219d084e516a7184658',1,'kobuki::DockDrive']]]
 ];
