@@ -17,5 +17,5 @@ jobs:
 
     - uses: mattnotmitt/doxygen-action@v1
       with:
-        working-directory: "kobuki_driver/doc/"
+        working-directory: "doc/"
         doxyfile-path: "./doxy.conf"
