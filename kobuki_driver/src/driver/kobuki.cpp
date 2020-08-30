@@ -298,8 +298,8 @@ void Kobuki::spin()
               // Check firmware/driver compatibility; major version must be the same
               int version_match = firmware.check_major_version();
               if (version_match < 0) {
-                sig_error.emit("Robot firmware is outdated and needs to be upgraded. Consult how-to on: " \
-                               "http://kobuki.yujinrobot.com/home-en/documentation/howtos/upgrading-firmware");
+                sig_error.emit("Robot firmware is outdated and needs to be upgraded (hint: " \
+                               "https://kobuki.readthedocs.io/en/devel/firmware.html)");
                 sig_error.emit("Robot firmware version is " + VersionInfo::toString(firmware.data.version)
                              + "; latest version is " + firmware.current_version());
                 shutdown_requested = true;
@@ -313,9 +313,8 @@ void Kobuki::spin()
                 // And minor version don't need to, but just make a suggestion
                 version_match = firmware.check_minor_version();
                 if (version_match < 0) {
-                  sig_warn.emit("Robot firmware is outdated; we suggest you to upgrade it " \
-                                "to benefit from the latest features. Consult how-to on: "  \
-                                "http://kobuki.yujinrobot.com/home-en/documentation/howtos/upgrading-firmware");
+                  sig_warn.emit("Robot firmware is outdated; we suggest you to upgrade it (hint: " \
+                                "https://kobuki.readthedocs.io/en/devel/firmware.html)");
                   sig_warn.emit("Robot firmware version is " + VersionInfo::toString(firmware.data.version)
                               + "; latest version is " + firmware.current_version());
                 }
