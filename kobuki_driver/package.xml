@@ -12,7 +12,7 @@
   <license>BSD</license>
   <url type="bugtracker">https://github.com/kobuki-base/kobuki_core/issues</url>
   <url type="repository">https://github.com/kobuki-base/kobuki_core</url>
-  <url type="website">https://kobuki.readthedocs.io/en/devel/index.html</url>
+  <url type="website">https://kobuki.readthedocs.io/en/release-1.0.x/</url>
 
   <buildtool_depend>ament_cmake_ros</buildtool_depend>
 
