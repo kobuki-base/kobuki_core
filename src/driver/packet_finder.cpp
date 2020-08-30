@@ -1,5 +1,5 @@
 /**
- * @file /kobuki_driver/src/driver/packet_finder.cpp
+ * @file /kobuki_core/src/driver/packet_finder.cpp
  *
  * @brief Packet handling implementation.
  *
@@ -12,7 +12,7 @@
 *****************************************************************************/
 
 #include <sstream>
-#include "../../include/kobuki_driver/packet_handler/packet_finder.hpp"
+#include "../../include/kobuki_core/packet_handler/packet_finder.hpp"
 
 /*****************************************************************************
 ** Namespaces

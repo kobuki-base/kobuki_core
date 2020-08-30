@@ -16,7 +16,7 @@
 #include <ecl/time.hpp>
 #include <ecl/command_line.hpp>
 
-#include <kobuki_driver/kobuki.hpp>
+#include <kobuki_core/kobuki.hpp>
 
 /*****************************************************************************
  ** Classes

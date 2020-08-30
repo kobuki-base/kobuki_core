@@ -1,5 +1,5 @@
 /**
- * @file /kobuki_driver/src/driver/diff_drive.cpp
+ * @file /kobuki_core/src/driver/diff_drive.cpp
  *
  * @brief Differential drive abstraction (brought in from ycs).
  *
@@ -11,7 +11,7 @@
 ** Includes
 *****************************************************************************/
 
-#include "../../include/kobuki_driver/modules/diff_drive.hpp"
+#include "../../include/kobuki_core/modules/diff_drive.hpp"
 
 /*****************************************************************************
 ** Namespaces

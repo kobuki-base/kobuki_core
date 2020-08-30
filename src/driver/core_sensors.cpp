@@ -1,5 +1,5 @@
 /**
- * @file /kobuki_driver/src/driver/core_sensors.cpp
+ * @file /kobuki_core/src/driver/core_sensors.cpp
  *
  * @brief Implementation of the core sensor packet data.
  *
@@ -11,8 +11,8 @@
 ** Includes
 *****************************************************************************/
 
-#include "../../include/kobuki_driver/packets/core_sensors.hpp"
-#include "../../include/kobuki_driver/packet_handler/payload_headers.hpp"
+#include "../../include/kobuki_core/packets/core_sensors.hpp"
+#include "../../include/kobuki_core/packet_handler/payload_headers.hpp"
 
 /*****************************************************************************
 ** Namespaces

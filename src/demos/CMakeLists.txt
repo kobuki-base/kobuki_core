@@ -2,8 +2,8 @@
 # Macro
 ###############################################################################
 
-macro(kobuki_driver_add_demo name)
-  set(target_name kobuki_driver_demo_${name})
+macro(kobuki_core_add_demo name)
+  set(target_name kobuki_core_demo_${name})
   add_executable(${target_name} ${name}.cpp)
   target_link_libraries(${target_name}
     ${PROJECT_NAME}
@@ -22,8 +22,8 @@ endmacro()
 # Tests
 ###############################################################################
 
-kobuki_driver_add_demo(chirp)
-kobuki_driver_add_demo(buttons)
-kobuki_driver_add_demo(stream)
-kobuki_driver_add_demo(velocity_commands)
-kobuki_driver_add_demo(simple_loop)
+kobuki_core_add_demo(chirp)
+kobuki_core_add_demo(buttons)
+kobuki_core_add_demo(stream)
+kobuki_core_add_demo(velocity_commands)
+kobuki_core_add_demo(simple_loop)
