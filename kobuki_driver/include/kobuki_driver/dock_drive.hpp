@@ -25,13 +25,50 @@
 #include <ecl/geometry/legacy_pose2d.hpp>
 #include <ecl/linear_algebra.hpp>
 
-#include "kobuki_dock_drive/state.hpp"
-
 /*****************************************************************************
 ** Namespaces
 *****************************************************************************/
 
 namespace kobuki {
+
+/*****************************************************************************
+** Definitions
+*****************************************************************************/
+
+// indicates the ir sensor from docking station
+struct DockStationIRState {
+  enum State {
+    INVISIBLE=0,
+    NEAR_LEFT=1,
+    NEAR_CENTER=2,
+    NEAR_RIGHT=4,
+    FAR_CENTER=8,
+    FAR_LEFT=16,
+    FAR_RIGHT=32,
+    NEAR = 7, // NEAR_LEFT + NEAR_CENTER + NEAR_RIGHT
+    FAR = 56, // FAR_CENTER + FAR_LEFT + FAR_RIGHT
+  };
+};
+
+// the current robot states
+struct RobotDockingState {
+  enum State {
+    IDLE,
+    DONE,
+    DOCKED_IN,
+    BUMPED_DOCK,
+    BUMPED,
+    SCAN,
+    FIND_STREAM,
+    GET_STREAM,
+    ALIGNED,
+    ALIGNED_FAR,
+    ALIGNED_NEAR,
+    UNKNOWN,
+    LOST
+  };
+
+};
 
 /*****************************************************************************
 ** Interfaces

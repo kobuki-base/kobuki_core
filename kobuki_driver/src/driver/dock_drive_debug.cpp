@@ -9,7 +9,7 @@
 ** includes
 *****************************************************************************/
 
-#include "kobuki_dock_drive/dock_drive.hpp"
+#include "../../include/kobuki_driver/dock_drive.hpp"
 
 namespace kobuki {
 /*************************
