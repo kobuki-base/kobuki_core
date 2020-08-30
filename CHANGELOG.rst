@@ -4,7 +4,9 @@ Changelog
 
 Forthcoming
 -----------
-* ...
+* [infra] kobuki_dock_drive and kobuki_driver merged into kobuki_core, `#31 <https://github.com/kobuki-base/kobuki_core/issues/31>`_.
+* [tools] kobuki_simple_keyop -> kobuki-simple-keyop, `#35 <https://github.com/kobuki-base/kobuki_core/issues/35>`_.
+* [tools] kobuki_version_info -> kobuki-version-info, `#35 <https://github.com/kobuki-base/kobuki_core/issues/35>`_.
 
 1.1.1 (2020-08-19)
 ------------------
