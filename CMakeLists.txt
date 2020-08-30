@@ -3,7 +3,7 @@
 ##############################################################################
 
 cmake_minimum_required(VERSION 3.5)
-project(kobuki_driver)
+project(kobuki_core)
 
 # Turn -isystem off. Actually like to see warnings from underlying packages
 # and regardless, have run into trouble because of the ordering it induces.

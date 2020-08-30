@@ -1,5 +1,5 @@
 /**
- * @file /kobuki_driver/src/driver/dock_drive_debug.cpp
+ * @file /kobuki_core/src/driver/dock_drive_debug.cpp
  *
  * License: BSD
  *   https://raw.githubusercontent.com/kobuki-base/kobuki_core/license/LICENSE
@@ -9,7 +9,7 @@
 ** includes
 *****************************************************************************/
 
-#include "../../include/kobuki_driver/dock_drive.hpp"
+#include "../../include/kobuki_core/dock_drive.hpp"
 
 namespace kobuki {
 /*************************

@@ -22,7 +22,7 @@
 #include <ecl/geometry/legacy_pose2d.hpp>
 #include <ecl/linear_algebra.hpp>
 #include <ecl/command_line.hpp>
-#include "kobuki_driver/kobuki.hpp"
+#include "kobuki_core/kobuki.hpp"
 
 /*****************************************************************************
 ** Classes

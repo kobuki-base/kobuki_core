@@ -1,5 +1,5 @@
 #!/bin/sh
-# postinst script for kobuki udev rules (part of the kobuki_driver package)
+# postinst script for kobuki udev rules (part of the kobuki_core package)
 #
 # see: dh_installdeb(1)
 

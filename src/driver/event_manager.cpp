@@ -1,5 +1,5 @@
 /**
- * @file /kobuki_driver/src/driver/event_manager.cpp
+ * @file /kobuki_core/src/driver/event_manager.cpp
  *
  * @brief Implementation of the event black magic.
  *
@@ -11,9 +11,9 @@
 ** Includes
 *****************************************************************************/
 
-#include "../../include/kobuki_driver/event_manager.hpp"
-#include "../../include/kobuki_driver/modules/battery.hpp"
-#include "../../include/kobuki_driver/packets/core_sensors.hpp"
+#include "../../include/kobuki_core/event_manager.hpp"
+#include "../../include/kobuki_core/modules/battery.hpp"
+#include "../../include/kobuki_core/packets/core_sensors.hpp"
 
 /*****************************************************************************
 ** Namespaces

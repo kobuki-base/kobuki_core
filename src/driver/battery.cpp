@@ -1,5 +1,5 @@
 /**
- * @file /kobuki_driver/src/driver/battery.cpp
+ * @file /kobuki_core/src/driver/battery.cpp
  *
  * @brief Battery/charging source implementation
  *
@@ -11,7 +11,7 @@
 ** Includes
 *****************************************************************************/
 
-#include "../../include/kobuki_driver/modules/battery.hpp"
+#include "../../include/kobuki_core/modules/battery.hpp"
 
 /*****************************************************************************
 ** Namespaces

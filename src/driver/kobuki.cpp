@@ -19,8 +19,8 @@
 #include <ecl/geometry/angle.hpp>
 #include <ecl/time/timestamp.hpp>
 #include <stdexcept>
-#include "../../include/kobuki_driver/kobuki.hpp"
-#include "../../include/kobuki_driver/packet_handler/payload_headers.hpp"
+#include "../../include/kobuki_core/kobuki.hpp"
+#include "../../include/kobuki_core/packet_handler/payload_headers.hpp"
 
 /*****************************************************************************
  ** Namespaces

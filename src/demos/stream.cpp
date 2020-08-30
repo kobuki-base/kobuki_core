@@ -17,7 +17,7 @@
 #include <ecl/time.hpp>
 #include <ecl/sigslots.hpp>
 
-#include <kobuki_driver/kobuki.hpp>
+#include <kobuki_core/kobuki.hpp>
 
 /*****************************************************************************
  ** Classes

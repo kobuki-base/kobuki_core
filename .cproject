@@ -37,7 +37,7 @@
                             							
                             <targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.GNU_ELF" id="cdt.managedbuild.target.gnu.platform.base.2061193780" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.gnu.platform.base"/>
                             							
-                            <builder autoBuildTarget="all" buildPath="${workspace_loc:/${ProjName}}/../../build/kobuki_driver" cleanBuildTarget="clean" enableAutoBuild="false" enableCleanBuild="true" enabledIncrementalBuild="true" id="cdt.managedbuild.target.gnu.builder.base.1391071744" incrementalBuildTarget="all" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="cdt.managedbuild.target.gnu.builder.base">
+                            <builder autoBuildTarget="all" buildPath="${workspace_loc:/${ProjName}}/../../build/kobuki_core" cleanBuildTarget="clean" enableAutoBuild="false" enableCleanBuild="true" enabledIncrementalBuild="true" id="cdt.managedbuild.target.gnu.builder.base.1391071744" incrementalBuildTarget="install" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="cdt.managedbuild.target.gnu.builder.base">
                                 								
                                 <outputEntries>
                                     									
@@ -87,7 +87,7 @@
                     					
                     <sourceEntries>
                         						
-                        <entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="include"/>
+                        <entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="include/kobuki_core"/>
                         						
                         <entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src"/>
                         					
@@ -194,5 +194,7 @@
         </buildTargets>
         	
     </storageModule>
+    	
+    <storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
     
 </cproject>

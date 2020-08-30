@@ -1,5 +1,5 @@
 /**
- * @file /kobuki_driver/src/tools/simple_keyop.cpp
+ * @file /kobuki_core/src/tools/simple_keyop.cpp
  *
  * @brief Tools/utility program to control robot by keyboard.
  *
@@ -21,7 +21,7 @@
 #include <ecl/exceptions.hpp>
 #include <ecl/linear_algebra.hpp>
 #include <ecl/geometry/legacy_pose2d.hpp>
-#include "kobuki_driver/kobuki.hpp"
+#include "kobuki_core/kobuki.hpp"
 
 /*****************************************************************************
 ** Classes

@@ -11,7 +11,7 @@
 ** Includes
 *****************************************************************************/
 
-#include "../../include/kobuki_driver/command.hpp"
+#include "../../include/kobuki_core/command.hpp"
 
 /*****************************************************************************
 ** Namespaces
