@@ -10,9 +10,7 @@ The **Kobuki Core** stack consists of c++ libraries and utilities for working wi
 
 ## Documentation
 
-The Kobuki ecosystem contains several repositories and packages that get bundled together.
-
-Matching this repository's release branches with the relevant documentation release:
+The Kobuki ecosystem contains several repositories and packages that get bundled together. Refer to the documentation release relevant to the branch/version of *kobuki_core* you are using:
 
 | Kobuki Core Branch | Kobuki Documentation Release |
 |:------------------:|:----------------------------:|
