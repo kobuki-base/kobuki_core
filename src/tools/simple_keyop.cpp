@@ -14,13 +14,15 @@
 #include <string>
 #include <csignal>
 #include <termios.h> // for keyboard input
+
 #include <ecl/command_line.hpp>
+#include <ecl/geometry.hpp>
+#include <ecl/linear_algebra.hpp>
 #include <ecl/time.hpp>
 #include <ecl/threads.hpp>
 #include <ecl/sigslots.hpp>
 #include <ecl/exceptions.hpp>
-#include <ecl/linear_algebra.hpp>
-#include <ecl/geometry/legacy_pose2d.hpp>
+
 #include "kobuki_core/kobuki.hpp"
 
 /*****************************************************************************
@@ -34,6 +36,7 @@
 class KobukiManager
 {
 public:
+
   /*********************
    ** C&D
    **********************/
@@ -54,11 +57,11 @@ public:
   /*********************
    ** Accessor
    **********************/
-  ecl::LegacyPose2D<double> getPose();
+  ecl::linear_algebra::Vector3d getPose();
 
 private:
   double vx, wz;
-  ecl::LegacyPose2D<double> pose;
+  ecl::linear_algebra::Vector3d pose;
   kobuki::Kobuki kobuki;
 
   double linear_vel_step, linear_vel_max;
@@ -330,10 +333,10 @@ void KobukiManager::resetVelocity()
 }
 
 void KobukiManager::processStreamData() {
-  ecl::LegacyPose2D<double> pose_update;
+  ecl::linear_algebra::Vector3d pose_update;
   ecl::linear_algebra::Vector3d pose_update_rates;
   kobuki.updateOdometry(pose_update, pose_update_rates);
-  pose *= pose_update;
+  ecl::concatenate_poses(pose, pose_update);
 //  dx += pose_update.x();
 //  dth += pose_update.heading();
   //std::cout << dx << ", " << dth << std::endl;
@@ -343,7 +346,7 @@ void KobukiManager::processStreamData() {
   kobuki.setBaseControl(vx, wz);
 }
 
-ecl::LegacyPose2D<double> KobukiManager::getPose() {
+ecl::linear_algebra::Vector3d KobukiManager::getPose() {
   return pose;
 }
 
@@ -374,12 +377,12 @@ int main(int argc, char** argv)
   kobuki_manager.init(device_port.getValue());
 
   ecl::Sleep sleep(1);
-  ecl::LegacyPose2D<double> pose;
+  ecl::linear_algebra::Vector3d pose;
   try {
     while (!shutdown_req){
       sleep();
       pose = kobuki_manager.getPose();
-      std::cout << "current pose: [" << pose.x() << ", " << pose.y() << ", " << pose.heading() << "]" << std::endl;
+      std::cout << "current pose: [x: " << pose[0] << ", y: " << pose[1] << ", heading: " << pose[2] << "]" << std::endl;
     }
   } catch ( ecl::StandardException &e ) {
     std::cout << e.what();

@@ -49,7 +49,14 @@ namespace kobuki {
    *  @dock_detecotr - indicates where the dock is located. Positive means dock is on left side of robot
    *  @rotated       - indicates how much the robot has rotated while scan
    ********************************************************/
-  void DockDrive::scan(RobotDockingState::State& nstate,double& nvx, double& nwz, const std::vector<unsigned char>& signal_filt, const ecl::LegacyPose2D<double>& pose_update, std::string& debug_str) {
+  void DockDrive::scan(
+    RobotDockingState::State& nstate,
+    double& nvx,
+    double& nwz,
+    const std::vector<unsigned char>& signal_filt,
+    const ecl::linear_algebra::Vector3d& pose_update,
+    std::string& debug_str
+  ) {
     // unsigned char right = signal_filt[0];
     unsigned char mid   = signal_filt[1];
     // unsigned char left  = signal_filt[2];
@@ -58,12 +65,10 @@ namespace kobuki {
     double next_vx;
     double next_wz;
 
-    rotated += pose_update.heading() / (2.0 * M_PI);
+    rotated += pose_update[2] / (2.0 * M_PI);
     std::ostringstream oss;
     oss << "rotated: " << std::fixed << std::setprecision(2) << std::setw(4) << rotated;
     debug_str = oss.str();
-
-
 
     if((mid & DockStationIRState::FAR_CENTER) || (mid & DockStationIRState::NEAR_CENTER))
     {

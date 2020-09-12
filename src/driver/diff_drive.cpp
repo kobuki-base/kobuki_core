@@ -51,7 +51,7 @@ DiffDrive::DiffDrive() :
 void DiffDrive::update(const uint16_t &time_stamp,
                        const uint16_t &left_encoder,
                        const uint16_t &right_encoder,
-                       ecl::LegacyPose2D<double> &pose_update,
+                       ecl::linear_algebra::Vector3d &pose_update,
                        ecl::linear_algebra::Vector3d &pose_update_rates) {
   state_mutex.lock();
   static bool init_l = false;
@@ -83,7 +83,10 @@ void DiffDrive::update(const uint16_t &time_stamp,
   last_rad_right += tick_to_rad * right_diff_ticks;
 
   // TODO this line and the last statements are really ugly; refactor, put in another place
-  pose_update = diff_drive_kinematics.forward(tick_to_rad * left_diff_ticks, tick_to_rad * right_diff_ticks);
+  pose_update = diff_drive_kinematics.poseUpdateFromWheelDifferential(
+    tick_to_rad * left_diff_ticks,
+    tick_to_rad * right_diff_ticks
+  );
 
   if (curr_timestamp != last_timestamp)
   {
@@ -95,9 +98,9 @@ void DiffDrive::update(const uint16_t &time_stamp,
     // we need to set the last_velocity_xxx to zero?
   }
 
-  pose_update_rates << pose_update.x()/last_diff_time,
-                       pose_update.y()/last_diff_time,
-                       pose_update.heading()/last_diff_time;
+  pose_update_rates << pose_update[0]/last_diff_time,  // x (m)
+                       pose_update[1]/last_diff_time,  // y (m)
+                       pose_update[2]/last_diff_time;  // heading (rads)
   state_mutex.unlock();
 }
 

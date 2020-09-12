@@ -22,7 +22,7 @@
 #include <iomanip>
 #include <cmath>
 #include <vector>
-#include <ecl/geometry/legacy_pose2d.hpp>
+#include <ecl/geometry.hpp>
 #include <ecl/linear_algebra.hpp>
 
 /*****************************************************************************
@@ -90,7 +90,7 @@ public:
   void update(const std::vector<unsigned char> &signal /* dock_ir signal*/
                 , const unsigned char &bumper
                 , const unsigned char &charger
-                , const ecl::LegacyPose2D<double> &pose);
+                , const ecl::linear_algebra::Vector3d &pose);
 
   void velocityCommands(const double &vx, const double &wz);
 
@@ -122,17 +122,17 @@ public:
 
 protected:
   void processBumpChargeEvent(const unsigned char& bumper, const unsigned char& charger);
-  void computePoseUpdate(ecl::LegacyPose2D<double>& pose_update, const ecl::LegacyPose2D<double>& pose);
+  void computePoseUpdate(ecl::linear_algebra::Vector3d& pose_update, const ecl::linear_algebra::Vector3d& pose);
   void filterIRSensor(std::vector<unsigned char>& signal_filt,const std::vector<unsigned char> &signal );
   void generateDebugMessage(const std::vector<unsigned char>& signal_filt, const unsigned char &bumper, const unsigned char &charger, const std::string& debug_str);
-  void updateVelocity(const std::vector<unsigned char>& signal_filt, const ecl::LegacyPose2D<double>& pose_update, std::string& debug_str);
+  void updateVelocity(const std::vector<unsigned char>& signal_filt, const ecl::linear_algebra::Vector3d& pose_update, std::string& debug_str);
   RobotDockingState::State determineRobotLocation(const std::vector<unsigned char>& signal_filt,const unsigned char& charger);
   bool validateSignal(const std::vector<unsigned char>& signal_filt, const unsigned int state);
 
 
   // States
   void idle(RobotDockingState::State& state,double& vx, double& wz);
-  void scan(RobotDockingState::State& state,double& vx, double& wz, const std::vector<unsigned char>& signal_filt, const ecl::LegacyPose2D<double>& pose_update, std::string& debug_str);
+  void scan(RobotDockingState::State& state,double& vx, double& wz, const std::vector<unsigned char>& signal_filt, const ecl::linear_algebra::Vector3d& pose_update, std::string& debug_str);
   void find_stream(RobotDockingState::State& state,double& vx, double& wz, const std::vector<unsigned char>& signal_filt);
   void get_stream(RobotDockingState::State& state,double& vx, double& wz, const std::vector<unsigned char>& signal_filt);
   void aligned(RobotDockingState::State& state,double& vx, double& wz, const std::vector<unsigned char>& signal_filt, std::string& debug_str);
@@ -153,7 +153,7 @@ private:
   double rotated;
   double min_abs_v;
   double min_abs_w;
-  ecl::LegacyPose2D<double> pose_priv;
+  ecl::linear_algebra::Vector3d pose_priv;
 
   void setVel(double v, double w);
 
