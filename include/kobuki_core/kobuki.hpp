@@ -24,7 +24,7 @@
 #include <ecl/devices.hpp>
 #include <ecl/threads/mutex.hpp>
 #include <ecl/exceptions/standard_exception.hpp>
-#include <ecl/geometry/legacy_pose2d.hpp>
+#include <ecl/geometry.hpp>
 #include "version_info.hpp"
 #include "parameters.hpp"
 #include "event_manager.hpp"
@@ -54,7 +54,6 @@
 
 namespace kobuki
 {
-
 /*****************************************************************************
  ** Definitions
  *****************************************************************************/
@@ -87,6 +86,9 @@ public:
 class kobuki_PUBLIC Kobuki
 {
 public:
+  /*********************
+   ** C&D
+   **********************/
   Kobuki();
   ~Kobuki();
 
@@ -142,7 +144,7 @@ public:
   **********************/
   void getWheelJointStates(double &wheel_left_angle, double &wheel_left_angle_rate,
                            double &wheel_right_angle, double &wheel_right_angle_rate);
-  void updateOdometry(ecl::LegacyPose2D<double> &pose_update,
+  void updateOdometry(ecl::linear_algebra::Vector3d &pose_update,
                       ecl::linear_algebra::Vector3d &pose_update_rates);
 
   /*********************

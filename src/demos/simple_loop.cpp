@@ -17,12 +17,13 @@
 #include <string>
 
 #include <csignal>
+#include <ecl/geometry.hpp>
 #include <ecl/time.hpp>
 #include <ecl/sigslots.hpp>
-#include <ecl/geometry/legacy_pose2d.hpp>
 #include <ecl/linear_algebra.hpp>
 #include <ecl/command_line.hpp>
 #include "kobuki_core/kobuki.hpp"
+
 
 /*****************************************************************************
 ** Classes
@@ -55,15 +56,15 @@ public:
   }
 
   void processStreamData() {
-    ecl::LegacyPose2D<double> pose_update;
+    ecl::linear_algebra::Vector3d pose_update;
     ecl::linear_algebra::Vector3d pose_update_rates;
     kobuki.updateOdometry(pose_update, pose_update_rates);
-    pose *= pose_update;
-    dx += pose_update.x();
-    dth += pose_update.heading();
-    //std::cout << dx << ", " << dth << std::endl;
-    //std::cout << kobuki.getHeading() << ", " << pose.heading() << std::endl;
-    //std::cout << "[" << pose.x() << ", " << pose.y() << ", " << pose.heading() << "]" << std::endl;
+    ecl::concatenate_poses(pose, pose_update);
+    dx += pose_update[0];   // x
+    dth += pose_update[2];  // heading
+    // std::cout << dx << ", " << dth << std::endl;
+    // std::cout << kobuki.getHeading() << ", " << pose.heading() << std::endl;
+    // std::cout << "[" << pose[0] << ", " << pose.y() << ", " << pose.heading() << "]" << std::endl;
     processMotion();
   }
 
@@ -82,18 +83,18 @@ public:
       std::cout << "[L] ";
       longitudinal_velocity = 0.3;
     }
-    std::cout << "[dx: " << dx << "][dth: " << dth << "][" << pose.x() << ", " << pose.y() << ", " << pose.heading() << "]" << std::endl;
+    std::cout << "[dx: " << dx << "][dth: " << dth << "][" << pose[0] << ", " << pose[1] << ", " << pose[2] << "]" << std::endl;
     kobuki.setBaseControl(longitudinal_velocity, rotational_velocity);
   }
 
-  ecl::LegacyPose2D<double> getPose() {
+  const ecl::linear_algebra::Vector3d& getPose() {
     return pose;
   }
 
 private:
   double dx, dth;
   const double length;
-  ecl::LegacyPose2D<double> pose;
+  ecl::linear_algebra::Vector3d pose;  // x, y, heading
   kobuki::Kobuki kobuki;
   ecl::Slot<> slot_stream_data;
 };
@@ -149,12 +150,12 @@ int main(int argc, char** argv)
   );
 
   ecl::Sleep sleep(1);
-  ecl::LegacyPose2D<double> pose;
+  ecl::linear_algebra::Vector3d pose;  // x, y, heading
   try {
     while (!shutdown_req){
       sleep();
       pose = kobuki_manager.getPose();
-      // std::cout << "current pose: [" << pose.x() << ", " << pose.y() << ", " << pose.heading() << "]" << std::endl;
+      // std::cout << "current pose: [" << pose[0] << ", " << pose[1] << ", " << pose[2] << "]" << std::endl;
     }
   } catch ( ecl::StandardException &e ) {
     std::cout << e.what();

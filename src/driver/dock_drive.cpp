@@ -86,12 +86,13 @@ void DockDrive::modeShift(const std::string& mode)
  * @param charger sensor
  * @param current pose
  */
-void DockDrive::update(const std::vector<unsigned char> &signal
-                , const unsigned char &bumper
-                , const unsigned char &charger
-                , const ecl::LegacyPose2D<double>& pose) {
-
-  ecl::LegacyPose2D<double> pose_update;
+void DockDrive::update(
+  const std::vector<unsigned char> &signal,
+  const unsigned char &bumper,
+  const unsigned char &charger,
+  const ecl::linear_algebra::Vector3d& pose
+) {
+  ecl::linear_algebra::Vector3d pose_update;  // x, y, heading
   std::vector<unsigned char> signal_filt(signal.size(), 0);
   std::string debug_str;
 
@@ -120,12 +121,14 @@ void DockDrive::update(const std::vector<unsigned char> &signal
  * @param pose update. this variable get filled after this function
  * @param pose - current pose
  **/
-void DockDrive::computePoseUpdate(ecl::LegacyPose2D<double>& pose_update, const ecl::LegacyPose2D<double>& pose)
-{
-  double dx = pose.x() - pose_priv.x();
-  double dy = pose.y() - pose_priv.y();
-  pose_update.x( std::sqrt( dx*dx + dy*dy ) );
-  pose_update.heading( pose.heading() - pose_priv.heading() );
+void DockDrive::computePoseUpdate(
+  ecl::linear_algebra::Vector3d& pose_update,
+  const ecl::linear_algebra::Vector3d& pose
+) {
+  double dx = pose[0] - pose_priv[0];
+  double dy = pose[1] - pose_priv[1];
+  pose_update[0] = std::sqrt( dx*dx + dy*dy );
+  pose_update[2] = ecl::wrap_angle(pose[2] - pose_priv[2]);
   //std::cout << pose_diff << "=" << pose << "-" << pose_priv << " | " << pose_update << std::endl;
   pose_priv = pose;
 
@@ -210,8 +213,11 @@ void DockDrive::processBumpChargeEvent(const unsigned char& bumper, const unsign
  * @param pose_update
  *
  *************************/
-void DockDrive::updateVelocity(const std::vector<unsigned char>& signal_filt, const ecl::LegacyPose2D<double>& pose_update, std::string& debug_str)
-{
+void DockDrive::updateVelocity(
+  const std::vector<unsigned char>& signal_filt,
+  const ecl::linear_algebra::Vector3d& pose_update,
+  std::string& debug_str
+) {
   std::ostringstream oss;
   RobotDockingState::State current_state, new_state;
   double new_vx = 0.0;
