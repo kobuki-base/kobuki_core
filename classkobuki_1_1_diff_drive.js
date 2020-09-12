@@ -6,7 +6,7 @@ var classkobuki_1_1_diff_drive =
     [ "pointVelocity", "classkobuki_1_1_diff_drive.html#ab827d99c56dccb07e898781dfbf2bd6a", null ],
     [ "reset", "classkobuki_1_1_diff_drive.html#a30022287cb6e09ffec607422b9166e49", null ],
     [ "setVelocityCommands", "classkobuki_1_1_diff_drive.html#ac03a97b1ee8b36a7b7d02ded9f28dd8a", null ],
-    [ "update", "classkobuki_1_1_diff_drive.html#a89aafb5b5a5c60f87fa7fa46e11b5b81", null ],
+    [ "update", "classkobuki_1_1_diff_drive.html#a179a0fd245a2edbd0db585f45ae46405", null ],
     [ "velocityCommands", "classkobuki_1_1_diff_drive.html#a6cce78209cb886b4fdd34e242d06e2d4", null ],
     [ "velocityCommands", "classkobuki_1_1_diff_drive.html#a74a496205059a0acd9b89b69309cab74", null ],
     [ "velocityCommands", "classkobuki_1_1_diff_drive.html#a1f01310eca08064aa55adbca8d6e24f0", null ],

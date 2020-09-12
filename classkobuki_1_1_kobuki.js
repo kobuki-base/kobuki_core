@@ -34,6 +34,6 @@ var classkobuki_1_1_kobuki =
     [ "shutdown", "classkobuki_1_1_kobuki.html#a36ba47467282656af96beb1384e4d337", null ],
     [ "spin", "classkobuki_1_1_kobuki.html#a6a4ff5d9a33ec16d705c9a8911d50649", null ],
     [ "unlockDataAccess", "classkobuki_1_1_kobuki.html#a4811744d8cf462525716c9a15d5fea71", null ],
-    [ "updateOdometry", "classkobuki_1_1_kobuki.html#a20913af66616fd0242e38f9ab11228c6", null ],
+    [ "updateOdometry", "classkobuki_1_1_kobuki.html#a6c5e57a2cd8e74d0390f7cc605a4234c", null ],
     [ "versionInfo", "classkobuki_1_1_kobuki.html#a3457d9ee4ef4ef4e3761a72bc4cd6610", null ]
 ];

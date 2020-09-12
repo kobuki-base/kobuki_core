@@ -1,5 +1,7 @@
 var NAVTREEINDEX2 =
 {
+"structkobuki_1_1_core_sensors_1_1_data.html#adbb5a43e2e08dbf7827beb3ef52cef0e":[0,0,0,8,0,1],
+"structkobuki_1_1_core_sensors_1_1_data.html#ae98f21f55cbd5f271b34c2d954a80f88":[0,0,0,8,0,6],
 "structkobuki_1_1_core_sensors_1_1_data.html#aed031d5acac9e297826cea0aaa48e3ef":[0,0,0,8,0,4],
 "structkobuki_1_1_core_sensors_1_1_flags.html":[0,0,0,8,1],
 "structkobuki_1_1_current_1_1_data.html":[0,0,0,9,0],
@@ -103,7 +105,5 @@ var NAVTREEINDEX2 =
 "velocity__commands_8cpp.html#aa6231a5027112a1cf56c610e6d7d91c5":[1,0,1,0,4,3],
 "velocity__commands_8cpp.html#aecf4729c6d16ed9ad6a63f862b514211":[1,0,1,0,4,2],
 "version__info_8hpp.html":[1,0,0,0,11],
-"version__info_8hpp_source.html":[1,0,0,0,11],
-"":[0,0,1],
-"":[0,0,0]
+"version__info_8hpp_source.html":[1,0,0,0,11]
 };

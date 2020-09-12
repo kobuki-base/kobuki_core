@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['computeposeupdate_179',['computePoseUpdate',['../classkobuki_1_1_dock_drive.html#af06c2592be3c1219d084e516a7184658',1,'kobuki::DockDrive']]]
+  ['computeposeupdate_179',['computePoseUpdate',['../classkobuki_1_1_dock_drive.html#acda4087285b0c45192bff2cfd57ba7bb',1,'kobuki::DockDrive']]]
 ];

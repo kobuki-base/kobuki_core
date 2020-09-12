@@ -5,7 +5,7 @@ var classkobuki_1_1_dock_drive =
     [ "aligned", "classkobuki_1_1_dock_drive.html#af51cfda8bd7a32612b80f547efbd93d1", null ],
     [ "bumped", "classkobuki_1_1_dock_drive.html#a5624102e37e64f452b6f682ec5df83a0", null ],
     [ "canRun", "classkobuki_1_1_dock_drive.html#a883c3ca9a2617f32b200fe40a1101cc2", null ],
-    [ "computePoseUpdate", "classkobuki_1_1_dock_drive.html#af06c2592be3c1219d084e516a7184658", null ],
+    [ "computePoseUpdate", "classkobuki_1_1_dock_drive.html#acda4087285b0c45192bff2cfd57ba7bb", null ],
     [ "determineRobotLocation", "classkobuki_1_1_dock_drive.html#aba7534cf69eb9adc2f7fe679f2e841ff", null ],
     [ "disable", "classkobuki_1_1_dock_drive.html#a24989e9131dae82c7755864580c2a93d", null ],
     [ "enable", "classkobuki_1_1_dock_drive.html#a5f785b0d99b9df6a3c706b3675d27c6d", null ],
@@ -24,11 +24,11 @@ var classkobuki_1_1_dock_drive =
     [ "isEnabled", "classkobuki_1_1_dock_drive.html#a63271a8c1eeffedefb546852342f9cdb", null ],
     [ "modeShift", "classkobuki_1_1_dock_drive.html#a17728574a5c48349bdf15c65bc3e72b4", null ],
     [ "processBumpChargeEvent", "classkobuki_1_1_dock_drive.html#acff5ed5133454f0a2b2844072f4e8be2", null ],
-    [ "scan", "classkobuki_1_1_dock_drive.html#a0dc8b8645c550993e33fc5fa976fb913", null ],
+    [ "scan", "classkobuki_1_1_dock_drive.html#a4c65387374bfa874c05e4e5e6f4fd7fb", null ],
     [ "setMinAbsV", "classkobuki_1_1_dock_drive.html#ac92339bc6363d2f0227767fe90d965c4", null ],
     [ "setMinAbsW", "classkobuki_1_1_dock_drive.html#a3dbc21d181c8d41ffa6c9b9356484032", null ],
-    [ "update", "classkobuki_1_1_dock_drive.html#ac8aa01bc69b051c9f7c34689d68f4a2a", null ],
-    [ "updateVelocity", "classkobuki_1_1_dock_drive.html#a5ce7b7013726d1f3ffd128a8fba3519e", null ],
+    [ "update", "classkobuki_1_1_dock_drive.html#a9b42f27d6998ad157f50527f65ef6bfe", null ],
+    [ "updateVelocity", "classkobuki_1_1_dock_drive.html#a674d0c5dfd0ff14ae5bb8ee2d8f7fc76", null ],
     [ "validateSignal", "classkobuki_1_1_dock_drive.html#aa550277295f3c0a61f9765d35d3967cd", null ],
     [ "velocityCommands", "classkobuki_1_1_dock_drive.html#a0ad298eaac3d0347bc77186c0d244fdb", null ]
 ];

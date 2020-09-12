@@ -1,5 +1,7 @@
 var NAVTREEINDEX1 =
 {
+"classkobuki_1_1_kobuki.html#a6c5e57a2cd8e74d0390f7cc605a4234c":[0,0,0,23,34],
+"classkobuki_1_1_kobuki.html#a70e163fcf282a169a1c1c7cbb8564294":[0,0,0,23,17],
 "classkobuki_1_1_kobuki.html#a75927d99e79c14a63c5e8f674ae9c03c":[0,0,0,23,10],
 "classkobuki_1_1_kobuki.html#a823260e89ce7e35fe1c721e3be1ec832":[0,0,0,23,27],
 "classkobuki_1_1_kobuki.html#a8300b9e468ea77063421953a711b3eef":[0,0,0,23,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX1 =
 "structkobuki_1_1_core_sensors_1_1_data.html#a7a32588b92f15eff9cef99ebe2d600b2":[0,0,0,8,0,9],
 "structkobuki_1_1_core_sensors_1_1_data.html#a880058d64a33e864c418ddcd353b325f":[0,0,0,8,0,3],
 "structkobuki_1_1_core_sensors_1_1_data.html#a9a2aee9ed43bb59570ab618f81016044":[0,0,0,8,0,5],
-"structkobuki_1_1_core_sensors_1_1_data.html#ab5d251034bca20f28ec57bde1441ca45":[0,0,0,8,0,8],
-"structkobuki_1_1_core_sensors_1_1_data.html#adbb5a43e2e08dbf7827beb3ef52cef0e":[0,0,0,8,0,1],
-"structkobuki_1_1_core_sensors_1_1_data.html#ae98f21f55cbd5f271b34c2d954a80f88":[0,0,0,8,0,6]
+"structkobuki_1_1_core_sensors_1_1_data.html#ab5d251034bca20f28ec57bde1441ca45":[0,0,0,8,0,8]
 };

@@ -2,9 +2,9 @@
 <area shape="rect" id="node1" title="Example program with a simple control loop." alt="" coords="1409,5,1572,47"/>
 <area shape="rect" id="node2" title=" " alt="" coords="1101,259,1155,285"/>
 <area shape="rect" id="node3" title=" " alt="" coords="171,95,234,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="1250,430,1342,457"/>
-<area shape="rect" id="node5" title=" " alt="" coords="25,430,137,457"/>
-<area shape="rect" id="node6" title=" " alt="" coords="2002,423,2139,464"/>
+<area shape="rect" id="node4" title=" " alt="" coords="2001,430,2121,457"/>
+<area shape="rect" id="node5" title=" " alt="" coords="1250,430,1342,457"/>
+<area shape="rect" id="node6" title=" " alt="" coords="25,430,137,457"/>
 <area shape="rect" id="node7" title=" " alt="" coords="1861,95,2008,121"/>
 <area shape="rect" id="node8" title=" " alt="" coords="2033,95,2183,121"/>
 <area shape="rect" id="node9" href="$kobuki_8hpp.html" title="Device driver core interface." alt="" coords="1135,95,1294,121"/>
@@ -20,7 +20,7 @@
 <area shape="rect" id="node27" href="$event__manager_8hpp.html" title="The event manager &#45; sigslot interface." alt="" coords="150,341,285,367"/>
 <area shape="rect" id="node29" href="$command_8hpp.html" title="Command structure." alt="" coords="1539,177,1642,203"/>
 <area shape="rect" id="node31" href="$modules_8hpp.html" title="Convenience header for modules." alt="" coords="1250,259,1345,285"/>
-<area shape="rect" id="node39" href="$packets_8hpp.html" title="Packets convenience header." alt="" coords="2747,341,2839,367"/>
+<area shape="rect" id="node39" href="$packets_8hpp.html" title="Packets convenience header." alt="" coords="2730,341,2822,367"/>
 <area shape="rect" id="node50" href="$packet__finder_8hpp.html" title="Simple packet finder." alt="" coords="1709,333,1862,375"/>
 <area shape="rect" id="node17" title=" " alt="" coords="1367,430,1436,457"/>
 <area shape="rect" id="node18" title=" " alt="" coords="749,601,813,628"/>
@@ -28,9 +28,9 @@
 <area shape="rect" id="node21" title=" " alt="" coords="515,601,637,628"/>
 <area shape="rect" id="node23" href="$battery_8hpp_source.html" title=" " alt="" coords="461,341,600,367"/>
 <area shape="rect" id="node24" href="$core__sensors_8hpp.html" title="Core sensor packet payloads." alt="" coords="689,430,873,457"/>
-<area shape="rect" id="node25" href="$payload__base_8hpp.html" title="Base class for payloads." alt="" coords="2541,512,2709,553"/>
+<area shape="rect" id="node25" href="$payload__base_8hpp.html" title="Base class for payloads." alt="" coords="2524,512,2692,553"/>
 <area shape="rect" id="node26" title=" " alt="" coords="1759,601,1886,628"/>
-<area shape="rect" id="node28" title=" " alt="" coords="2027,519,2085,546"/>
+<area shape="rect" id="node28" title=" " alt="" coords="2017,519,2076,546"/>
 <area shape="rect" id="node30" href="$led__array_8hpp_source.html" title=" " alt="" coords="1431,341,1582,367"/>
 <area shape="rect" id="node32" href="$digital__output_8hpp_source.html" title=" " alt="" coords="1072,341,1248,367"/>
 <area shape="rect" id="node33" href="$diff__drive_8hpp_source.html" title=" " alt="" coords="625,341,775,367"/>
@@ -39,14 +39,14 @@
 <area shape="rect" id="node34" title=" " alt="" coords="949,430,1009,457"/>
 <area shape="rect" id="node35" title=" " alt="" coords="1033,430,1175,457"/>
 <area shape="rect" id="node38" title=" " alt="" coords="1511,430,1583,457"/>
-<area shape="rect" id="node40" href="$cliff_8hpp.html" title="Cliff sensor packet payloads." alt="" coords="2163,430,2279,457"/>
-<area shape="rect" id="node41" href="$current_8hpp.html" title="Current level packet payloads." alt="" coords="2473,430,2609,457"/>
-<area shape="rect" id="node42" href="$gp__input_8hpp.html" title="gpio data command packets." alt="" coords="2303,430,2449,457"/>
-<area shape="rect" id="node43" href="$inertia_8hpp.html" title="Inertia packet payloads." alt="" coords="3116,430,3247,457"/>
-<area shape="rect" id="node44" href="$dock__ir_8hpp.html" title="Docking infrared sensor packet payloads." alt="" coords="3271,430,3409,457"/>
-<area shape="rect" id="node45" href="$firmware_8hpp.html" title="Firmware version request packet payloads." alt="" coords="3434,430,3579,457"/>
-<area shape="rect" id="node46" href="$hardware_8hpp.html" title="Hardware version request packet payloads." alt="" coords="3604,430,3753,457"/>
-<area shape="rect" id="node47" href="$unique__device__id_8hpp.html" title="Module for handling of unique device id request packet payloads." alt="" coords="2633,423,2788,464"/>
-<area shape="rect" id="node48" href="$three__axis__gyro_8hpp.html" title="Module for handling of three_axis_gyro packet payloads." alt="" coords="2812,423,2943,464"/>
-<area shape="rect" id="node49" href="$controller__info_8hpp.html" title="Controller info packet payloads." alt="" coords="2967,423,3092,464"/>
+<area shape="rect" id="node40" href="$cliff_8hpp.html" title="Cliff sensor packet payloads." alt="" coords="2146,430,2262,457"/>
+<area shape="rect" id="node41" href="$current_8hpp.html" title="Current level packet payloads." alt="" coords="2456,430,2592,457"/>
+<area shape="rect" id="node42" href="$gp__input_8hpp.html" title="gpio data command packets." alt="" coords="2286,430,2431,457"/>
+<area shape="rect" id="node43" href="$inertia_8hpp.html" title="Inertia packet payloads." alt="" coords="3099,430,3229,457"/>
+<area shape="rect" id="node44" href="$dock__ir_8hpp.html" title="Docking infrared sensor packet payloads." alt="" coords="3253,430,3392,457"/>
+<area shape="rect" id="node45" href="$firmware_8hpp.html" title="Firmware version request packet payloads." alt="" coords="3417,430,3562,457"/>
+<area shape="rect" id="node46" href="$hardware_8hpp.html" title="Hardware version request packet payloads." alt="" coords="3587,430,3736,457"/>
+<area shape="rect" id="node47" href="$unique__device__id_8hpp.html" title="Module for handling of unique device id request packet payloads." alt="" coords="2616,423,2771,464"/>
+<area shape="rect" id="node48" href="$three__axis__gyro_8hpp.html" title="Module for handling of three_axis_gyro packet payloads." alt="" coords="2795,423,2925,464"/>
+<area shape="rect" id="node49" href="$controller__info_8hpp.html" title="Controller info packet payloads." alt="" coords="2949,423,3075,464"/>
 </map>
