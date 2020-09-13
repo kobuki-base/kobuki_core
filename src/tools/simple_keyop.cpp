@@ -16,6 +16,7 @@
 #include <termios.h> // for keyboard input
 
 #include <ecl/command_line.hpp>
+#include <ecl/console.hpp>
 #include <ecl/geometry.hpp>
 #include <ecl/linear_algebra.hpp>
 #include <ecl/time.hpp>
@@ -45,11 +46,6 @@ public:
   bool init(const std::string & device);
 
   /*********************
-   ** Runtime
-   **********************/
-  void spin();
-
-  /*********************
    ** Callbacks
    **********************/
   void processStreamData();
@@ -57,7 +53,8 @@ public:
   /*********************
    ** Accessor
    **********************/
-  ecl::linear_algebra::Vector3d getPose();
+  const ecl::linear_algebra::Vector3d& getPose() { return pose; };
+  bool isShutdown() { return quit_requested || kobuki.isShutdown(); }
 
 private:
   double vx, wz;
@@ -67,6 +64,7 @@ private:
   double linear_vel_step, linear_vel_max;
   double angular_vel_step, angular_vel_max;
   std::string name;
+  ecl::Slot<const std::string&> slot_debug_error, slot_debug_warning;
   ecl::Slot<> slot_stream_data;
 
   /*********************
@@ -79,9 +77,14 @@ private:
   void resetVelocity();
 
   /*********************
+   ** Debugging
+   **********************/
+  void relayWarnings(const std::string& message);
+  void relayErrors(const std::string& message);
+
+  /*********************
    ** Keylogging
    **********************/
-
   void keyboardInputLoop();
   void processKeyboardInput(char c);
   void restoreTerminal();
@@ -104,6 +107,8 @@ KobukiManager::KobukiManager() :
   linear_vel_max(1.0),
   angular_vel_step(0.33),
   angular_vel_max(6.6),
+  slot_debug_error(&KobukiManager::relayErrors, *this),
+  slot_debug_warning(&KobukiManager::relayWarnings, *this),
   slot_stream_data(&KobukiManager::processStreamData, *this),
   quit_requested(false),
   key_file_descriptor(0)
@@ -126,10 +131,13 @@ bool KobukiManager::init(const std::string & device)
   /*********************
    ** Parameters
    **********************/
-  std::cout << "KobukiManager : using linear  vel step [" << linear_vel_step << "]." << std::endl;
-  std::cout << "KobukiManager : using linear  vel max  [" << linear_vel_max << "]." << std::endl;
-  std::cout << "KobukiManager : using angular vel step [" << angular_vel_step << "]." << std::endl;
-  std::cout << "KobukiManager : using angular vel max  [" << angular_vel_max << "]." << std::endl;
+  std::cout << "Parameters" << std::endl;
+  std::cout << "----------" << std::endl;
+  std::cout << " - linear_vel_max   [" << linear_vel_max << "]" << std::endl;
+  std::cout << " - linear_vel_step  [" << linear_vel_step << "]" << std::endl;
+  std::cout << " - angular_vel_max  [" << angular_vel_max << "]" << std::endl;
+  std::cout << " - angular_vel_step [" << angular_vel_step << "]" << std::endl;
+  std::cout << std::endl;
 
   /*********************
    ** Velocities
@@ -147,6 +155,8 @@ bool KobukiManager::init(const std::string & device)
 
   kobuki.init(parameters);
   kobuki.enable();
+  slot_debug_error.connect("/kobuki/ros_error");
+  slot_debug_warning.connect("/kobuki/ros_warn");
   slot_stream_data.connect("/kobuki/stream_data");
 
   /*********************
@@ -157,28 +167,15 @@ bool KobukiManager::init(const std::string & device)
 }
 
 /*****************************************************************************
- ** Implementation [Spin]
+ ** Implementation [Debugging]
  *****************************************************************************/
 
-/**
- * @brief Worker thread loop; sends current velocity command at a fixed rate.
- *
- * It also process ros functions as well as aborting when requested.
- */
-void KobukiManager::spin()
-{
-/*
-  {
-    // just in case we got here not via a keyboard quit request
-    quit_requested = true;
-    thread.cancel();
-  }
-*/
-  ecl::Sleep sleep(ecl::Duration(0.1));
-  while (!quit_requested){
-    sleep();
-  }
-  thread.join();
+void KobukiManager::relayWarnings(const std::string& message) {
+  std::cout << ecl::yellow << "[WARNING] " << message << ecl::reset << std::endl;
+}
+
+void KobukiManager::relayErrors(const std::string& message) {
+  std::cout << ecl::red << "[ERROR] " << message << ecl::reset << std::endl;
 }
 
 /*****************************************************************************
@@ -202,12 +199,13 @@ void KobukiManager::keyboardInputLoop()
   raw.c_cc[VEOF] = 2;
   tcsetattr(key_file_descriptor, TCSANOW, &raw);
 
-  puts("Reading from keyboard");
-  puts("---------------------------");
-  puts("Forward/back arrows : linear velocity incr/decr.");
-  puts("Right/left arrows : angular velocity incr/decr.");
-  puts("Spacebar : reset linear/angular velocities.");
-  puts("q : quit.");
+  std::cout << "Reading from keyboard" << std::endl;
+  std::cout << "---------------------" << std::endl;
+  std::cout << "Forward/back arrows : linear velocity incr/decr." << std::endl;
+  std::cout << "Right/left arrows : angular velocity incr/decr." << std::endl;
+  std::cout << "Spacebar : reset linear/angular velocities." << std::endl;
+  std::cout << "q : quit." << std::endl;
+  std::cout << std::endl;
   char c;
   while (!quit_requested)
   {
@@ -286,7 +284,6 @@ void KobukiManager::incrementLinearVelocity()
   {
     vx += linear_vel_step;
   }
-//  ROS_INFO_STREAM("KeyOp: linear  velocity incremented [" << cmd->linear.x << "|" << cmd->angular.z << "]");
 }
 
 /**
@@ -298,7 +295,6 @@ void KobukiManager::decrementLinearVelocity()
   {
     vx -= linear_vel_step;
   }
-//  ROS_INFO_STREAM("KeyOp: linear  velocity decremented [" << cmd->linear.x << "|" << cmd->angular.z << "]");
 }
 
 /**
@@ -310,7 +306,6 @@ void KobukiManager::incrementAngularVelocity()
   {
     wz += angular_vel_step;
   }
-//  ROS_INFO_STREAM("KeyOp: angular velocity incremented [" << cmd->linear.x << "|" << cmd->angular.z << "]");
 }
 
 /**
@@ -322,14 +317,12 @@ void KobukiManager::decrementAngularVelocity()
   {
     wz -= angular_vel_step;
   }
-//    ROS_INFO_STREAM("KeyOp: angular velocity decremented [" << cmd->linear.x << "|" << cmd->angular.z << "]");
 }
 
 void KobukiManager::resetVelocity()
 {
   vx = 0.0;
   wz = 0.0;
-//    ROS_INFO_STREAM("KeyOp: reset linear/angular velocities.");
 }
 
 void KobukiManager::processStreamData() {
@@ -337,26 +330,19 @@ void KobukiManager::processStreamData() {
   ecl::linear_algebra::Vector3d pose_update_rates;
   kobuki.updateOdometry(pose_update, pose_update_rates);
   ecl::concatenate_poses(pose, pose_update);
-//  dx += pose_update.x();
-//  dth += pose_update.heading();
-  //std::cout << dx << ", " << dth << std::endl;
-  //std::cout << kobuki.getHeading() << ", " << pose.heading() << std::endl;
-  //std::cout << "[" << pose.x() << ", " << pose.y() << ", " << pose.heading() << "]" << std::endl;
-
+  // TODO(daniel.stonier): this needs a mutex
+  // This callback triggers in Kobuki's thread, however
+  // vx, wz are updated in the keyboard input thread.
   kobuki.setBaseControl(vx, wz);
-}
-
-ecl::linear_algebra::Vector3d KobukiManager::getPose() {
-  return pose;
 }
 
 /*****************************************************************************
 ** Signal Handler
 *****************************************************************************/
 
-bool shutdown_req = false;
+bool signal_shutdown_requested = false;
 void signalHandler(int /* signum */) {
-  shutdown_req = true;
+  signal_shutdown_requested = true;
 }
 
 /*****************************************************************************
@@ -372,17 +358,18 @@ int main(int argc, char** argv)
 
   signal(SIGINT, signalHandler);
 
-  std::cout << "Simple Keyop : Utility for driving kobuki by keyboard." << std::endl;
+  std::cout << ecl::bold << "\nSimple Keyop : Utility for driving kobuki by keyboard.\n" << ecl::reset << std::endl;
   KobukiManager kobuki_manager;
   kobuki_manager.init(device_port.getValue());
 
-  ecl::Sleep sleep(1);
-  ecl::linear_algebra::Vector3d pose;
+  ecl::Sleep sleep_one_second(1);
   try {
-    while (!shutdown_req){
-      sleep();
-      pose = kobuki_manager.getPose();
+    while (!signal_shutdown_requested && !kobuki_manager.isShutdown()){
+      sleep_one_second();
+      const ecl::linear_algebra::Vector3d& pose = kobuki_manager.getPose();
+      std::cout << ecl::green;
       std::cout << "current pose: [x: " << pose[0] << ", y: " << pose[1] << ", heading: " << pose[2] << "]" << std::endl;
+      std::cout << ecl::reset;
     }
   } catch ( ecl::StandardException &e ) {
     std::cout << e.what();

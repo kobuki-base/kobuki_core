@@ -18,6 +18,7 @@
 
   <build_depend>ecl_build</build_depend>
   <build_depend>ecl_config</build_depend>
+  <build_depend>ecl_console</build_depend>
   <build_depend>ecl_converters</build_depend>
   <build_depend>ecl_devices</build_depend>
   <build_depend>ecl_geometry</build_depend>

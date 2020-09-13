@@ -8,6 +8,7 @@ macro(kobuki_core_add_tool name)
   target_link_libraries(${target_name}
     ${PROJECT_NAME}
     ecl_command_line::ecl_command_line
+    ecl_console::ecl_console
   )
   # if we want dashes
   string(REGEX REPLACE "_" "-" dashed_name kobuki-${name})

@@ -4,11 +4,11 @@ Changelog
 
 Forthcoming
 -----------
-* ...
+* [infra] recommended firmware versions 1.1.4, 1.2.0, `#37 <https://github.com/kobuki-base/kobuki_core/issues/37>`_
 
 1.3.0 (2020-09-12)
 ------------------
-* [all] LegacyPose2D -> Vector3d,  `#36 <https://github.com/kobuki-base/kobuki_core/issues/36>`_
+* [all] LegacyPose2D -> Vector3d, `#36 <https://github.com/kobuki-base/kobuki_core/issues/36>`_
 
 1.2.0 (2020-08-30)
 ------------------
