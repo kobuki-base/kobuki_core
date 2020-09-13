@@ -100,8 +100,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa11797ac2c8d0a5b37c701bb22e634a2"><td class="memItemLeft" align="right" valign="top"><a id="aa11797ac2c8d0a5b37c701bb22e634a2"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>KobukiManager</b> (const std::string &amp;device)</td></tr>
 <tr class="separator:aa11797ac2c8d0a5b37c701bb22e634a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2a9199cb862ebc899996a9eef3214c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kobuki_manager.html#aa2a9199cb862ebc899996a9eef3214c6">spin</a> ()</td></tr>
-<tr class="memdesc:aa2a9199cb862ebc899996a9eef3214c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Worker thread loop; sends current velocity command at a fixed rate.  <a href="class_kobuki_manager.html#aa2a9199cb862ebc899996a9eef3214c6">More...</a><br /></td></tr>
+<tr class="memitem:aa2a9199cb862ebc899996a9eef3214c6"><td class="memItemLeft" align="right" valign="top"><a id="aa2a9199cb862ebc899996a9eef3214c6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>spin</b> ()</td></tr>
 <tr class="separator:aa2a9199cb862ebc899996a9eef3214c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a782a758ed80f25c49c0f429e88d8bf3e"><td class="memItemLeft" align="right" valign="top"><a id="a782a758ed80f25c49c0f429e88d8bf3e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>processButtonEvent</b> (const <a class="el" href="structkobuki_1_1_button_event.html">kobuki::ButtonEvent</a> &amp;event)</td></tr>
@@ -115,12 +115,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>processButtonEvent</b
 <tr class="memitem:a8b7d112844422e6d0e1bb67acacfc6e5"><td class="memItemLeft" align="right" valign="top"><a id="a8b7d112844422e6d0e1bb67acacfc6e5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>processStreamData</b> ()</td></tr>
 <tr class="separator:a8b7d112844422e6d0e1bb67acacfc6e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8978850cfc318ea44e55d2cc61165ca4"><td class="memItemLeft" align="right" valign="top"><a id="a8978850cfc318ea44e55d2cc61165ca4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>relayWarnings</b> (const std::string &amp;message)</td></tr>
+<tr class="separator:a8978850cfc318ea44e55d2cc61165ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08ab45ff3eda22d11f2dc6f9fee075e0"><td class="memItemLeft" align="right" valign="top"><a id="a08ab45ff3eda22d11f2dc6f9fee075e0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>relayErrors</b> (const std::string &amp;message)</td></tr>
+<tr class="separator:a08ab45ff3eda22d11f2dc6f9fee075e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f21876cbc4f349b4ae711395c8c2dd3"><td class="memItemLeft" align="right" valign="top"><a id="a3f21876cbc4f349b4ae711395c8c2dd3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>processMotion</b> ()</td></tr>
 <tr class="separator:a3f21876cbc4f349b4ae711395c8c2dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35ddd2a57461acb70795792fa2a5681e"><td class="memItemLeft" align="right" valign="top"><a id="a35ddd2a57461acb70795792fa2a5681e"></a>
+<tr class="memitem:ab17c503553288aaf1708d189b5ed8284"><td class="memItemLeft" align="right" valign="top"><a id="ab17c503553288aaf1708d189b5ed8284"></a>
 const ecl::linear_algebra::Vector3d &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getPose</b> ()</td></tr>
-<tr class="separator:a35ddd2a57461acb70795792fa2a5681e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ab17c503553288aaf1708d189b5ed8284"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa11797ac2c8d0a5b37c701bb22e634a2"><td class="memItemLeft" align="right" valign="top"><a id="aa11797ac2c8d0a5b37c701bb22e634a2"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>KobukiManager</b> (const std::string &amp;device)</td></tr>
 <tr class="separator:aa11797ac2c8d0a5b37c701bb22e634a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,21 +144,27 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>processStreamData</b>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kobuki_manager.html#aea4eaabe383b3f0e4340ebd1db4b4718">init</a> (const std::string &amp;device)</td></tr>
 <tr class="memdesc:aea4eaabe383b3f0e4340ebd1db4b4718"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialises the node. <br /></td></tr>
 <tr class="separator:aea4eaabe383b3f0e4340ebd1db4b4718"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2a9199cb862ebc899996a9eef3214c6"><td class="memItemLeft" align="right" valign="top"><a id="aa2a9199cb862ebc899996a9eef3214c6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>spin</b> ()</td></tr>
-<tr class="separator:aa2a9199cb862ebc899996a9eef3214c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b7d112844422e6d0e1bb67acacfc6e5"><td class="memItemLeft" align="right" valign="top"><a id="a8b7d112844422e6d0e1bb67acacfc6e5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>processStreamData</b> ()</td></tr>
 <tr class="separator:a8b7d112844422e6d0e1bb67acacfc6e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35ddd2a57461acb70795792fa2a5681e"><td class="memItemLeft" align="right" valign="top"><a id="a35ddd2a57461acb70795792fa2a5681e"></a>
-ecl::linear_algebra::Vector3d&#160;</td><td class="memItemRight" valign="bottom"><b>getPose</b> ()</td></tr>
-<tr class="separator:a35ddd2a57461acb70795792fa2a5681e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab17c503553288aaf1708d189b5ed8284"><td class="memItemLeft" align="right" valign="top"><a id="ab17c503553288aaf1708d189b5ed8284"></a>
+const ecl::linear_algebra::Vector3d &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getPose</b> ()</td></tr>
+<tr class="separator:ab17c503553288aaf1708d189b5ed8284"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01178a67132432f8f66d824d25459a54"><td class="memItemLeft" align="right" valign="top"><a id="a01178a67132432f8f66d824d25459a54"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isShutdown</b> ()</td></tr>
+<tr class="separator:a01178a67132432f8f66d824d25459a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26c5c2dba94d25134a9e07cf200081b4"><td class="memItemLeft" align="right" valign="top"><a id="a26c5c2dba94d25134a9e07cf200081b4"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>KobukiManager</b> (const std::string &amp;device_port)</td></tr>
 <tr class="separator:a26c5c2dba94d25134a9e07cf200081b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40431417c3d7cf986620b1ae3f2c7146"><td class="memItemLeft" align="right" valign="top"><a id="a40431417c3d7cf986620b1ae3f2c7146"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>processVersionInfo</b> (const <a class="el" href="classkobuki_1_1_version_info.html">kobuki::VersionInfo</a> &amp;version_info)</td></tr>
 <tr class="separator:a40431417c3d7cf986620b1ae3f2c7146"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8978850cfc318ea44e55d2cc61165ca4"><td class="memItemLeft" align="right" valign="top"><a id="a8978850cfc318ea44e55d2cc61165ca4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>relayWarnings</b> (const std::string &amp;message)</td></tr>
+<tr class="separator:a8978850cfc318ea44e55d2cc61165ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08ab45ff3eda22d11f2dc6f9fee075e0"><td class="memItemLeft" align="right" valign="top"><a id="a08ab45ff3eda22d11f2dc6f9fee075e0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>relayErrors</b> (const std::string &amp;message)</td></tr>
+<tr class="separator:a08ab45ff3eda22d11f2dc6f9fee075e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7aab020e5b0bce432047578ffa62b1c2"><td class="memItemLeft" align="right" valign="top"><a id="a7aab020e5b0bce432047578ffa62b1c2"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isAcquired</b> ()</td></tr>
 <tr class="separator:a7aab020e5b0bce432047578ffa62b1c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,36 +183,7 @@ std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getUDID<
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Keyboard remote control for our robot core (mobile base). </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa2a9199cb862ebc899996a9eef3214c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2a9199cb862ebc899996a9eef3214c6">&#9670;&nbsp;</a></span>spin()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void KobukiManager::spin </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Worker thread loop; sends current velocity command at a fixed rate. </p>
-<p>It also process ros functions as well as aborting when requested. </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>/github/workspace/src/demos/<a class="el" href="buttons_8cpp.html">buttons.cpp</a></li>
 <li>/github/workspace/src/demos/<a class="el" href="chirp_8cpp.html">chirp.cpp</a></li>
 <li>/github/workspace/src/demos/<a class="el" href="simple__loop_8cpp.html">simple_loop.cpp</a></li>

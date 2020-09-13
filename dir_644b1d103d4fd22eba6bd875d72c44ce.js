@@ -25,7 +25,9 @@ var dir_644b1d103d4fd22eba6bd875d72c44ce =
       [ "Eeprom", "classkobuki_1_1_eeprom.html", "classkobuki_1_1_eeprom" ],
       [ "Data", "structkobuki_1_1_eeprom_1_1_data.html", "structkobuki_1_1_eeprom_1_1_data" ]
     ] ],
-    [ "firmware.hpp", "firmware_8hpp.html", "firmware_8hpp" ],
+    [ "firmware.hpp", "firmware_8hpp.html", [
+      [ "Firmware", "classkobuki_1_1_firmware.html", "classkobuki_1_1_firmware" ]
+    ] ],
     [ "gp_input.hpp", "gp__input_8hpp.html", [
       [ "GpInput", "classkobuki_1_1_gp_input.html", "classkobuki_1_1_gp_input" ],
       [ "Data", "structkobuki_1_1_gp_input_1_1_data.html", "structkobuki_1_1_gp_input_1_1_data" ]

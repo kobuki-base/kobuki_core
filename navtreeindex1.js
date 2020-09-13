@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"classkobuki_1_1_kobuki.html#a6a4ff5d9a33ec16d705c9a8911d50649":[0,0,0,23,32],
 "classkobuki_1_1_kobuki.html#a6c5e57a2cd8e74d0390f7cc605a4234c":[0,0,0,23,34],
 "classkobuki_1_1_kobuki.html#a70e163fcf282a169a1c1c7cbb8564294":[0,0,0,23,17],
 "classkobuki_1_1_kobuki.html#a75927d99e79c14a63c5e8f674ae9c03c":[0,0,0,23,10],
@@ -139,9 +140,8 @@ var NAVTREEINDEX1 =
 "event__manager_8hpp.html":[1,0,0,0,5],
 "event__manager_8hpp_source.html":[1,0,0,0,5],
 "files.html":[1,0],
+"firmware_8cpp.html":[1,0,1,1,1],
 "firmware_8hpp.html":[1,0,0,0,2,6],
-"firmware_8hpp.html#a161d3871c6e5e161eb3065ca8d8e5669":[1,0,0,0,2,6,2],
-"firmware_8hpp.html#a6a95a673675b30a190e9513645e0a089":[1,0,0,0,2,6,3],
 "firmware_8hpp_source.html":[1,0,0,0,2,6],
 "functions.html":[0,3,0],
 "functions_enum.html":[0,3,3],
@@ -155,7 +155,7 @@ var NAVTREEINDEX1 =
 "index.html":[],
 "inertia_8hpp.html":[1,0,0,0,2,9],
 "inertia_8hpp_source.html":[1,0,0,0,2,9],
-"kobuki_8cpp.html":[1,0,1,1,1],
+"kobuki_8cpp.html":[1,0,1,1,2],
 "kobuki_8hpp.html":[1,0,0,0,6],
 "kobuki_8hpp_source.html":[1,0,0,0,6],
 "led__array_8hpp_source.html":[1,0,0,0,0,4],

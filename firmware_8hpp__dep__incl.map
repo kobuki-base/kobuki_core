@@ -1,6 +1,7 @@
 <map id="/github/workspace/include/kobuki_core/packets/firmware.hpp" name="/github/workspace/include/kobuki_core/packets/firmware.hpp">
-<area shape="rect" id="node1" title="Firmware version request packet payloads." alt="" coords="325,5,548,47"/>
+<area shape="rect" id="node1" title="Firmware version request packet payloads." alt="" coords="419,5,641,47"/>
 <area shape="rect" id="node2" href="$packets_8hpp.html" title="Packets convenience header." alt="" coords="350,95,523,136"/>
+<area shape="rect" id="node9" href="$firmware_8cpp.html" title="Constant definitions for compatible firmware versions." alt="" coords="548,95,699,136"/>
 <area shape="rect" id="node3" href="$kobuki_8hpp.html" title="Device driver core interface." alt="" coords="350,184,523,225"/>
 <area shape="rect" id="node4" href="$buttons_8cpp.html" title="Example program for kobuki button events." alt="" coords="5,273,156,315"/>
 <area shape="rect" id="node5" href="$chirp_8cpp.html" title="Example program for kobuki initialisation." alt="" coords="180,273,331,315"/>

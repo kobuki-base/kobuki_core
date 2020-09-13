@@ -85,8 +85,7 @@ $(document).ready(function(){initNavTree('firmware_8hpp.html',''); initResizable
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
 <div class="title">firmware.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -94,18 +93,29 @@ $(document).ready(function(){initNavTree('firmware_8hpp.html',''); initResizable
 
 <p>Firmware version request packet payloads.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="payload__base_8hpp_source.html">../packet_handler/payload_base.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;<a class="el" href="payload__base_8hpp_source.html">../packet_handler/payload_base.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="payload__headers_8hpp_source.html">../packet_handler/payload_headers.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="version__info_8hpp_source.html">../version_info.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for firmware.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="firmware_8hpp__incl.png" border="0" usemap="#a_2github_2workspace_2include_2kobuki__core_2packets_2firmware_8hpp" alt=""/></div>
 <map name="_2github_2workspace_2include_2kobuki__core_2packets_2firmware_8hpp" id="a_2github_2workspace_2include_2kobuki__core_2packets_2firmware_8hpp">
-<area shape="rect" title="Firmware version request packet payloads." alt="" coords="113,5,336,47"/>
-<area shape="rect" href="payload__base_8hpp.html" title="Base class for payloads." alt="" coords="45,95,213,136"/>
-<area shape="rect" href="payload__headers_8hpp.html" title="Byte id&#39;s for the individual payload headers." alt="" coords="237,95,405,136"/>
+<area shape="rect" title="Firmware version request packet payloads." alt="" coords="231,5,453,47"/>
+<area shape="rect" title=" " alt="" coords="245,184,314,211"/>
+<area shape="rect" title=" " alt="" coords="338,184,397,211"/>
+<area shape="rect" href="payload__base_8hpp.html" title="Base class for payloads." alt="" coords="86,95,254,136"/>
+<area shape="rect" href="payload__headers_8hpp.html" title="Byte id&#39;s for the individual payload headers." alt="" coords="531,95,699,136"/>
+<area shape="rect" href="version__info_8hpp.html" title="Version info for the kobuki driver." alt="" coords="380,102,507,129"/>
 <area shape="rect" title=" " alt="" coords="5,184,132,211"/>
 <area shape="rect" title=" " alt="" coords="157,184,221,211"/>
+<area shape="rect" title=" " alt="" coords="421,184,493,211"/>
+<area shape="rect" title=" " alt="" coords="517,184,572,211"/>
+<area shape="rect" href="macros_8hpp.html" title="Macros for kobuki_core." alt="" coords="596,184,685,211"/>
+<area shape="rect" title=" " alt="" coords="487,259,635,285"/>
+<area shape="rect" title=" " alt="" coords="659,259,782,285"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -113,8 +123,9 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="firmware_8hpp__dep__incl.png" border="0" usemap="#a_2github_2workspace_2include_2kobuki__core_2packets_2firmware_8hppdep" alt=""/></div>
 <map name="_2github_2workspace_2include_2kobuki__core_2packets_2firmware_8hppdep" id="a_2github_2workspace_2include_2kobuki__core_2packets_2firmware_8hppdep">
-<area shape="rect" title="Firmware version request packet payloads." alt="" coords="325,5,548,47"/>
+<area shape="rect" title="Firmware version request packet payloads." alt="" coords="419,5,641,47"/>
 <area shape="rect" href="packets_8hpp.html" title="Packets convenience header." alt="" coords="350,95,523,136"/>
+<area shape="rect" href="firmware_8cpp.html" title="Constant definitions for compatible firmware versions." alt="" coords="548,95,699,136"/>
 <area shape="rect" href="kobuki_8hpp.html" title="Device driver core interface." alt="" coords="350,184,523,225"/>
 <area shape="rect" href="buttons_8cpp.html" title="Example program for kobuki button events." alt="" coords="5,273,156,315"/>
 <area shape="rect" href="chirp_8cpp.html" title="Example program for kobuki initialisation." alt="" coords="180,273,331,315"/>
@@ -130,17 +141,6 @@ This graph shows which files directly or indirectly include this file:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkobuki_1_1_firmware.html">kobuki::Firmware</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkobuki_1_1_firmware_1_1_data.html">kobuki::Firmware::Data</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a161d3871c6e5e161eb3065ca8d8e5669"><td class="memItemLeft" align="right" valign="top"><a id="a161d3871c6e5e161eb3065ca8d8e5669"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>CURRENT_FIRMWARE_MAJOR_VERSION</b>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:a161d3871c6e5e161eb3065ca8d8e5669"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a95a673675b30a190e9513645e0a089"><td class="memItemLeft" align="right" valign="top"><a id="a6a95a673675b30a190e9513645e0a089"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>CURRENT_FIRMWARE_MINOR_VERSION</b>&#160;&#160;&#160;2</td></tr>
-<tr class="separator:a6a95a673675b30a190e9513645e0a089"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Firmware version request packet payloads. </p>

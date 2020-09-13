@@ -9,7 +9,6 @@ var hierarchy =
     [ "kobuki::Current::Data", "structkobuki_1_1_current_1_1_data.html", null ],
     [ "kobuki::DockIR::Data", "structkobuki_1_1_dock_i_r_1_1_data.html", null ],
     [ "kobuki::Eeprom::Data", "structkobuki_1_1_eeprom_1_1_data.html", null ],
-    [ "kobuki::Firmware::Data", "structkobuki_1_1_firmware_1_1_data.html", null ],
     [ "kobuki::GpInput::Data", "structkobuki_1_1_gp_input_1_1_data.html", null ],
     [ "kobuki::Hardware::Data", "structkobuki_1_1_hardware_1_1_data.html", null ],
     [ "kobuki::Inertia::Data", "structkobuki_1_1_inertia_1_1_data.html", null ],

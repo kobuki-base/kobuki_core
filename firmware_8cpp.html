@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Kobuki: /github/workspace/src/driver -&gt; include Relation</title>
+<title>Kobuki: /github/workspace/src/driver/firmware.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -65,7 +65,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('dir_4db3a2f7aa3a8b9901e70dfeb2571af9.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('firmware_8cpp.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -83,13 +83,46 @@ $(document).ready(function(){initNavTree('dir_4db3a2f7aa3a8b9901e70dfeb2571af9.h
 </iframe>
 </div>
 
+<div class="header">
+  <div class="headertitle">
+<div class="title">firmware.cpp File Reference</div>  </div>
+</div><!--header-->
 <div class="contents">
-<h3>driver &rarr; include Relation</h3><table class="dirtab"><tr class="dirtab"><th class="dirtab">File in src/driver</th><th class="dirtab">Includes file in include</th></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="command_8cpp.html">command.cpp</a></td><td class="dirtab"><a class="el" href="dir_74d1d638fd8425bf63dbc367bc2310bb.html">kobuki_core</a>&#160;/&#160;<a class="el" href="command_8hpp.html">command.hpp</a></td></tr><tr class="dirtab"><td class="dirtab"><b>core_sensors.cpp</b></td><td class="dirtab"><a class="el" href="dir_74d1d638fd8425bf63dbc367bc2310bb.html">kobuki_core</a>&#160;/&#160;<a class="el" href="dir_644b1d103d4fd22eba6bd875d72c44ce.html">packets</a>&#160;/&#160;<a class="el" href="core__sensors_8hpp.html">core_sensors.hpp</a></td></tr><tr class="dirtab"><td class="dirtab"><b>core_sensors.cpp</b></td><td class="dirtab"><a class="el" href="dir_74d1d638fd8425bf63dbc367bc2310bb.html">kobuki_core</a>&#160;/&#160;<a class="el" href="dir_c0e1487ade8704853960e702f4864b4b.html">packet_handler</a>&#160;/&#160;<a class="el" href="payload__headers_8hpp.html">payload_headers.hpp</a></td></tr><tr class="dirtab"><td class="dirtab"><b>event_manager.cpp</b></td><td class="dirtab"><a class="el" href="dir_74d1d638fd8425bf63dbc367bc2310bb.html">kobuki_core</a>&#160;/&#160;<a class="el" href="dir_644b1d103d4fd22eba6bd875d72c44ce.html">packets</a>&#160;/&#160;<a class="el" href="core__sensors_8hpp.html">core_sensors.hpp</a></td></tr><tr class="dirtab"><td class="dirtab"><b>event_manager.cpp</b></td><td class="dirtab"><a class="el" href="dir_74d1d638fd8425bf63dbc367bc2310bb.html">kobuki_core</a>&#160;/&#160;<a class="el" href="event__manager_8hpp.html">event_manager.hpp</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="firmware_8cpp.html">firmware.cpp</a></td><td class="dirtab"><a class="el" href="dir_74d1d638fd8425bf63dbc367bc2310bb.html">kobuki_core</a>&#160;/&#160;<a class="el" href="dir_644b1d103d4fd22eba6bd875d72c44ce.html">packets</a>&#160;/&#160;<a class="el" href="firmware_8hpp.html">firmware.hpp</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="kobuki_8cpp.html">kobuki.cpp</a></td><td class="dirtab"><a class="el" href="dir_74d1d638fd8425bf63dbc367bc2310bb.html">kobuki_core</a>&#160;/&#160;<a class="el" href="kobuki_8hpp.html">kobuki.hpp</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="kobuki_8cpp.html">kobuki.cpp</a></td><td class="dirtab"><a class="el" href="dir_74d1d638fd8425bf63dbc367bc2310bb.html">kobuki_core</a>&#160;/&#160;<a class="el" href="dir_c0e1487ade8704853960e702f4864b4b.html">packet_handler</a>&#160;/&#160;<a class="el" href="payload__headers_8hpp.html">payload_headers.hpp</a></td></tr><tr class="dirtab"><td class="dirtab"><b>packet_finder.cpp</b></td><td class="dirtab"><a class="el" href="dir_74d1d638fd8425bf63dbc367bc2310bb.html">kobuki_core</a>&#160;/&#160;<a class="el" href="dir_c0e1487ade8704853960e702f4864b4b.html">packet_handler</a>&#160;/&#160;<a class="el" href="packet__finder_8hpp.html">packet_finder.hpp</a></td></tr></table></div><!-- contents -->
+
+<p>Constant definitions for compatible firmware versions.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;<a class="el" href="firmware_8hpp_source.html">../../include/kobuki_core/packets/firmware.hpp</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for firmware.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="firmware_8cpp__incl.png" border="0" usemap="#a_2github_2workspace_2src_2driver_2firmware_8cpp" alt=""/></div>
+<map name="_2github_2workspace_2src_2driver_2firmware_8cpp" id="a_2github_2workspace_2src_2driver_2firmware_8cpp">
+<area shape="rect" title="Constant definitions for compatible firmware versions." alt="" coords="479,5,629,47"/>
+<area shape="rect" title=" " alt="" coords="646,273,705,300"/>
+<area shape="rect" href="firmware_8hpp.html" title="Firmware version request packet payloads." alt="" coords="378,95,559,136"/>
+<area shape="rect" title=" " alt="" coords="245,273,314,300"/>
+<area shape="rect" href="payload__base_8hpp.html" title="Base class for payloads." alt="" coords="75,184,243,225"/>
+<area shape="rect" href="payload__headers_8hpp.html" title="Byte id&#39;s for the individual payload headers." alt="" coords="470,184,638,225"/>
+<area shape="rect" href="version__info_8hpp.html" title="Version info for the kobuki driver." alt="" coords="319,191,445,218"/>
+<area shape="rect" title=" " alt="" coords="5,273,132,300"/>
+<area shape="rect" title=" " alt="" coords="157,273,221,300"/>
+<area shape="rect" title=" " alt="" coords="453,273,525,300"/>
+<area shape="rect" title=" " alt="" coords="549,273,604,300"/>
+<area shape="rect" href="macros_8hpp.html" title="Macros for kobuki_core." alt="" coords="339,273,428,300"/>
+<area shape="rect" title=" " alt="" coords="229,348,377,375"/>
+<area shape="rect" title=" " alt="" coords="402,348,525,375"/>
+</map>
+</div>
+</div><a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Constant definitions for compatible firmware versions. </p>
+<p>License: BSD <a href="https://raw.githubusercontent.com/kobuki-base/kobuki_core/license/LICENSE">https://raw.githubusercontent.com/kobuki-base/kobuki_core/license/LICENSE</a> </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_4db3a2f7aa3a8b9901e70dfeb2571af9.html">driver</a></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_4db3a2f7aa3a8b9901e70dfeb2571af9.html">driver</a></li><li class="navelem"><a class="el" href="firmware_8cpp.html">firmware.cpp</a></li>
     <li class="footer">Generated by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>

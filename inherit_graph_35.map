@@ -1,3 +1,16 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_kobuki_manager.html" title="Keyboard remote control for our robot core (mobile base)." alt="" coords="5,5,117,32"/>
+<area shape="rect" id="node1" href="$classpacket__handler_1_1payload_base.html" title="Provides base class for payloads." alt="" coords="5,309,196,336"/>
+<area shape="rect" id="node2" href="$classkobuki_1_1_cliff.html" title=" " alt="" coords="280,5,368,32"/>
+<area shape="rect" id="node3" href="$classkobuki_1_1_command.html" title=" " alt="" coords="261,56,387,83"/>
+<area shape="rect" id="node4" href="$classkobuki_1_1_controller_info.html" title=" " alt="" coords="253,107,395,133"/>
+<area shape="rect" id="node5" href="$classkobuki_1_1_core_sensors.html" title=" " alt="" coords="253,157,395,184"/>
+<area shape="rect" id="node6" href="$classkobuki_1_1_current.html" title=" " alt="" coords="270,208,378,235"/>
+<area shape="rect" id="node7" href="$classkobuki_1_1_dock_i_r.html" title=" " alt="" coords="269,259,379,285"/>
+<area shape="rect" id="node8" href="$classkobuki_1_1_eeprom.html" title=" " alt="" coords="269,309,379,336"/>
+<area shape="rect" id="node9" href="$classkobuki_1_1_firmware.html" title=" " alt="" coords="264,360,384,387"/>
+<area shape="rect" id="node10" href="$classkobuki_1_1_gp_input.html" title=" " alt="" coords="268,411,380,437"/>
+<area shape="rect" id="node11" href="$classkobuki_1_1_hardware.html" title=" " alt="" coords="263,461,385,488"/>
+<area shape="rect" id="node12" href="$classkobuki_1_1_inertia.html" title=" " alt="" coords="273,512,375,539"/>
+<area shape="rect" id="node13" href="$classkobuki_1_1_three_axis_gyro.html" title=" " alt="" coords="249,563,399,589"/>
+<area shape="rect" id="node14" href="$classkobuki_1_1_unique_device_i_d.html" title=" " alt="" coords="244,613,404,640"/>
 </map>

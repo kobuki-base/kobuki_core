@@ -29,8 +29,6 @@ var NAVTREEINDEX2 =
 "structkobuki_1_1_eeprom_1_1_data.html#a40259e53d69c4e01c95fbefceb66a371":[0,0,0,15,0,1],
 "structkobuki_1_1_eeprom_1_1_data.html#a49fd4240664c5ece3ce78c38144c6e2c":[0,0,0,15,0,2],
 "structkobuki_1_1_eeprom_1_1_data.html#ad19a65d2de9d2595d2c238a9dec971b8":[0,0,0,15,0,0],
-"structkobuki_1_1_firmware_1_1_data.html":[0,0,0,17,0],
-"structkobuki_1_1_firmware_1_1_data.html#aa1755f72354675dcd3dcda77eb6d055c":[0,0,0,17,0,0],
 "structkobuki_1_1_gp_input_1_1_data.html":[0,0,0,18,0],
 "structkobuki_1_1_gp_input_1_1_data.html#a4d91ec153b1310b7ef99af7f61850906":[0,0,0,18,0,2],
 "structkobuki_1_1_gp_input_1_1_data.html#a5a77ebbf4e04790e65f1bfb9a935db70":[0,0,0,18,0,1],

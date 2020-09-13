@@ -45,7 +45,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "",
-"classkobuki_1_1_kobuki.html#a6c5e57a2cd8e74d0390f7cc605a4234c",
+"classkobuki_1_1_kobuki.html#a6a4ff5d9a33ec16d705c9a8911d50649",
 "structkobuki_1_1_core_sensors_1_1_data.html#adbb5a43e2e08dbf7827beb3ef52cef0e"
 ];
 

@@ -1,7 +1,15 @@
 <map id="/github/workspace/include/kobuki_core/packets/firmware.hpp" name="/github/workspace/include/kobuki_core/packets/firmware.hpp">
-<area shape="rect" id="node1" title="Firmware version request packet payloads." alt="" coords="113,5,336,47"/>
-<area shape="rect" id="node2" href="$payload__base_8hpp.html" title="Base class for payloads." alt="" coords="45,95,213,136"/>
-<area shape="rect" id="node5" href="$payload__headers_8hpp.html" title="Byte id&#39;s for the individual payload headers." alt="" coords="237,95,405,136"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,184,132,211"/>
-<area shape="rect" id="node4" title=" " alt="" coords="157,184,221,211"/>
+<area shape="rect" id="node1" title="Firmware version request packet payloads." alt="" coords="231,5,453,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="245,184,314,211"/>
+<area shape="rect" id="node3" title=" " alt="" coords="338,184,397,211"/>
+<area shape="rect" id="node4" href="$payload__base_8hpp.html" title="Base class for payloads." alt="" coords="86,95,254,136"/>
+<area shape="rect" id="node7" href="$payload__headers_8hpp.html" title="Byte id&#39;s for the individual payload headers." alt="" coords="531,95,699,136"/>
+<area shape="rect" id="node8" href="$version__info_8hpp.html" title="Version info for the kobuki driver." alt="" coords="380,102,507,129"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,184,132,211"/>
+<area shape="rect" id="node6" title=" " alt="" coords="157,184,221,211"/>
+<area shape="rect" id="node9" title=" " alt="" coords="421,184,493,211"/>
+<area shape="rect" id="node10" title=" " alt="" coords="517,184,572,211"/>
+<area shape="rect" id="node11" href="$macros_8hpp.html" title="Macros for kobuki_core." alt="" coords="596,184,685,211"/>
+<area shape="rect" id="node12" title=" " alt="" coords="487,259,635,285"/>
+<area shape="rect" id="node13" title=" " alt="" coords="659,259,782,285"/>
 </map>
