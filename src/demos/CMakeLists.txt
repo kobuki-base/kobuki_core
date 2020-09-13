@@ -8,6 +8,7 @@ macro(kobuki_core_add_demo name)
   target_link_libraries(${target_name}
     ${PROJECT_NAME}
     ecl_command_line::ecl_command_line
+    ecl_console::ecl_console
   )
   set_target_properties(${target_name} PROPERTIES OUTPUT_NAME demo_${name})
   install(
