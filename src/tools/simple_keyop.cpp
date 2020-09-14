@@ -353,7 +353,6 @@ int main(int argc, char** argv)
       std::cout << ecl::green;
       std::cout << "current pose: [x: " << pose[0] << ", y: " << pose[1] << ", heading: " << pose[2] << "]" << std::endl;
       std::cout << ecl::reset;
-      std::cout << std::endl;
     }
   } catch ( ecl::StandardException &e ) {
     std::cout << e.what();

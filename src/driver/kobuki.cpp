@@ -75,7 +75,7 @@ Kobuki::~Kobuki()
   disable();
   shutdown_requested = true; // thread's spin() will catch this and terminate
   thread.join();
-  sig_debug.emit("Device: kobuki driver terminated.");
+  sig_debug.emit("Kobuki driver destructed.");
 }
 
 void Kobuki::init(Parameters &parameters)
@@ -102,7 +102,6 @@ void Kobuki::init(Parameters &parameters)
   sig_info.connect(sigslots_namespace + std::string("/info"));
   sig_warn.connect(sigslots_namespace + std::string("/warning"));
   sig_error.connect(sigslots_namespace + std::string("/error"));
-  sig_named.connect(sigslots_namespace + std::string("/named"));
 
   switch(this->parameters.log_level) {
     case LogLevel::DEBUG:
@@ -123,6 +122,7 @@ void Kobuki::init(Parameters &parameters)
 
   try {
     serial.open(parameters.device_port, ecl::BaudRate_115200, ecl::DataBits_8, ecl::StopBits_1, ecl::NoParity);  // this will throw exceptions - NotFoundError, OpenError
+    sig_debug.emit("Serial connection opened.");
     is_connected = true;
     serial.block(4000); // blocks by default, but just to be clear!
   }
@@ -249,19 +249,18 @@ void Kobuki::spin()
         is_alive = false;
         version_info_reminder = 10;
         controller_info_reminder = 10;
-        sig_debug.emit("Timed out while waiting for incoming bytes.");
+        sig_warn.emit("Timed out while waiting for incoming bytes.");
       }
       event_manager.update(is_connected, is_alive);
       continue;
     }
     else
     {
-      std::ostringstream ostream;
-      ostream << "kobuki_node : serial_read(" << n << ")"
-        << ", packet_finder.numberOfDataToRead(" << packet_finder.numberOfDataToRead() << ")";
-      //sig_debug.emit(ostream.str());
-      sig_named.emit(log("debug", "serial", ostream.str()));
-      // might be useful to send this to a topic if there is subscribers
+      // too much noise, even for debug
+      // std::ostringstream ostream;
+      // ostream << "serial_read(" << n << ")"
+      //   << ", packet_finder.numberOfDataToRead(" << packet_finder.numberOfDataToRead() << ")";
+      // sig_debug.emit(ostream.str());
     }
 
     if (packet_finder.update(buf, n)) // this clears packet finder's buffer and transfers important bytes into it
@@ -387,7 +386,10 @@ void Kobuki::spin()
       //std::cout << "---" << std::endl;
       unlockDataAccess();
 
-      is_alive = true;
+      if ( !is_alive ) {
+        sig_debug.emit("First data received.");
+        is_alive = true;
+      }
       event_manager.update(is_connected, is_alive);
       last_signal_time.stamp();
       sig_stream_data.emit();
@@ -410,7 +412,7 @@ void Kobuki::spin()
 void Kobuki::fixPayload(ecl::PushAndPop<unsigned char> & byteStream)
 {
   if (byteStream.size() < 3 ) { /* minimum size of sub-payload is 3; header_id, length, data */
-    sig_named.emit(log("error", "packet", "too small sub-payload detected."));
+    sig_error.emit("too small sub-payload detected.");
     byteStream.clear();
   } else {
     std::stringstream ostream;
@@ -436,8 +438,8 @@ void Kobuki::fixPayload(ecl::PushAndPop<unsigned char> & byteStream)
     }
     ostream << "]";
 
-    if (remains < length) sig_named.emit(log("error", "packet", "malformed sub-payload detected. "  + ostream.str()));
-    else                  sig_named.emit(log("debug", "packet", "unknown sub-payload detected. " + ostream.str()));
+    if (remains < length) sig_error.emit("Malformed sub-payload detected. "  + ostream.str());
+    else                  sig_debug.emit("Unknown sub-payload detected. " + ostream.str());
   }
 }
 
@@ -597,9 +599,8 @@ void Kobuki::sendCommand(Command command)
 {
   if( !is_alive || !is_connected ) {
     //need to do something
-    sig_debug.emit("Device state is not ready yet.");
-    if( !is_alive     ) sig_debug.emit(" - Device is not alive.");
-    if( !is_connected ) sig_debug.emit(" - Device is not connected.");
+    if( !is_alive     ) sig_debug.emit("Serial connection opened, but not yet receiving data.");
+    if( !is_connected ) sig_debug.emit("Serial connection not open.");
     //std::cout << is_enabled << ", " << is_alive << ", " << is_connected << std::endl;
     return;
   }
