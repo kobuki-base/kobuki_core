@@ -4,6 +4,7 @@ Changelog
 
 Forthcoming
 -----------
+* [core] ros_ prefixes dropped, custom_logging & raw_data_stream demos, `#40 <https://github.com/kobuki-base/kobuki_core/issues/40>`_
 * [infra] recommended firmware versions 1.1.4, 1.2.0, `#37 <https://github.com/kobuki-base/kobuki_core/issues/37>`_
 
 1.3.0 (2020-09-12)
