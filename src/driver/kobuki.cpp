@@ -11,6 +11,8 @@
  *****************************************************************************/
 
 #include <cmath>
+#include <stdexcept>
+
 #include <ecl/math.hpp>
 #include <ecl/geometry/angle.hpp>
 #include <ecl/time/sleep.hpp>
@@ -18,8 +20,9 @@
 #include <ecl/sigslots.hpp>
 #include <ecl/geometry/angle.hpp>
 #include <ecl/time/timestamp.hpp>
-#include <stdexcept>
+
 #include "../../include/kobuki_core/kobuki.hpp"
+#include "../../include/kobuki_core/logging.hpp"
 #include "../../include/kobuki_core/packet_handler/payload_headers.hpp"
 
 /*****************************************************************************
@@ -49,14 +52,18 @@ bool PacketFinder::checkSum()
  *****************************************************************************/
 
 Kobuki::Kobuki() :
-    shutdown_requested(false)
-    , is_enabled(false)
-    , heading_offset(0.0/0.0)
-    , is_connected(false)
-    , is_alive(false)
-    , version_info_reminder(0)
-    , controller_info_reminder(0)
-    , velocity_commands_debug(4, 0)
+  shutdown_requested(false),
+  is_enabled(false),
+  heading_offset(0.0/0.0),
+  is_connected(false),
+  is_alive(false),
+  version_info_reminder(0),
+  controller_info_reminder(0),
+  velocity_commands_debug(4, 0),
+  slot_log_debug(logDebug),
+  slot_log_info(logInfo),
+  slot_log_warning(logWarning),
+  slot_log_error(logError)
 {
 }
 
@@ -91,11 +98,28 @@ void Kobuki::init(Parameters &parameters)
   sig_raw_control_command.connect(sigslots_namespace + std::string("/raw_control_command"));
   //sig_serial_timeout.connect(sigslots_namespace+std::string("/serial_timeout"));
 
-  sig_debug.connect(sigslots_namespace + std::string("/ros_debug"));
-  sig_info.connect(sigslots_namespace + std::string("/ros_info"));
-  sig_warn.connect(sigslots_namespace + std::string("/ros_warn"));
-  sig_error.connect(sigslots_namespace + std::string("/ros_error"));
-  sig_named.connect(sigslots_namespace + std::string("/ros_named"));
+  sig_debug.connect(sigslots_namespace + std::string("/debug"));
+  sig_info.connect(sigslots_namespace + std::string("/info"));
+  sig_warn.connect(sigslots_namespace + std::string("/warning"));
+  sig_error.connect(sigslots_namespace + std::string("/error"));
+  sig_named.connect(sigslots_namespace + std::string("/named"));
+
+  switch(this->parameters.log_level) {
+    case LogLevel::DEBUG:
+      slot_log_debug.connect(parameters.sigslots_namespace + "/debug");
+      [[fallthrough]];
+    case LogLevel::INFO:
+      slot_log_info.connect(parameters.sigslots_namespace + "/info");
+      [[fallthrough]];
+    case LogLevel::WARNING:
+      slot_log_warning.connect(parameters.sigslots_namespace + "/warning");
+      [[fallthrough]];
+    case LogLevel::ERROR:
+      slot_log_error.connect(parameters.sigslots_namespace + "/error");
+      break;
+    default:
+      break;
+  }
 
   try {
     serial.open(parameters.device_port, ecl::BaudRate_115200, ecl::DataBits_8, ecl::StopBits_1, ecl::NoParity);  // this will throw exceptions - NotFoundError, OpenError

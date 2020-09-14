@@ -18,6 +18,8 @@
  *****************************************************************************/
 
 #include <string>
+
+#include "logging.hpp"
 #include "modules/battery.hpp"
 
 /*****************************************************************************
@@ -47,7 +49,8 @@ public:
     linear_acceleration_limit(0.3),
     linear_deceleration_limit(-0.3*1.2),
     angular_acceleration_limit(3.5),
-    angular_deceleration_limit(-3.5*1.2)
+    angular_deceleration_limit(-3.5*1.2),
+    log_level(LogLevel::WARNING)
   {
   } /**< @brief Default constructor. **/
 
@@ -63,6 +66,8 @@ public:
   double linear_deceleration_limit;
   double angular_acceleration_limit;
   double angular_deceleration_limit;
+
+  LogLevel log_level;              /**< @brief Print to stdout messages for this logging level and above. **/
 
   /**
    * @brief A validator to ensure the user has supplied correct/sensible parameter values.

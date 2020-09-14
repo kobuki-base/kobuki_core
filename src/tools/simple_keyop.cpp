@@ -64,7 +64,6 @@ private:
   double linear_vel_step, linear_vel_max;
   double angular_vel_step, angular_vel_max;
   std::string name;
-  ecl::Slot<const std::string&> slot_debug_error, slot_debug_warning;
   ecl::Slot<> slot_stream_data;
 
   /*********************
@@ -107,8 +106,6 @@ KobukiManager::KobukiManager() :
   linear_vel_max(1.0),
   angular_vel_step(0.33),
   angular_vel_max(6.6),
-  slot_debug_error(&KobukiManager::relayErrors, *this),
-  slot_debug_warning(&KobukiManager::relayWarnings, *this),
   slot_stream_data(&KobukiManager::processStreamData, *this),
   quit_requested(false),
   key_file_descriptor(0)
@@ -155,8 +152,6 @@ bool KobukiManager::init(const std::string & device)
 
   kobuki.init(parameters);
   kobuki.enable();
-  slot_debug_error.connect("/kobuki/ros_error");
-  slot_debug_warning.connect("/kobuki/ros_warn");
   slot_stream_data.connect("/kobuki/stream_data");
 
   /*********************
@@ -164,18 +159,6 @@ bool KobukiManager::init(const std::string & device)
    **********************/
   thread.start(&KobukiManager::keyboardInputLoop, *this);
   return true;
-}
-
-/*****************************************************************************
- ** Implementation [Debugging]
- *****************************************************************************/
-
-void KobukiManager::relayWarnings(const std::string& message) {
-  std::cout << ecl::yellow << "[WARNING] " << message << ecl::reset << std::endl;
-}
-
-void KobukiManager::relayErrors(const std::string& message) {
-  std::cout << ecl::red << "[ERROR] " << message << ecl::reset << std::endl;
 }
 
 /*****************************************************************************
@@ -351,7 +334,7 @@ void signalHandler(int /* signum */) {
 
 int main(int argc, char** argv)
 {
-  ecl::CmdLine cmd_line("simple_keyop program", ' ', "0.2");
+  ecl::CmdLine cmd_line("simple_keyop program", ' ', "0.3");
   ecl::UnlabeledValueArg<std::string> device_port("device_port", "Path to device file of serial port to open, connected to the kobuki", false, "/dev/kobuki", "string");
   cmd_line.add(device_port);
   cmd_line.parse(argc, argv);
@@ -370,6 +353,7 @@ int main(int argc, char** argv)
       std::cout << ecl::green;
       std::cout << "current pose: [x: " << pose[0] << ", y: " << pose[1] << ", heading: " << pose[2] << "]" << std::endl;
       std::cout << ecl::reset;
+      std::cout << std::endl;
     }
   } catch ( ecl::StandardException &e ) {
     std::cout << e.what();

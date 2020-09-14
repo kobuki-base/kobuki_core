@@ -17,6 +17,7 @@
   <buildtool_depend>ament_cmake_ros</buildtool_depend>
 
   <build_depend>ecl_build</build_depend>
+  <build_depend>ecl_command_line</build_depend>
   <build_depend>ecl_config</build_depend>
   <build_depend>ecl_console</build_depend>
   <build_depend>ecl_converters</build_depend>
@@ -26,9 +27,10 @@
   <build_depend>ecl_sigslots</build_depend>
   <build_depend>ecl_threads</build_depend>
   <build_depend>ecl_time</build_depend>
-  <build_depend>ecl_command_line</build_depend>
 
+  <exec_depend>ecl_command_line</exec_depend>
   <exec_depend>ecl_config</exec_depend>
+  <exec_depend>ecl_console</exec_depend>
   <exec_depend>ecl_converters</exec_depend>
   <exec_depend>ecl_devices</exec_depend>
   <exec_depend>ecl_geometry</exec_depend>
@@ -36,7 +38,6 @@
   <exec_depend>ecl_sigslots</exec_depend>
   <exec_depend>ecl_threads</exec_depend>
   <exec_depend>ecl_time</exec_depend>
-  <exec_depend>ecl_command_line</exec_depend>
 
   <export>
     <build_type>ament_cmake</build_type>

@@ -50,8 +50,8 @@ void PacketFinderBase::configure(const std::string &sigslots_namespace,
   buffer = BufferType(size_stx + size_length_field + size_max_payload + size_checksum_field + size_etx);
   state = waitingForStx;
 
-  sig_warn.connect(sigslots_namespace + std::string("/ros_warn"));
-  sig_error.connect(sigslots_namespace + std::string("/ros_error"));
+  sig_warn.connect(sigslots_namespace + std::string("/warning"));
+  sig_error.connect(sigslots_namespace + std::string("/error"));
 
   //todo; exception
   // Problem1: size_length_field = 1, vairable_size_payload = false

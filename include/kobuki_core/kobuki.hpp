@@ -263,6 +263,12 @@ private:
   ecl::Signal<Command::Buffer&> sig_raw_data_command; // should be const, but pushnpop is not fully realised yet for const args in the formatters.
   ecl::Signal<PacketFinder::BufferType&> sig_raw_data_stream; // should be const, but pushnpop is not fully realised yet for const args in the formatters.
   ecl::Signal<const std::vector<short>&> sig_raw_control_command;
+
+  /*********************
+  ** Slots
+  **********************/
+  ecl::Slot<const std::string&> slot_log_debug, slot_log_info, slot_log_warning, slot_log_error;
+
 };
 
 } // namespace kobuki

@@ -49,6 +49,7 @@ add_subdirectory(src)
 ament_export_targets(${PROJECT_NAME})
 ament_export_dependencies(
     ecl_config
+    ecl_console
     ecl_converters
     ecl_devices
     ecl_geometry

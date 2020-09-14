@@ -11,11 +11,14 @@
  * Includes
  ****************************************************************************/
 
+#include <functional>
 #include <string>
+
 #include <ecl/console.hpp>
 #include <ecl/time.hpp>
 #include <ecl/sigslots.hpp>
 #include <ecl/command_line.hpp>
+
 #include "kobuki_core/kobuki.hpp"
 
 /*****************************************************************************
@@ -26,17 +29,13 @@ class KobukiManager {
 public:
   KobukiManager(const std::string &device_port) :
     acquired(false),
-    slot_debug_error(&KobukiManager::relayErrors, *this),
-    slot_debug_warning(&KobukiManager::relayWarnings, *this),
     slot_version_info(&KobukiManager::processVersionInfo, *this)
   {
     kobuki::Parameters parameters;
     parameters.sigslots_namespace = "/kobuki"; // configure the first part of the sigslot namespace
     parameters.device_port = device_port;    // the serial port to connect to (windows COM1..)
     kobuki.init(parameters);
-    slot_debug_warning.connect("/kobuki/ros_warn");
-    slot_debug_error.connect("/kobuki/ros_error");
-    slot_version_info.connect("/kobuki/version_info");
+    slot_version_info.connect(parameters.sigslots_namespace + "/version_info");
   }
 
   ~KobukiManager() {}
@@ -50,14 +49,6 @@ public:
     acquired = true;
   }
 
-  void relayWarnings(const std::string& message) {
-    std::cout << ecl::yellow << "[WARNING] " << message << ecl::reset << std::endl;
-  }
-
-  void relayErrors(const std::string& message) {
-    std::cout << ecl::red << "[ERROR] " << message << ecl::reset << std::endl;
-  }
-
   bool isAcquired() { return acquired; }
   std::string& getHardwareVersion() { return hardware; }
   std::string& getFirmwareVersion() { return firmware; }
@@ -68,7 +59,6 @@ private:
   volatile bool acquired;
   kobuki::Kobuki kobuki;
   std::string hardware, firmware, software, udid;
-  ecl::Slot<const std::string&> slot_debug_error, slot_debug_warning;
   ecl::Slot<const kobuki::VersionInfo&> slot_version_info;
 };
 
@@ -78,13 +68,13 @@ private:
 
 int main(int argc, char** argv)
 {
-  ecl::CmdLine cmd_line("version_info program", ' ', "0.2");
+  ecl::CmdLine cmd_line("version_info program", ' ', "0.3");
   ecl::UnlabeledValueArg<std::string> device_port("device_port", "Path to device file of serial port to open, connected to the kobuki", false, "/dev/kobuki", "string");
   cmd_line.add(device_port);
   cmd_line.parse(argc, argv);
   //std::cout << "device_port: " << device_port.getValue() << std::endl;
 
-  std::cout << "Version Info:" << std::endl;
+  std::cout << ecl::bold << "\nVersion Info\n" << ecl::reset << std::endl;
   KobukiManager kobuki_manager(device_port.getValue());
 
   ecl::MilliSleep sleep_one_hundred_ms(100);
