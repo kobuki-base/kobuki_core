@@ -17,7 +17,6 @@
 #include <string>
 
 #include <csignal>
-#include <ecl/console.hpp>
 #include <ecl/geometry.hpp>
 #include <ecl/time.hpp>
 #include <ecl/sigslots.hpp>
@@ -39,8 +38,6 @@ public:
   ) :
     dx(0.0), dth(0.0),
     length(length),
-    slot_debug_error(&KobukiManager::relayErrors, *this),
-    slot_debug_warning(&KobukiManager::relayWarnings, *this),
     slot_stream_data(&KobukiManager::processStreamData, *this)
   {
     kobuki::Parameters parameters;
@@ -50,8 +47,6 @@ public:
 
     kobuki.init(parameters);
     kobuki.enable();
-    slot_debug_error.connect("/kobuki/ros_error");
-    slot_debug_warning.connect("/kobuki/ros_warn");
     slot_stream_data.connect("/kobuki/stream_data");
   }
 
@@ -71,14 +66,6 @@ public:
     // std::cout << kobuki.getHeading() << ", " << pose.heading() << std::endl;
     // std::cout << "[" << pose[0] << ", " << pose.y() << ", " << pose.heading() << "]" << std::endl;
     processMotion();
-  }
-
-  void relayWarnings(const std::string& message) {
-    std::cout << ecl::yellow << "[WARNING] " << message << ecl::reset << std::endl;
-  }
-
-  void relayErrors(const std::string& message) {
-    std::cout << ecl::red << "[ERROR] " << message << ecl::reset << std::endl;
   }
 
   // Generate square motion
@@ -109,7 +96,6 @@ private:
   const double length;
   ecl::linear_algebra::Vector3d pose;  // x, y, heading
   kobuki::Kobuki kobuki;
-  ecl::Slot<const std::string&> slot_debug_error, slot_debug_warning;
   ecl::Slot<> slot_stream_data;
 };
 

@@ -27,6 +27,7 @@ target_include_directories(
 target_link_libraries(
   ${PROJECT_NAME}
   PUBLIC
+    ecl_console::ecl_console
     ecl_converters::ecl_converters
     ecl_devices::ecl_devices
     ecl_geometry::ecl_geometry

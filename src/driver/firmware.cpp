@@ -72,7 +72,7 @@ bool Firmware::deserialise(ecl::PushAndPop<unsigned char> & byteStream)
     buildVariable(data.version, byteStream);
   }
   // override data.version here to hack/test version checking
-  // data.version = 0x020107;
+  // data.version = 0x010103;
 
   //showMe();
   return constrain();
