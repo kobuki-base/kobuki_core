@@ -23,6 +23,7 @@ var dir_74d1d638fd8425bf63dbc367bc2310bb =
       [ "PacketFinder", "classkobuki_1_1_packet_finder.html", "classkobuki_1_1_packet_finder" ],
       [ "Kobuki", "classkobuki_1_1_kobuki.html", "classkobuki_1_1_kobuki" ]
     ] ],
+    [ "logging.hpp", "logging_8hpp.html", "logging_8hpp" ],
     [ "macros.hpp", "macros_8hpp.html", "macros_8hpp" ],
     [ "modules.hpp", "modules_8hpp.html", null ],
     [ "packets.hpp", "packets_8hpp.html", null ],

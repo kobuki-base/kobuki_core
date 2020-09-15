@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['unique_5fdevice_5fid_2ehpp_177',['unique_device_id.hpp',['../unique__device__id_8hpp.html',1,'']]]
+  ['three_5faxis_5fgyro_2ehpp_180',['three_axis_gyro.hpp',['../three__axis__gyro_8hpp.html',1,'']]]
 ];

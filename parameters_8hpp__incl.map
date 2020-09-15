@@ -1,12 +1,15 @@
 <map id="/github/workspace/include/kobuki_core/parameters.hpp" name="/github/workspace/include/kobuki_core/parameters.hpp">
-<area shape="rect" id="node1" title="Parameter configuration for the kobuki." alt="" coords="5,5,195,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="13,95,67,121"/>
-<area shape="rect" id="node3" href="$battery_8hpp_source.html" title=" " alt="" coords="92,95,231,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="7,333,71,360"/>
-<area shape="rect" id="node5" href="$core__sensors_8hpp.html" title="Core sensor packet payloads." alt="" coords="69,169,253,196"/>
-<area shape="rect" id="node8" href="$macros_8hpp.html" title="Macros for kobuki_core." alt="" coords="271,251,369,278"/>
-<area shape="rect" id="node6" href="$payload__base_8hpp.html" title="Base class for payloads." alt="" coords="77,244,245,285"/>
-<area shape="rect" id="node7" title=" " alt="" coords="95,333,222,360"/>
-<area shape="rect" id="node9" title=" " alt="" coords="246,333,394,360"/>
-<area shape="rect" id="node10" title=" " alt="" coords="419,333,541,360"/>
+<area shape="rect" id="node1" title="Parameter configuration for the kobuki." alt="" coords="26,5,215,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,169,60,196"/>
+<area shape="rect" id="node3" href="$logging_8hpp.html" title="Log levels and simple logging to screen." alt="" coords="77,95,164,121"/>
+<area shape="rect" id="node6" href="$battery_8hpp_source.html" title=" " alt="" coords="346,95,485,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="85,169,157,196"/>
+<area shape="rect" id="node5" title=" " alt="" coords="181,169,293,196"/>
+<area shape="rect" id="node7" title=" " alt="" coords="347,333,411,360"/>
+<area shape="rect" id="node8" href="$core__sensors_8hpp.html" title="Core sensor packet payloads." alt="" coords="389,169,573,196"/>
+<area shape="rect" id="node11" href="$macros_8hpp.html" title="Macros for kobuki_core." alt="" coords="611,251,710,278"/>
+<area shape="rect" id="node9" href="$payload__base_8hpp.html" title="Base class for payloads." alt="" coords="418,244,586,285"/>
+<area shape="rect" id="node10" title=" " alt="" coords="436,333,563,360"/>
+<area shape="rect" id="node12" title=" " alt="" coords="587,333,735,360"/>
+<area shape="rect" id="node13" title=" " alt="" coords="759,333,882,360"/>
 </map>

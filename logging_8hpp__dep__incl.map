@@ -1,0 +1,10 @@
+<map id="/github/workspace/include/kobuki_core/logging.hpp" name="/github/workspace/include/kobuki_core/logging.hpp">
+<area shape="rect" id="node1" title="Log levels and simple logging to screen." alt="" coords="465,5,638,47"/>
+<area shape="rect" id="node2" href="$kobuki_8hpp.html" title="Device driver core interface." alt="" coords="309,184,482,225"/>
+<area shape="rect" id="node6" href="$kobuki_8cpp.html" title="Implementation for the kobuki device driver." alt="" coords="543,273,693,315"/>
+<area shape="rect" id="node7" href="$parameters_8hpp.html" title="Parameter configuration for the kobuki." alt="" coords="391,95,581,136"/>
+<area shape="rect" id="node8" href="$logging_8cpp.html" title="Simple logging implementation." alt="" coords="656,95,807,136"/>
+<area shape="rect" id="node3" href="$buttons_8cpp.html" title="Example program for kobuki button events." alt="" coords="5,273,156,315"/>
+<area shape="rect" id="node4" href="$chirp_8cpp.html" title="Example program for kobuki initialisation." alt="" coords="180,273,331,315"/>
+<area shape="rect" id="node5" href="$simple__loop_8cpp.html" title="Example program with a simple control loop." alt="" coords="355,273,518,315"/>
+</map>

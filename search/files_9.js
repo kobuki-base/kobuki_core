@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['macros_2ehpp_167',['macros.hpp',['../macros_8hpp.html',1,'']]],
-  ['modules_2ehpp_168',['modules.hpp',['../modules_8hpp.html',1,'']]]
+  ['logging_2ecpp_170',['logging.cpp',['../logging_8cpp.html',1,'']]],
+  ['logging_2ehpp_171',['logging.hpp',['../logging_8hpp.html',1,'']]]
 ];

@@ -12,6 +12,7 @@ var classkobuki_1_1_parameters =
     [ "error_msg", "classkobuki_1_1_parameters.html#a173dfe128efc68e860cdd0b3193dc2d7", null ],
     [ "linear_acceleration_limit", "classkobuki_1_1_parameters.html#a80f340ed5ef2c38e29dcc84bd808d8d8", null ],
     [ "linear_deceleration_limit", "classkobuki_1_1_parameters.html#a508680b2d1079e83d80492af73aed9cd", null ],
+    [ "log_level", "classkobuki_1_1_parameters.html#ad38e5139237815bbcbd3f24d697346e5", null ],
     [ "sigslots_namespace", "classkobuki_1_1_parameters.html#a0717933338e84bc7907f7e8345e2347e", null ],
     [ "simulation", "classkobuki_1_1_parameters.html#afb674fc8606ffb15482a4230293cae6c", null ]
 ];

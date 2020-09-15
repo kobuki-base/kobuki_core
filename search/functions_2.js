@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['deserialise_182',['deserialise',['../classkobuki_1_1_command.html#a98ee9f7d0256e8b2ea06ec58cb198038',1,'kobuki::Command']]],
-  ['disable_183',['disable',['../classkobuki_1_1_kobuki.html#a9e4447e3b2bb177155ee681daccdc274',1,'kobuki::Kobuki']]]
+  ['deserialise_186',['deserialise',['../classkobuki_1_1_command.html#a98ee9f7d0256e8b2ea06ec58cb198038',1,'kobuki::Command']]],
+  ['disable_187',['disable',['../classkobuki_1_1_kobuki.html#a9e4447e3b2bb177155ee681daccdc274',1,'kobuki::Kobuki']]]
 ];
