@@ -91,6 +91,7 @@ private:
   int key_file_descriptor;
   struct termios original_terminal_state;
   ecl::Thread thread;
+  ecl::Mutex mutex;
 };
 
 /*****************************************************************************
@@ -263,10 +264,12 @@ void KobukiManager::processKeyboardInput(char c)
  */
 void KobukiManager::incrementLinearVelocity()
 {
+  mutex.lock();
   if (vx <= linear_vel_max)
   {
     vx += linear_vel_step;
   }
+  mutex.unlock();
 }
 
 /**
@@ -274,10 +277,12 @@ void KobukiManager::incrementLinearVelocity()
  */
 void KobukiManager::decrementLinearVelocity()
 {
+  mutex.lock();
   if (vx >= -linear_vel_max)
   {
     vx -= linear_vel_step;
   }
+  mutex.unlock();
 }
 
 /**
@@ -285,10 +290,12 @@ void KobukiManager::decrementLinearVelocity()
  */
 void KobukiManager::incrementAngularVelocity()
 {
+  mutex.lock();
   if (wz <= angular_vel_max)
   {
     wz += angular_vel_step;
   }
+  mutex.unlock();
 }
 
 /**
@@ -296,16 +303,20 @@ void KobukiManager::incrementAngularVelocity()
  */
 void KobukiManager::decrementAngularVelocity()
 {
+  mutex.lock();
   if (wz >= -angular_vel_max)
   {
     wz -= angular_vel_step;
   }
+  mutex.unlock();
 }
 
 void KobukiManager::resetVelocity()
 {
+  mutex.lock();
   vx = 0.0;
   wz = 0.0;
+  mutex.unlock();
 }
 
 void KobukiManager::processStreamData() {
@@ -316,7 +327,9 @@ void KobukiManager::processStreamData() {
   // TODO(daniel.stonier): this needs a mutex
   // This callback triggers in Kobuki's thread, however
   // vx, wz are updated in the keyboard input thread.
+  mutex.lock();
   kobuki.setBaseControl(vx, wz);
+  mutex.unlock();
 }
 
 /*****************************************************************************
