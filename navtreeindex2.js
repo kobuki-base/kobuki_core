@@ -1,5 +1,7 @@
 var NAVTREEINDEX2 =
 {
+"structkobuki_1_1_command_1_1_data.html#ad168a40d28679febe6ca598ccc9b9b84":[0,0,0,6,0,7],
+"structkobuki_1_1_command_1_1_data.html#ad9f88322e56d06cca433be590734ffd3":[0,0,0,6,0,11],
 "structkobuki_1_1_command_1_1_data.html#af8f1b9426d4315cba2730875579b543f":[0,0,0,6,0,14],
 "structkobuki_1_1_controller_info_1_1_data.html":[0,0,0,7,0],
 "structkobuki_1_1_controller_info_1_1_data.html#a34713fb1c773e9908701dde811b43b60":[0,0,0,7,0,0],
@@ -120,7 +122,5 @@ var NAVTREEINDEX2 =
 "velocity__commands_8cpp.html#aa6231a5027112a1cf56c610e6d7d91c5":[1,0,1,0,3,3],
 "velocity__commands_8cpp.html#aecf4729c6d16ed9ad6a63f862b514211":[1,0,1,0,3,2],
 "version__info_8hpp.html":[1,0,0,0,12],
-"version__info_8hpp_source.html":[1,0,0,0,12],
-"":[0,0,0],
-"":[0,0,1]
+"version__info_8hpp_source.html":[1,0,0,0,12]
 };
