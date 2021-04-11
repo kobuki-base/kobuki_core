@@ -5,6 +5,7 @@ Changelog
 Forthcoming
 -----------
 * [demos] log levels demo added, `#42 <https://github.com/kobuki-base/kobuki_core/issues/42>`_
+* [driver] bugfix major, minor, patch macro conflicts, `#44 <https://github.com/kobuki-base/kobuki_core/issues/44>`_
 
 1.3.1 (2020-09-15)
 ------------------
