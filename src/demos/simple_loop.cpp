@@ -50,12 +50,14 @@ public:
     slot_stream_data.connect("/kobuki/stream_data");
   }
 
-  ~KobukiManager() {
+  ~KobukiManager()
+  {
     kobuki.setBaseControl(0,0); // linear_velocity, angular_velocity in (m/s), (rad/s)
     kobuki.disable();
   }
 
-  void processStreamData() {
+  void processStreamData()
+  {
     ecl::linear_algebra::Vector3d pose_update;
     ecl::linear_algebra::Vector3d pose_update_rates;
     kobuki.updateOdometry(pose_update, pose_update_rates);
@@ -69,7 +71,8 @@ public:
   }
 
   // Generate square motion
-  void processMotion() {
+  void processMotion()
+  {
     const double buffer = 0.05;
     double longitudinal_velocity = 0.0;
     double rotational_velocity = 0.0;
@@ -87,7 +90,8 @@ public:
     kobuki.setBaseControl(longitudinal_velocity, rotational_velocity);
   }
 
-  const ecl::linear_algebra::Vector3d& getPose() {
+  const ecl::linear_algebra::Vector3d& getPose()
+  {
     return pose;
   }
 
@@ -104,7 +108,8 @@ private:
 *****************************************************************************/
 
 bool shutdown_req = false;
-void signalHandler(int /* signum */) {
+void signalHandler(int /* signum */)
+{
   shutdown_req = true;
 }
 
@@ -157,7 +162,7 @@ int main(int argc, char** argv)
       pose = kobuki_manager.getPose();
       // std::cout << "current pose: [" << pose[0] << ", " << pose[1] << ", " << pose[2] << "]" << std::endl;
     }
-  } catch ( ecl::StandardException &e ) {
+  } catch (ecl::StandardException &e) {
     std::cout << e.what();
   }
   return 0;
