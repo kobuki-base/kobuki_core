@@ -129,7 +129,7 @@ void Kobuki::init(Parameters &parameters)
   catch (const ecl::StandardException &e)
   {
     if (e.flag() == ecl::NotFoundError) {
-      sig_warn.emit("device does not (yet) available, is the usb connected?."); // not a failure mode.
+      sig_warn.emit("device is not (yet) available, is the usb connected?."); // not a failure mode.
     } else {
       throw ecl::StandardException(LOC, e);
     }
@@ -224,7 +224,7 @@ void Kobuki::spin()
       {
         // windows throws OpenError if not connected
         if (e.flag() == ecl::NotFoundError) {
-          sig_info.emit("device does not (yet) available on this port, waiting...");
+          sig_info.emit("device is not (yet) available on this port, waiting...");
         } else if (e.flag() == ecl::OpenError) {
           sig_info.emit("device failed to open, waiting... [" + std::string(e.what()) + "]");
         } else {
