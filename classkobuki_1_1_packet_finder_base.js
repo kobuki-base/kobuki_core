@@ -1,39 +1,5 @@
 var classkobuki_1_1_packet_finder_base =
 [
-    [ "BufferType", "classkobuki_1_1_packet_finder_base.html#a7a548c36c0c0c85a290bf63d54f8211b", null ],
-    [ "packetFinderState", "classkobuki_1_1_packet_finder_base.html#a95a1d9a9e4de9401769771b7240408e8", [
-      [ "clearBuffer", "classkobuki_1_1_packet_finder_base.html#a95a1d9a9e4de9401769771b7240408e8ad650e76e8c85b6112140b86ddeb20929", null ],
-      [ "waitingForStx", "classkobuki_1_1_packet_finder_base.html#a95a1d9a9e4de9401769771b7240408e8a03e0fbf274e46ddf14c038a4abad4189", null ],
-      [ "waitingForPayloadSize", "classkobuki_1_1_packet_finder_base.html#a95a1d9a9e4de9401769771b7240408e8a7a2627559f357bf02ec088b2c884a055", null ],
-      [ "waitingForPayloadToEtx", "classkobuki_1_1_packet_finder_base.html#a95a1d9a9e4de9401769771b7240408e8aab89bfaf9b37cacf36a932c317bdac7a", null ],
-      [ "waitingForEtx", "classkobuki_1_1_packet_finder_base.html#a95a1d9a9e4de9401769771b7240408e8ad96841e57c961d3723996ce4b5b7fad5", null ]
-    ] ],
     [ "PacketFinderBase", "classkobuki_1_1_packet_finder_base.html#a2af8577ace869ac685bbd3df818a43fd", null ],
-    [ "~PacketFinderBase", "classkobuki_1_1_packet_finder_base.html#a31f82a805d1daf63ec3ee3e8586e3ad3", null ],
-    [ "checkSum", "classkobuki_1_1_packet_finder_base.html#ae06705ce8c3471aa60a496099f68b27f", null ],
-    [ "clear", "classkobuki_1_1_packet_finder_base.html#af6613761f5b02d1ea41aa9c8a5751a9a", null ],
-    [ "configure", "classkobuki_1_1_packet_finder_base.html#a36345c2f2abf305954b882371ed9f9c3", null ],
-    [ "enableVerbose", "classkobuki_1_1_packet_finder_base.html#aaf9a887ab7258cb32db3e92f0500a160", null ],
-    [ "getBuffer", "classkobuki_1_1_packet_finder_base.html#a3b59b2c70d61bf2180337eddfb0ae08c", null ],
-    [ "getPayload", "classkobuki_1_1_packet_finder_base.html#a3b7d8eb69f43f02a8cdbb9a908740bba", null ],
-    [ "numberOfDataToRead", "classkobuki_1_1_packet_finder_base.html#ac81c6f8d3f569447a6d0bc992060f37d", null ],
-    [ "update", "classkobuki_1_1_packet_finder_base.html#ae80fbedeba41baf3dd2f3db93c812b44", null ],
-    [ "waitForEtx", "classkobuki_1_1_packet_finder_base.html#a211cc4e18d4b48e951539952cf3a0607", null ],
-    [ "waitForPayloadAndEtx", "classkobuki_1_1_packet_finder_base.html#a14e362e78ff9f5d584ee437b353580aa", null ],
-    [ "waitForPayloadSize", "classkobuki_1_1_packet_finder_base.html#a95a3ef9d47f9a00dde9924d97f207c0f", null ],
-    [ "WaitForStx", "classkobuki_1_1_packet_finder_base.html#a7adc7edf0182921fd55787e5981198c3", null ],
-    [ "buffer", "classkobuki_1_1_packet_finder_base.html#aaa6673951c65a21948e94e6efbe41ff1", null ],
-    [ "ETX", "classkobuki_1_1_packet_finder_base.html#a024c93fd9228fa0598d6edebaf1e851c", null ],
-    [ "sig_error", "classkobuki_1_1_packet_finder_base.html#a84d10875989ea59314bfe87a95a98ca3", null ],
-    [ "sig_warn", "classkobuki_1_1_packet_finder_base.html#a7648848ba9116a55f8609b12f0249bd6", null ],
-    [ "size_checksum_field", "classkobuki_1_1_packet_finder_base.html#a81db6ffbf2859173df7e917b44b32dba", null ],
-    [ "size_etx", "classkobuki_1_1_packet_finder_base.html#adaf32c7b348c6f6c675edfefa1e6f1a5", null ],
-    [ "size_length_field", "classkobuki_1_1_packet_finder_base.html#a1fd3a110b4920103132e7e281251caca", null ],
-    [ "size_max_payload", "classkobuki_1_1_packet_finder_base.html#ab9981e768e5042c0efffd23df506c477", null ],
-    [ "size_payload", "classkobuki_1_1_packet_finder_base.html#a0ab8932e3f01def929b43d2d8c68413d", null ],
-    [ "size_stx", "classkobuki_1_1_packet_finder_base.html#afd37d819afc24b5fbbbdfd21e4cda1ac", null ],
-    [ "state", "classkobuki_1_1_packet_finder_base.html#a01a3037d83ed4f9bb3d22932d29a1dcc", null ],
-    [ "STX", "classkobuki_1_1_packet_finder_base.html#a8deef4eaa35897578030892cb3265d02", null ],
-    [ "variable_size_payload", "classkobuki_1_1_packet_finder_base.html#a06d54c9254d3413fed606bf515183770", null ],
-    [ "verbose", "classkobuki_1_1_packet_finder_base.html#ac1ebadd0a19b4d15edde603c35855563", null ]
+    [ "update", "classkobuki_1_1_packet_finder_base.html#ae80fbedeba41baf3dd2f3db93c812b44", null ]
 ];
