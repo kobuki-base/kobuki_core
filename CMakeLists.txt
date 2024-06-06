@@ -8,12 +8,13 @@ project(kobuki_core)
 # Turn -isystem off. Actually like to see warnings from underlying packages
 # and regardless, have run into trouble because of the ordering it induces.
 set(CMAKE_NO_SYSTEM_FROM_IMPORTED TRUE)
+set(CMAKE_CXX_FLAGS "-fPIC ${CMAKE_CXX_FLAGS}")
 
 ##############################################################################
 # Find Packages
 ##############################################################################
 
-find_package(ament_cmake_ros REQUIRED)
+find_package(ament_cmake REQUIRED)
 
 find_package(ecl_build REQUIRED)
 find_package(ecl_command_line REQUIRED)
